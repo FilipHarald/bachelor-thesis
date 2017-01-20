@@ -7,4 +7,4 @@
 |`2017-01-17`|3|X|X|Discussing possible research questions and areas.|
 |`2017-01-17`|2|X|X|2nd lecture, the process of defining a research question.|
 |`2017-01-17`|1|X||Initializing git and log.|
-|`2017-01-19`|2|X|X||3nd lecture, the process of finding quality jornuals and how to track them.|
+|`2017-01-19`|2|X|X||3rd lecture, the process of finding good quality journals and how to track them.|

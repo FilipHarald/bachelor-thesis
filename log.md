@@ -10,5 +10,5 @@
 |`2017-01-19`|2|X|X|3rd lecture, the process of finding good quality journals and how to track them.|
 |`2017-01-19`|1|X||1st assignment(text analysis), searching for papers|
 |`2017-01-20`|2|X||1st assignment(text analysis), searching for papers|
-
+|`2017-01-21`|1|X||LaTeX-hassle, external citing from Mendeley generated `.bib`-file.|
 |`2017-01-`|0|X|X||

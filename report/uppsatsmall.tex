@@ -1,0 +1,190 @@
+\documentclass[a4paper,11pt]{article}
+
+%
+% Do not change
+\textheight = 220mm
+\textwidth  = 150mm
+\topmargin  = 10mm
+\oddsidemargin  = 5.0mm
+\evensidemargin = 5.0mm
+\unitlength = 1mm
+
+
+\usepackage[T1]{fontenc} % Use latin1 font encoding, permits the direct use of åäöÅÄÖ in the text
+
+%
+% Choose if you write in Swedish or English. (Don't write in English!)
+\usepackage[swedish]{babel} % If in Swedish
+%\usepackage[english]{babel} % If in English
+
+\begin{document}
+%
+% Do not change
+\let\rempage=\thepage
+{
+\renewcommand{\thepage}{\relax}
+\begin{picture}(44,0)(15,10)%
+\special{psfile=mahlogo-name.eps}%
+\end{picture}%
+
+\vspace*{-30mm}
+\hfill\begin{minipage}[t]{10em}\large
+Teknik och samhälle\\
+Datavetenskap
+\end{minipage}
+
+\vspace*{45mm}
+\begin{center}
+{\bf\large
+Examensarbete 
+
+\small
+15 högskolepoäng, grundnivå
+}
+
+\vspace*{25mm}
+\LARGE
+%
+% Put your title here
+Examensarbetets titel
+
+\vspace*{8mm}
+\large
+%
+% Translated title 
+Examensarbetets titel på engelska\\
+(på svenska om arbetet är skrivet på engelska)
+
+\vspace*{12mm}
+\Large
+%
+% Author names
+Författares namn\\
+var och en på egen rad, i bokstavsordning efter efternamn
+
+\vspace*{30mm}
+\large
+%
+% Picture if you want
+Eventuell bild
+\end{center}
+
+\vfill
+\hspace*{-10mm}%
+\begin{minipage}[t]{20em}
+%
+% Fill in correct data for you
+Examen:~kandidatexamen 180~hp
+\\
+Huvudområde:~datavetenskap
+%
+% Huvudområden är:
+% Affärssystem
+% Data och informationsvetenskap (IA och IS)
+% Datavetenskap (Övriga)
+\\
+Program: (t.ex.~systemutvecklare)
+\\
+Datum för slutseminarium: (t.ex.~2012-05-30)
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{15em}
+%
+% Fill in supervisor and second reader
+Handledare: XYZ
+\\
+Examinator: ABC
+\end{minipage}
+
+\newpage
+
+\mbox{}
+
+\newpage
+
+\section*{Sammanfattning}
+
+Text på svenska\ldots
+
+\newpage
+
+\mbox{}
+
+\newpage
+
+\section*{Abstract}
+
+Text in English\ldots
+
+\newpage
+
+\mbox{}
+
+\newpage
+\tableofcontents
+\newpage
+\ifodd\value{page}\else\mbox{}\newpage\fi
+\setcounter{page}{1}
+\renewcommand{\thepage}{\rempage}
+%
+
+
+\section{Inledning}
+
+\subsection{Bakgrund och tidigare forskning}
+
+I dagens samhälle\ldots
+
+\vdots
+
+\ldots\ Lenhart~{\em m.fl.}~\cite{rectlinkfirst} visar en
+kvadratisk algoritm för problemet. Det förbättras senare till $O(n\log n)$ tid av
+Djidjev~{\em m.fl.}~\cite{rectlinkopt1} och Ke~\cite{rectlinkopt2} oberoende av varandra.~\ldots
+
+Notera att inledningen skrivs i presens, den visar en nulägessituation.
+
+
+\subsection{Frågeställning}
+
+\section{Metod}
+
+\subsection{Metodbeskrivning}
+
+\subsection{Metoddiskussion}
+
+\section{Resultat}
+
+\section{Analys}
+
+\section{Diskussion}
+
+\section{Slutsatser och vidare forskning}
+
+
+%
+% Do not change
+\newpage
+\addcontentsline{toc}{section}{Referenser}
+\begin{thebibliography}{888}
+%
+% Referenserna ordnade i bokstavsordning efter försteförfattaren
+
+\bibitem{rectlinkopt2}
+H.~N.~Djidjev, A.~Lingas, J.-R.~Sack, An $O(n\log n)$ algorithm for
+computing the rectilinear link center of a simple polygon. {\em Discrete and
+Computational Geometry\/}~8:131--152,~1992.
+
+\bibitem{rectlinkopt1}
+Y.~Ke, An efficient algorithm for link distance problems. In {\em
+Proceedings of the 5th ACM Symposium on Computational Geometry}, pages~69--78,~1989.
+
+\bibitem{rectlinkfirst}
+W.~Lenhart, R.~Pollack, J.-R.~Sack, R.~Seidel, M.~Sharir, S.~Suri,
+G.~Toussaint, S.~Whitesides, C.~Yap, Computing the link center of a simple
+polygon. {\em Discrete and Computational Geometry\/}~3:281--293,~1988.
+
+\end{thebibliography}
+
+\end{document}

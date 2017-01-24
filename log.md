@@ -12,4 +12,5 @@
 |`2017-01-20`|2|X||1st assignment(text analysis): searching for papers|
 |`2017-01-21`|1|X||LaTeX-hassle, external citing from Mendeley generated `.bib`-file.|
 |`2017-01-22`|2|X||1st assignment(text analysis): 1st paper...|
-|`2017-01-23`|2|X|X|4th lecture: report structure and language |
+|`2017-01-23`|2|X|X|4th lecture: report structure and language|
+|`2017-01-24`|1|X||1st assignment(text analysis): 1st paper...|

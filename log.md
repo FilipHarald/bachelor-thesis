@@ -2,6 +2,8 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-01-24`|1|X|X|Discussion about title, area and the upcoming assignments|
+|`2017-01-24`|2|X|X|4th lecture: Schedule overview and the history of academics|
 |`2017-01-24`|1|X||1st assignment(text analysis): 1st paper...|
 |`2017-01-23`|2|X|X|4th lecture: report structure and language|
 |`2017-01-22`|2|X||1st assignment(text analysis): 1st paper...|

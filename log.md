@@ -2,6 +2,7 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-01-24`|4|X||1st assignment(text analysis): Finalizing 1st paper.|
 |`2017-01-26`|2|X||5th lecture: Common misstakes in thesises and more history of academics|
 |`2017-01-24`|1||X|1st assignment(text analysis): Summary of 1st paper...|
 |`2017-01-24`|1||X|1st assignment(text analysis): Latex setup|

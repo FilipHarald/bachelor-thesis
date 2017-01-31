@@ -12,19 +12,15 @@
 
 \usepackage[T1]{fontenc} % Use latin1 font encoding, permits the direct use of åäöÅÄÖ in the text
 
-%
-% Choose if you write in Swedish or English. (Don't write in English!)
 \usepackage[swedish]{babel} % If in Swedish
-%\usepackage[english]{babel} % If in English
 
 \begin{document}
-%
-% Do not change
+
 \let\rempage=\thepage
 {
 \renewcommand{\thepage}{\relax}
 \begin{picture}(44,0)(15,10)%
-\special{psfile=mahlogo-name.eps}%
+\special{psfile=mahlogo-name.eps}
 \end{picture}%
 
 \vspace*{-30mm}
@@ -44,9 +40,8 @@ Examensarbete
 
 \vspace*{25mm}
 \LARGE
-%
-% Put your title here
-Examensarbetets titel
+
+Title
 
 \vspace*{8mm}
 \large
@@ -128,23 +123,11 @@ Text in English\ldots
 \ifodd\value{page}\else\mbox{}\newpage\fi
 \setcounter{page}{1}
 \renewcommand{\thepage}{\rempage}
-%
-
 
 \section{Inledning}
 
 \subsection{Bakgrund och tidigare forskning}
-
-I dagens samhälle\ldots
-
-\vdots
-
-\ldots\ Lenhart~{\em m.fl.}~\cite{rectlinkfirst} visar en
-kvadratisk algoritm för problemet. Det förbättras senare till $O(n\log n)$ tid av
-Djidjev~{\em m.fl.}~\cite{rectlinkopt1} och Ke~\cite{rectlinkopt2} oberoende av varandra.~\ldots
-
-Notera att inledningen skrivs i presens, den visar en nulägessituation.
-
+Test bibliography\cite{Mockus2002}
 
 \subsection{Frågeställning}
 
@@ -162,29 +145,9 @@ Notera att inledningen skrivs i presens, den visar en nulägessituation.
 
 \section{Slutsatser och vidare forskning}
 
-
-%
-% Do not change
 \newpage
 \addcontentsline{toc}{section}{Referenser}
-\begin{thebibliography}{888}
-%
-% Referenserna ordnade i bokstavsordning efter försteförfattaren
-
-\bibitem{rectlinkopt2}
-H.~N.~Djidjev, A.~Lingas, J.-R.~Sack, An $O(n\log n)$ algorithm for
-computing the rectilinear link center of a simple polygon. {\em Discrete and
-Computational Geometry\/}~8:131--152,~1992.
-
-\bibitem{rectlinkopt1}
-Y.~Ke, An efficient algorithm for link distance problems. In {\em
-Proceedings of the 5th ACM Symposium on Computational Geometry}, pages~69--78,~1989.
-
-\bibitem{rectlinkfirst}
-W.~Lenhart, R.~Pollack, J.-R.~Sack, R.~Seidel, M.~Sharir, S.~Suri,
-G.~Toussaint, S.~Whitesides, C.~Yap, Computing the link center of a simple
-polygon. {\em Discrete and Computational Geometry\/}~3:281--293,~1988.
-
-\end{thebibliography}
+\bibliographystyle{plain}
+\bibliography{library}
 
 \end{document}

@@ -2,8 +2,9 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
-|`2017-02-01`|1|x||Translated report template and started researching|
-|`2017-01-31`|1|x||LaTeX-hassle and Mendeley auto-sync|
+|`2017-02-02`|2|X||Analyzed "A Case Study of Open Source software Development: the Apache server"|
+|`2017-02-01`|1|X||Translated report template and started researching|
+|`2017-01-31`|1|X||LaTeX-hassle and Mendeley auto-sync|
 |`2017-01-29`|9||X|1st assignment(text analysis): 3rd paper and Finalizing|
 |`2017-01-29`|12|X||1st assignment(text analysis): 2nd & 3rd paper.|
 |`2017-01-28`|2||X|1st assignment(text analysis): 2nd paper.|

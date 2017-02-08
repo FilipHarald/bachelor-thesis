@@ -2,7 +2,9 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
-|`2017-02-08`|1||X|Attending boot seminar as listener|
+|`2017-02-08`|1||X|Attending at boot seminar as listener|
+|`2017-02-07`|3||X|Analyzed "Inflow and Retention in OSS Communities with Commercial Involvement: A Case Study of Three Hybrid Projects"|
+|`2017-02-06`|3||X|Analyzed "Peripheral Developer Participation in Open Source Projects: An Empirical Analysis"|
 |`2017-02-02`|2|X||Analyzed "A Case Study of Open Source software Development: the Apache server"|
 |`2017-02-01`|1|X||Translated report template and started researching|
 |`2017-01-31`|1|X||LaTeX-hassle and Mendeley auto-sync|

@@ -2,6 +2,7 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-02-08`|4||X|First draft of the boot seminar presentation|
 |`2017-02-08`|1||X|Attending at boot seminar as listener|
 |`2017-02-07`|3||X|Analyzed "Inflow and Retention in OSS Communities with Commercial Involvement: A Case Study of Three Hybrid Projects"|
 |`2017-02-06`|3||X|Analyzed "Peripheral Developer Participation in Open Source Projects: An Empirical Analysis"|

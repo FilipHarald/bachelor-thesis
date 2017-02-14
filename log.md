@@ -3,7 +3,7 @@
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
 |`2017-02-08`|2|X|X|Comparison among potential communiteis to base the research upon|
-|`2017-02-08`|2|X||Boot seminar presentation and feedback|
+|`2017-02-08`|3|X||Boot seminar presentation and feedback|
 |`2017-02-08`|4||X|Boot seminar presentation and feedback|
 |`2017-02-08`|4||X|First draft of the boot seminar presentation|
 |`2017-02-08`|1||X|Attending at boot seminar as listener|

@@ -2,6 +2,7 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-02-21`|7|X|X|Started on writing article (introduction)|
 |`2017-02-20`|4|X||Reading articles about OSS in general|
 |`2017-02-15`|1|X|X|Planning the work hours for the upcoming weeks|
 |`2017-02-15`|1|X||2nd supervisor meeting|

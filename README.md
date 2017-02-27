@@ -5,3 +5,4 @@ This repo is intended to share the following documents:
 * `assignments/` - Mandatory assignments given during the course
 * `guidelines/` - Information that are relevant to the thesis
 * `meeting-minutes/` - Meeting minutes from the meetings with supervisors
+* `utils/` - scripts for the bachelor-thesis repo.

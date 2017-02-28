@@ -2,6 +2,9 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-02-28`|1|X|X|3rd supervisor meeting|
+|`2017-02-28`|6|X|X|Writing on introduction and methodology|
+|`2017-02-27`|4|X|X|Writing on introduction and methodology|
 |`2017-02-22`|1|X||Reviewing introduction|
 |`2017-02-21`|2||X|Started writing on the context part of the introduction|
 |`2017-02-21`|7|X|X|Started on writing article (introduction)|
@@ -10,7 +13,7 @@
 |`2017-02-15`|1|X||2nd supervisor meeting|
 |`2017-02-15`|3|X||Reading articles about OSS in general|
 |`2017-02-14`|2|X|X|Potential research questions|
-|`2017-02-14`|3|X|X|Comparison among potential communiteis to base the research upon|
+|`2017-02-14`|3|X|X|Comparison among potential communities to base the research upon|
 |`2017-02-13`|3|X||Boot seminar presentation and feedback|
 |`2017-02-13`|4||X|Boot seminar presentation and feedback|
 |`2017-02-08`|4||X|First draft of the boot seminar presentation|

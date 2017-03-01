@@ -10,7 +10,7 @@
 \unitlength = 1mm
 
 
-\usepackage[T1]{fontenc} % Use latin1 font encoding, permits the direct use of åäöÅÄÖ in the text
+\usepackage[T1]{fontenc} % Use latin1 font encoding
 
 \usepackage[swedish]{babel} % If in Swedish
 
@@ -179,21 +179,19 @@ This article presents a comparative case study of differences in requirement eli
 	\item[Q0:]\emph{What is Atom and CodeLite, and how big are they?} 
 	
 	Since we are only studying two projects, and we don't want to compare OSS-projects on different domains. We want to ensure that they have roughly the same size(lines of code) and product scope.
-	\item[Q1:]\emph{What are the characteristics of community-driven open source development?}
-	\item[Q2:]\emph{What are the characteristics of firm-driven open source development?}
+	\item[Q1:]\emph{What are the characteristics of community-driven OSS development?}
+	\item[Q2:]\emph{What are the characteristics of firm-driven OSS development?}
 	\item[Q3:]\emph{How can software companies benefit from engaging in corporate-driven OSS development?}
 \end{itemize}
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \section{Methodology}
 %introduce the reader to the section
-Here we will introduce the reader to this section...
+Here we will introduce the reader to the methodology section...
 
 %Descirbe what we want to research 
-Describe what we want to research. (comparing firm and corporate driven) and that we want to do a case study on two projects.
-
-\subsection{Case Study}
-%Should we describe what a case study is? (shortly)
-
+The purpose of this study is to compare the effects two different types of governing bodies, a firm or a non-profit community, have on OSS-projects. Given the nature of them both being OSS almost all information will be digital and most of it also publicly documented, including both code evolution and discussions between project participants. With these given conditions we've chosen to conduct a comparative case study on two OSS-projects, one of each type of governing bodies mentioned earlier.
+% why not survey
+With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. By programmatically processing the information from OSS-projects we could cover a greater amount of projects than if we would do it partially by hand. However...TODO
 \subsection{Case Description}
 In this section we will describe the two projects we intend to do our case studies on. Firstly we describe Atom, then we describe CodeLite.
 \subsubsection{Case 1: Atom}
@@ -214,6 +212,7 @@ To address these challenges, we conducted a comparative case study that investig
 Previous work on the subject suggests an approach for researching requirement elicitation \cite{Noll}. In the study the authors uses 5 steps for conducting the case study. Their suggested method would however to some extent limit the scope of this study. Therefore we will do some modifications to it. Each step with it's modifications are described below.
 \footnote{TODO: We need more here, and also elaborate on what a case study should include.}
 
+%Schema for process for collecting data
 \begin{itemize}
 	\item[Step 1:] Select a version of the software for which there has been added a set of features.
 	\item[Step 2:] Select a subset of these features to examine. We do not consider bugfixes to be a feature, but other than that we think that all features should be selected for examination.
@@ -223,13 +222,20 @@ Previous work on the subject suggests an approach for researching requirement el
 	\item[Step 4b:] Determine the final implementation of the feature submitted.
 	\item[Step 5:] Categorize the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a re- quest to one of the discussion forums, or filing a bug report or ?Request for Enhancement? in the issue database; or derived from\footnote{TODO: rephrase step 5}
 \end{itemize}
+
 \subsection{Data Collection}
-\subsubsection{Datasources}
+\subsubsection{Data}
+% What data needs to be collected? Make schema for this
+\subsubsection{Sources}
 % Github
 	% issuetracker
 	% commit and merge history
-	% forum?
+% forum?
+\subsubsection{Tools}
+% Github API
+% contructing scripts
 \subsection{Data Analysis}
+%TODO: How will this section be structured?
 \subsection{Threats to Validity}
 % Github as only source 
 

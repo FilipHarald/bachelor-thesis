@@ -139,7 +139,7 @@ In this thesis we investigate a contemporary phenomenon (the differences in requ
 %Argument that can make companies use OSS development more frequently
 The purpose of this study is that it will be able to be used as support for firms when considering if they want to make a software open source. Whether it would be an existing software or they are starting from scratch. However we will not research on the comparison between developing open source and proprietary. This is important because the results from our study will not list the pros and cons of moving from proprietary- to open source-development. Instead they will help the firm realise the differences\footnote{TODO: Should it be potential differences here?} of OSS-projects depending on the governing body.
 
-As a result of this study we will have made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use open source development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about open source development. (c) The scripts we will use to process the documented discussions(history) of the two projects.
+As a result of this study we will have made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use open source development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about open source development. (c) The scripts we will develop and use to process the documented discussions(history) of the two projects.
 
 This article presents a comparative case study of differences in requirement elicitation between firm-driven and community-driven OSS projects on Github: the hackable text editor ATOM and CodeLite an cross platform IDE. We address key questions about their differences towards each other overall and within the area of requirement elicitation, based on data gathered from Github. Based on the work of \cite{Mockus2002a} and \cite{Noll} we framed a number of hypotheses that we conjectured would be true generally of both development and requirement elicitation within the area of OSS-development. 
 %Shortly describe structure of report
@@ -153,14 +153,17 @@ This article presents a comparative case study of differences in requirement eli
 	
 	Since we are only studying two projects, and we don't want to compare OSS-projects on different domains. We want to ensure that they have roughly the same size(lines of code) and product scope.
 	\item[Q1:]\emph{What are the characteristics of community-driven open source development?}
-	\item[Q2:]\emph{What are the characteristics of corporate-driven open source development?}
+	\item[Q2:]\emph{What are the characteristics of firm-driven open source development?}
 	\item[Q3:]\emph{How can software companies benefit from engaging in corporate-driven OSS development?}
 \end{itemize}
 
 \section{Methodology}
 \subsection{Introduction}
+%Describe the conditions for which our study is made, what method we chose and why
+
+
 %Describe the ecosystem in which we research. Why it is easy to get historical data.
-The domain, OSS-development, in which we are researching is from a researcher perspective a very friendly environment. In that it offers a lot of information to research on. Both the traceability on where in the code work has been done and by whom. But most importantly, by being ''open source'' it's also possible to observe the history of the development process since most of the communication is done through open channels. Furthermore given the nature of the information also being digital and structured in a specific pattern it can be processed automatically and hence increasing the amount of information we're able to process, than if we were to process it manually.
+The domain, OSS-development, in which we are studying is a very researcher friendly environment. In that it offers a lot of information to research on. Both the traceability on where in the code work has been done and by whom. But most importantly, by being ''open source'' it's also possible to observe the history of the development process since most of the communication is done through open channels. Furthermore given the nature of the information also being digital and structured in a specific pattern it can be processed automatically and hence increasing the amount of information we're able to process, than if we were to process it manually.
 
 \subsection{Description}
 
@@ -181,12 +184,17 @@ So to address these challenges, we conducted a comparative case study that inves
 
 
 \subsection{Case Study}
-Previous work on the subject suggests an approach for researching requirement elicitation \cite{Noll}. In the study the authors uses 5 steps for conducting the case study. The suggested method will however to some extent limit the scope of the study. And therefore we will do some modifications to it. Each step and it's modifications are described below.
+Previous work on the subject suggests an approach for researching requirement elicitation \cite{Noll}. In the study the authors uses 5 steps for conducting the case study. Their suggested method would however to some extent limit the scope of this study. Therefore we will do some modifications to it. Each step with it's modifications are described below.
+\footnote{We need more here, and also elaborate on what a case study should include.}
 
 \begin{itemize}
 	\item[Step 1:] Select a version of the software for which there has been added a set of features.
 	\item[Step 2:] Select a subset of these features to examine. We do not consider bugfixes to be a feature, but other than that we think that all features should be selected for examination.
-	\item[Step 3:] Examine resources related to the project, such as archives of discussion forums and the projects issue database to discover when the feature was first proposed, and what role the person proposing the feature played.
+	\item[Step 3a:] Examine resources related to the project, such as archives of discussion forums and the projects issue database to discover how the feature was first proposed.
+	\item[Step 3b:] Determine when the feature was acknowledged as a requirement. E.g. a ''core dev'' approving of the suggestion.
+	\item[Step 4a:] Determine the initial implementation of the feature submitted.
+	\item[Step 4b:] Determine the final implementation of the feature submitted.
+	\item[Step 5:] Categorize the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a re- quest to one of the discussion forums, or filing a bug report or ?Request for Enhancement? in the issue database; or derived from\footnote{TODO rephrase step 5}
 \end{itemize}
 
 

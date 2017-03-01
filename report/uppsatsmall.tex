@@ -190,29 +190,48 @@ Here we will introduce the reader to the methodology section...
 
 %Descirbe what we want to research 
 The purpose of this study is to compare the effects two different types of governing bodies, a firm or a non-profit community, have on OSS-projects. Given the nature of them both being OSS almost all information will be digital and most of it also publicly documented, including both code evolution and discussions between project participants. With these given conditions we've chosen to conduct a comparative case study on two OSS-projects, one of each type of governing bodies mentioned earlier.
+
 % why not survey
-With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. By programmatically processing the information from OSS-projects we could cover a greater amount of projects than if we would do it partially by hand. However...TODO
+With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. By programmatically processing the information from OSS-projects we could cover a greater amount of projects than if we would do it partially manually. However...TODO
 \subsection{Case Description}
-In this section we will describe the two projects we intend to do our case studies on. Firstly we describe Atom, then we describe CodeLite.
+In this section we will describe the two projects we intend to do our case studies on. First we describe Atom, then we describe CodeLite.
 \subsubsection{Case 1: Atom}
 
 \subsubsection{Case 2: CodeLite}
 
 \subsection{Case Study}
+\begin{itemize}
+	\item what is a case study?
+	\item what have others done in their case studies?
+	\item what do we want to do in our case study?
+\end{itemize}
+
 %what is a case study?
 
 %what do we want to do in our case study?
 
-Even though the information can be processed all requirements will be unique and can be hard to identify solely by processing the documented discussion. Therefore we can not study a large amount of projects by doing for example a survey. By instead comparing only two projects we decrease the risk of missing out on important details. On the other hand, this could also means that our results will not necessarily apply to OSS-projects i general.\footnote{TODO: We need sources and probably need to elaborate on this section...}
+%what do we want to do in our case study?
 
-To address these challenges, we conducted a comparative case study that investigated the parallel evolution of several products. Comparative case studies cover two or more cases in a way that produces more generalisable knowledge about causal questions\cite{Goodrick2014}. In general, it includes a comparison of conditions that pave the way for causal inference. We selected two projects that were developed from the same specification over a similar period (i.e., parallel evolution) but had a varying nature of commercial involvement practices both between the projects and between epochs within a project. This allowed us to compare the differences between projects and the differences between different epochs of a single project. 
+% Even though the information can be processed all requirements will be unique and can be hard to identify solely by processing the documented discussion. Therefore we can not study a large amount of projects by doing for example a survey. By instead comparing only two projects we decrease the risk of missing out on important details. On the other hand, this could also means that our results will not necessarily apply to OSS-projects i general.\footnote{TODO: We need sources and probably need to elaborate on this section...}
+
+% To address these challenges, we conducted a comparative case study that investigated the parallel evolution of several products. Comparative case studies cover two or more cases in a way that produces more generalisable knowledge about causal questions\cite{Goodrick2014}. In general, it includes a comparison of conditions that pave the way for causal inference. We selected two projects that were developed from the same specification over a similar period (i.e., parallel evolution) but had a varying nature of commercial involvement practices both between the projects and between epochs within a project. This allowed us to compare the differences between projects and the differences between different epochs of a single project. 
+
+\subsection{Data Collection}
+\subsubsection{Sources}
+\begin{itemize}
+	\item Github, (issuetracker and commit and merge history)
+
+	\item We need to investigate if the projects have any other channel for communication. If so we should write it here.
+\end{itemize}
+
+\subsubsection{Collection process}
+\begin{itemize}
+	\item This subsection will include: How will we decide what data to collect? what is a requirement? what versions or timespan will we choose? The content right now needs to be edited.
+\end{itemize}
 
 
-%Describe case study and how we intend to use it
-Previous work on the subject suggests an approach for researching requirement elicitation \cite{Noll}. In the study the authors uses 5 steps for conducting the case study. Their suggested method would however to some extent limit the scope of this study. Therefore we will do some modifications to it. Each step with it's modifications are described below.
-\footnote{TODO: We need more here, and also elaborate on what a case study should include.}
+Previous work on the subject suggests an approach for researching requirement elicitation \cite{Noll}. In the study the authors uses 5 steps for conducting the case study. Their suggested method would however to some extent limit the scope of this study. Therefore we will do some modifications to it. Each step with it's modifications is described below.
 
-%Schema for process for collecting data
 \begin{itemize}
 	\item[Step 1:] Select a version of the software for which there has been added a set of features.
 	\item[Step 2:] Select a subset of these features to examine. We do not consider bugfixes to be a feature, but other than that we think that all features should be selected for examination.
@@ -222,23 +241,22 @@ Previous work on the subject suggests an approach for researching requirement el
 	\item[Step 4b:] Determine the final implementation of the feature submitted.
 	\item[Step 5:] Categorize the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a re- quest to one of the discussion forums, or filing a bug report or ?Request for Enhancement? in the issue database; or derived from\footnote{TODO: rephrase step 5}
 \end{itemize}
-
-\subsection{Data Collection}
 \subsubsection{Data}
-% What data needs to be collected? Make schema for this
-\subsubsection{Sources}
-% Github
-	% issuetracker
-	% commit and merge history
-% forum?
+What data needs to be collected? Make schema for this (based on similar studies)
 \subsubsection{Tools}
-% Github API
-% contructing scripts
-\subsection{Data Analysis}
-%TODO: How will this section be structured?
-\subsection{Threats to Validity}
-% Github as only source 
+\begin{itemize}
+	\item Explain Github API
 
+	\item Explain how we will be constructing scripts to gather and analyse data from Github
+\end{itemize}
+\subsection{Data Analysis}
+TODO: write structure for this section
+\subsection{Threats to Validity}
+\begin{itemize}
+	\item A generalisation from our results might not be representable for all firm- and community-driven OSS-projects
+
+	\item Github as only source...
+\end{itemize}
 \section{Result}
 
 \section{Analysis}

@@ -151,11 +151,12 @@ The conventional methods have within software development emerged into what we c
 %Describe the problem we are trying to solve
 In this thesis we investigate a contemporary phenomenon (the differences in requirement elicitation between community- and firm-driven OSS projects) in depth and within its real-life context with the boundaries between phenomenon and context not being clearly evident\cite{RobertK1994}.This leads to several challenges. First, software development is a knowledge-intensive activity with a large number of potentially confounding factors \cite{Curtis1986}, and this makes it difficult or impossible to discern the impact of commercial involvement. Second, to observe the impact of commercial involvement, it is important to compare the differences in contributions from developers, and to observe the work impact on projects over long period of time. Third, there is no easy way to learn companies, intentions motivating their involvement in the OSS community, and it is even more difficult to examine the effects of such involvement. 
 
+% related work
+\label{related_work}Out of the previous work that has been made on OSS there are two studies that are similar to ours. In the first the authors conduct two case studies from which they try to form theories on what it is that defines OSS-projects. They conclude the study by comparing their results with commercial, proprietary, projects\cite{Mockus2002a}. The second is a case study where the authors investigate the differences in requirement elicitation between large and small OSS-projects\cite{Noll}.
 %Describe why we want to solve it (goal)
 
 %Deeper understanding of the process that OSS development 
-%Argument that can make companies use OSS development more frequently
-The purpose of this study is that it will be able to be used as support for firms when considering if they want to make a software open source. Whether it would be an existing software or they are starting from scratch. However we will not research on the comparison between developing OSS and closed source\footnote{Perhaps closed source should be proprietary instead. (Throughout the thesis)}. This is important because the results from our study will not list the pros and cons of moving from closed source- to OSS-development. Instead they will help the firm realise the potential differences of OSS-projects depending on the governing body.
+The purpose of this study is that it will be able to be used as support for firms when considering if they want to make a software open source. Whether it would be an existing software or they are starting from scratch. However we will not research on the comparison between developing OSS and proprietary software. This is important because the results from our study will not list the pros and cons of moving from proprietary software- to OSS-development. Instead they will help the firm realise the potential differences of OSS-projects depending on the governing body.
 
 As a result of this study we will have made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use OSS development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about OSS development. (c) The scripts we will develop and use to process the documented discussions(history) of the two projects.
 
@@ -182,29 +183,31 @@ Here we will introduce the reader to the methodology section...
 The purpose of this study is to compare the effects two different types of governing bodies, a firm or a non-profit community, have on OSS-projects. Given the nature of them both being OSS almost all information will be digital and most of it also publicly documented, including both code evolution and discussions between project participants. With these given conditions we've chosen to conduct a comparative case study on two OSS-projects, one of each type of governing bodies mentioned earlier.
 
 % why not survey
-With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. By programmatically processing the information from OSS-projects we could cover a greater amount of projects than if we would do it partially manually. However...TODO
+With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. By programmatically processing the information from OSS-projects we could cover a greater amount of projects than if we would do it partially manually. However, such a survey would risk to miss out on important information which could not be parsed.
 \subsection{Case Description}
 In this section we will describe the two projects we intend to do our case studies on. First we describe Atom, then we describe CodeLite.
 \subsubsection{Case 1: Atom}
+%TODO
 
 \subsubsection{Case 2: CodeLite}
+%TODO
 
 \subsection{Case Study}
-\begin{itemize}
-	\item what is a case study?
-	\item what have others done in their case studies?
-	\item what do we want to do in our case study?
-\end{itemize}
-
 %what is a case study?
+In \cite{Oates2005} the author refers to a case study as being research strategy for which one tries to describe a case, or phenomenon, from within its natural context. Rather than just confirming a phenomenons existence, which could be done by e.g. conducting a survey, a case study aims to discover why it occurred. This is done, as a researcher, by aiming to give a detailed description of not just the phenomenon but also it's context. It is from the context the researcher can identify factors which might have caused the phenomenon to occur. The amount of factors varies from case to case and the probability of multiple causing factors should be taken into account.
+
+%internet case studies
+In \cite{Oates2005} the author says that case study can favourably be used when ''studying the 'life' on the Internet''. However the author mentions particular issues with conducting this kind of research. The first is the problem of boundary. I.e. how do one define the boundaries for which the study is being conducted. The second is the problem of offline/online existence. I.e. one might not get all the details for case by only studying it online, since some information might only be available offline. E.g. communications between participants of the studied case. These problems are taken in to consideration when constructing our method for conducting the case study. However, we believe that the first problem will have minimal effect on our research since it's easy to define what is part and not of the development process of a product and what is not. The second problem on the other hand could affect our research to greater extent. The nature of OSS is that everything related to the project is stored and displayed online. But even though developers might never meet face-to-face, they may still communicate on other channels than those provided through the project. These channels are not always displayed online and can therefore be seen, from a researchers perspective, as offline.
+
+%what have others done in their case studies?
+% apache and mozilla
+As previously mentioned (section \ref{related_work}) there has been two studies conducted that is similar to ours. In the first, \cite{Mockus2002a}, the authors conduct an exploratory case study with the purpose of mapping how OSS-projects are conducted to form hypothesises on how they generally will perform. The authors also tries to compare their results with commercial projects. To make their generalisation trustworthy they have selected two cases which can be considered typical instances for an OSS-project. The authors present 6 research questions for which they motivate that it should be sufficient to compare with other projects \cite{Mockus2002a}. The 6 questions are presented in schema \ref{apache_mozilla_schema}. In our case study we will use parts of the presented questions. However, the majority of our data collection schema will be similar to the second study.
+
+% firefox and openemr (req. elicitation)
+The second study, \cite{Noll}, is also an case study on OSS-projects. But instead of being exploratory it is specific on what factors to compare between two projects, namely requirement elicitation. The authors have chosen to compare requirement elicitation between two extremes off OSS-projects, large and small in terms of end-users of the product and contributors to the project. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in schema \ref{firefox_openemr_schema}.
 
 %what do we want to do in our case study?
-
-%what do we want to do in our case study?
-
-% Even though the information can be processed all requirements will be unique and can be hard to identify solely by processing the documented discussion. Therefore we can not study a large amount of projects by doing for example a survey. By instead comparing only two projects we decrease the risk of missing out on important details. On the other hand, this could also means that our results will not necessarily apply to OSS-projects i general.\footnote{TODO: We need sources and probably need to elaborate on this section...}
-
-% To address these challenges, we conducted a comparative case study that investigated the parallel evolution of several products. Comparative case studies cover two or more cases in a way that produces more generalisable knowledge about causal questions\cite{Goodrick2014}. In general, it includes a comparison of conditions that pave the way for causal inference. We selected two projects that were developed from the same specification over a similar period (i.e., parallel evolution) but had a varying nature of commercial involvement practices both between the projects and between epochs within a project. This allowed us to compare the differences between projects and the differences between different epochs of a single project. 
+In the following sections we present the approach for conducting our case study. We will mainly make use of the method presented in schema \ref{firefox_openemr_schema}. However we will make some modifications to it and add parts of schema \cite{Mockus2002a}.
 
 \subsection{Data Collection}
 \subsubsection{Sources}
@@ -217,6 +220,7 @@ In this section we will describe the two projects we intend to do our case studi
 \subsubsection{Collection process}
 \begin{itemize}
 	\item This subsection will include: How will we decide what data to collect? what is a requirement? what versions or timespan will we choose? The content right now needs to be edited.
+	\item where are the developers geographically from?
 \end{itemize}
 
 
@@ -243,10 +247,16 @@ What data needs to be collected? Make schema for this (based on similar studies)
 TODO: write structure for this section
 \subsection{Threats to Validity}
 \begin{itemize}
+	\item When performing a case study it is important to ensure that the context which is being researched is not affected by the researcher.
+
 	\item A generalisation from our results might not be representable for all firm- and community-driven OSS-projects
 
 	\item Github as only source...
 \end{itemize}
+
+\subsection{Hypothesis}
+It has been shown in OSS-projects that the requirement elicitation process is independent of project size\cite{Noll}. We think that this study will find that the process is also independent of a firm or a community being the governing body.
+
 \section{Result}
 
 \section{Analysis}

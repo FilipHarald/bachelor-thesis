@@ -2,6 +2,8 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-07`|4|X||Methodology (case study previous studies)|
+|`2017-03-06`|4|X||Methodology (case study introduction)|
 |`2017-03-01`|5|X||Methodology structure and writing on methodology|
 |`2017-02-28`|1|X|X|3rd supervisor meeting|
 |`2017-02-28`|6|X|X|Writing on introduction and methodology|

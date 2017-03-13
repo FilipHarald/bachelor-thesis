@@ -2,6 +2,8 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-13`|4|X||Methodology (Data collection)|
+|`2017-03-09`|1|X||Methodology (Data collection)|
 |`2017-03-07`|4|X|X|4th supervisor meeting|
 |`2017-03-07`|4|X||Methodology (case study previous studies)|
 |`2017-03-06`|4|X||Methodology (case study introduction)|

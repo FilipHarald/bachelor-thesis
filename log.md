@@ -2,6 +2,8 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-14`|7||X|Introduction (Requierment elicitation and OSS introduction)|
+|`2017-03-14`|4||X|Introduction (Introduce the reader to Software development)|
 |`2017-03-13`|4|X||Methodology (Data collection)|
 |`2017-03-09`|1|X||Methodology (Data collection)|
 |`2017-03-07`|4|X|X|4th supervisor meeting|

@@ -2,6 +2,7 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-17`|11|X||Developing [data-collection-tools](https://github.com/FilipHarald/bachelor-thesis/tree/master/data-collection-tools)|
 |`2017-03-16`|3|X||Methodology (Data & Tools)|
 |`2017-03-15`|7||X|Introduction (Requierment elicitation and OSS introduction)|
 |`2017-03-14`|2||X|Introduction (Introduce the reader to Software development)|

@@ -1,4 +1,6 @@
 import os
+from datetime import datetime
+
 import matplotlib.pyplot as plt
 import utils.cache as cache
 from collections import Counter
@@ -11,16 +13,17 @@ key = os.path.basename(__file__)  # file cache key
 
 def get_repo_contributors(repo, g):
     print(repo['color'] + repo['name'])
-    print('--------' + repo['since'])
-    users = cache.get(key + '_users')
-    if users:
-        return users
+    temp_key = key + '_' + repo['key'] + '_users'
+    cached_users = cache.get(temp_key)
+    if cached_users:
+        return cached_users
     else:
         users = []
-        for commits in g.get_repo(repo['name']).get_commits(since=repo['since'],
-                                                            until=repo['until']):
+        since = datetime.fromtimestamp(int(repo['since']))
+        until = datetime.fromtimestamp(int(repo['until']))
+        for commits in g.get_repo(repo['name']).get_commits(since=since, until=until):
             users.append(commits.commit.author.name)
-        cache.store(key + '_users', users)
+        cache.store(temp_key, users)
     return users
 
 

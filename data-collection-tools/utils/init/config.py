@@ -28,15 +28,15 @@ def init(g):
     print('\033[91m**  Initializing config  **')
     for repo in repos:
         temp_key = key + '_' + repo['key']
-        since_cached = cache.get(temp_key + '_since')
-        until_cached = cache.get(temp_key + '_until')
-        repo['since'] = since_cached if since_cached \
-            else cache.store(temp_key + '_since',
-                             g.get_repo(repo['name']).get_commits(
-                                 sha=repo['since_sha'])[0].commit.author.date.strftime('%s'))
-        repo['until'] = until_cached if until_cached \
-            else cache.store(temp_key + '_until',
-                             g.get_repo(repo['name']).get_commits(
-                                 sha=repo['until_sha'])[0].commit.author.date.strftime('%s'))
+        repo['since'] = commit_to_date(repo, g, temp_key + '_since', repo['since_sha'])
+        repo['until'] = commit_to_date(repo, g, temp_key + '_until', repo['until_sha'])
     print('**  Init done!  **\033[0m')
 
+
+def commit_to_date(repo, g, pickle_key, sha_key):
+    cached = cache.get(pickle_key)
+    if cached:
+        return cached
+    else:
+        return cache.store(pickle_key, g.get_repo(repo['name']).get_commits(
+            sha=repo[sha_key])[0].commit.author.date.strftime('%s'))

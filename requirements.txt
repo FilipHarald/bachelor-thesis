@@ -1,0 +1,2 @@
+matplotlib==2.0.0
+PyGithub==1.32

@@ -19,6 +19,14 @@ def store(key, value):
         pickle.dump(str(value), file)
     return value
 
+def cache(func, key, **kwargs):
+    cached = get(key)
+    if cached:
+        return cached
+    else:
+        value = store(key, func(kwargs))
+        return value
+
 
 def _fp(key):
     return temp_folder_path + '/temp/' + key + '.pickle'

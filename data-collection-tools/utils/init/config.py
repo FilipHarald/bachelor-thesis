@@ -39,4 +39,4 @@ def commit_to_date(repo, g, pickle_key, sha_key):
         return cached
     else:
         return cache.store(pickle_key, g.get_repo(repo['name']).get_commits(
-            sha=repo[sha_key])[0].commit.author.date.strftime('%s'))
+            sha=sha_key)[0].commit.author.date.strftime('%s'))

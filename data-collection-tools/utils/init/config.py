@@ -28,12 +28,13 @@ def init(g):
     print('\033[91m**  Initializing config  **')
     for repo in repos:
         key = filename + '_' + repo['key']
-        repo['since'] = cache.cache(commit_to_date, key + '_since', g=g, sha_key=repo['since_sha'])
-        repo['until'] = cache.cache(commit_to_date, key + '_until', g=g, sha_key=repo['until_sha'])
-        # repo['since'] = commit_to_date(repo, g, temp_key + '_since', repo['since_sha'])
-        # repo['until'] = commit_to_date(repo, g, temp_key + '_until', repo['until_sha'])
+        repo['since'] = cache.cache(commit_to_date, key + '_since', repo=repo, g=g, sha_key=repo['since_sha'])
+        repo['until'] = cache.cache(commit_to_date, key + '_until', repo=repo, g=g, sha_key=repo['until_sha'])
     print('**  Init done!  **\033[0m')
 
 
-def commit_to_date(repo, g, sha_key):
+def commit_to_date(args_dict):
+    repo = args_dict['repo']
+    sha_key = args_dict['sha_key']
+    g = args_dict['g']
     return g.get_repo(repo['name']).get_commits(sha=sha_key)[0].commit.author.date.strftime('%s')

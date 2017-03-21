@@ -19,6 +19,7 @@ def store(key, value):
         json.dump(value, file)
     return value
 
+
 def cache(func, key, **kwargs):
     cached = get(key)
     if cached:

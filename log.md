@@ -2,6 +2,7 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-21`|6|X|X|Developing [data-collection-tools](https://github.com/FilipHarald/bachelor-thesis/tree/master/data-collection-tools) and supervisor meeting|
 |`2017-03-17`|9|X||Developing [data-collection-tools](https://github.com/FilipHarald/bachelor-thesis/tree/master/data-collection-tools)|
 |`2017-03-16`|3|X||Methodology (Data & Tools)|
 |`2017-03-15`|7||X|Introduction (Requierment elicitation and OSS introduction)|

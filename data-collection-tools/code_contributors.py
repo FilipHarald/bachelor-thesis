@@ -46,10 +46,10 @@ def run(g, config):
                                                       repo_name=repo['name'],
                                                       since=datetime.fromtimestamp(int(repo['since'])),
                                                       until=datetime.fromtimestamp(int(repo['until'])))
+        pprint(contributors_data)
     visualize_results(config.repos, 'commits', contributors_data)
     visualize_results(config.repos, 'additions', contributors_data)
     visualize_results(config.repos, 'deletions', contributors_data)
 
-    pprint(contributors_data)
     print('----------------------------Code contributors END----------------------------')
     pass

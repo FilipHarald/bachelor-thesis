@@ -20,8 +20,15 @@ neovim = {'name': 'neovim/neovim',
           'color': '\033[96m',
           'since_sha': 'c4826c300340a9e4df20964a14650caf64fc1b58',
           'until_sha': '0542baac28681050483c685c79efcb4d3c1e32ea'}
+testrepo = {'name': 'FilipHarald/bachelor-thesis',
+          'key': 'test',
+          'color': '\033[0m',
+          'since_sha': '9357d043a08e481eff80cafd687b6c4ccb2caad9',
+          'until_sha': '2c542daf7e0c5fa1c914c686cbdd1e07d1b4c9f2'}
 
-repos = [neovim, codelite, atom]
+# repos = [testrepo]
+repos = [testrepo, neovim, codelite, atom]
+# repos = [neovim, codelite, atom]
 
 
 def init(g):
@@ -33,8 +40,8 @@ def init(g):
     print('**  Init done!  **\033[0m')
 
 
-def commit_to_date(args_dict):
-    repo = args_dict['repo']
-    sha_key = args_dict['sha_key']
-    g = args_dict['g']
+def commit_to_date(repo, sha_key, g):
+    repo = repo
+    sha_key = sha_key
+    g = g
     return g.get_repo(repo['name']).get_commits(sha=sha_key)[0].commit.author.date.strftime('%s')

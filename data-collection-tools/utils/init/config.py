@@ -16,7 +16,7 @@ codelite = {'name': 'eranif/codelite',
             'until_sha': '91fcddd84101224c8fe853d8dcca82b23a36799b'}
 
 neovim = {'name': 'neovim/neovim',
-          'key': 'nn',
+          'key': 'nv',
           'color': '\033[96m',
           'since_sha': 'c4826c300340a9e4df20964a14650caf64fc1b58',
           'until_sha': '0542baac28681050483c685c79efcb4d3c1e32ea'}

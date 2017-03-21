@@ -1,6 +1,7 @@
 import json
 """JSON printer"""
 
+
 def j_print(str):
     """JSON print"""
     print(json.dumps(str))

@@ -30,7 +30,24 @@ def get_repo_contributors(repo, g):
 def analyze_users(repo, users):
     output = [repo['color'] + repo['name'],
               'All users (' + str(len(users)) + '): ' + str(users)]
+    print(type(users))
     unique_dict = Counter(users)
     output.append('Unique users(' + str(len(unique_dict)) + '): ' + str(unique_dict))
     plt.plot(get_distribution(unique_dict), label=repo['name'])
     return '\n'.join(output)
+
+
+def run(g, config):
+    print('----------------------------Code contributors----------------------------')
+    results = []
+    for repo in config.repos:
+        contributors = get_repo_contributors(repo, g)
+        results.append(analyze_users(repo, contributors))
+    plt.ylabel('users (%)')
+    plt.xlabel('commits (%)')
+    plt.legend()
+    plt.savefig('results/code_contributors/commits_dist.png')
+    plt.savefig('results/code_contributors/commits_dist.pdf')
+    for res in results:
+        print(res)
+    pass

@@ -12,7 +12,7 @@
 
 \usepackage[T1]{fontenc} % Use latin1 font encoding
 
-\usepackage[swedish]{babel} % If in Swedish
+\usepackage[UKenglish]{babel} % If in Swedish
 
 \usepackage{csquotes} % For blockquote
 \usepackage{enumitem}
@@ -145,7 +145,7 @@ In this thesis we investigate a contemporary phenomenon (the differences in requ
 %Deeper understanding of the process that OSS development
 The purpose of this study is that it will be able to be used as support for firms when considering if they want to make a software open source. Whether it would be an existing software or they are starting from scratch. However we will not research on the comparison between developing OSS and proprietary software. This is important because the results from our study will not list the pros and cons of moving from proprietary software- to OSS-development. Instead they will help the firm realise the potential differences of OSS-projects depending on the governing body.
 
-As a result of this study we will have made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use OSS development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about OSS development. (c) The scripts we will develop and use to process the documented discussions(history) of the two projects.
+As a result of this study we made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use OSS development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about OSS development. (c) The scripts we will develop and use to process the documented discussions(i.e. history) of the two projects.
 
 This article presents a comparative case study of differences in requirement elicitation between firm-driven and community-driven OSS projects on Github: the hackable text editor Atom and CodeLite an cross platform IDE. We address key questions about their differences towards each other overall and within the area of requirement elicitation, based on data gathered from Github. Based on the work of \cite{Mockus2002a} and \cite{Noll} we framed a number of hypotheses that we conjectured would be true generally of both development and requirement elicitation within the area of OSS-development.
 
@@ -164,10 +164,11 @@ Here we will describe the structure of the thesis and what we will include in ea
 Here we will introduce the reader to the methodology section...
 
 %Descirbe what we want to research 
-The purpose of this study is to compare the effects two different types of governing bodies, a firm or a non-profit community, have on OSS-projects. Given the nature of them both being OSS almost all information will be digital and most of it also publicly documented, including both code evolution and discussions between project participants. With these given conditions we've chosen to conduct a comparative case study on two OSS-projects, one of each type of governing bodies mentioned earlier.
+The purpose of this study is to compare the effects two different types of governing bodies, a firm or a non-profit community, have on OSS-projects. Given the nature of them both being OSS most of the information will publicly documented, including both code evolution and discussions between project participants. With these given conditions we've chosen to conduct a comparative case study on two OSS-projects, one of each type of governing bodies mentioned earlier.
 
 % why not survey
-With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. By programmatically processing the information from OSS-projects we could cover a greater amount of projects than if we would do it partially manually. However, such a survey would risk to miss out on important information which could not be parsed.
+With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. However, such a survey would risk to miss out on detailed information that is unique for each project.
+
 \subsection{Case Description}
 In this section we will describe the two projects we intend to do our case studies on. First we describe Atom, then we describe CodeLite.
 \subsubsection{Case 1: Atom}
@@ -185,27 +186,45 @@ In \cite{Oates2005} the author says that case study can favourably be used when 
 
 %what have others done in their case studies?
 % apache and mozilla
-As previously mentioned (section \ref{related_work}) there has been two studies conducted that is similar to ours. In the first, \cite{Mockus2002a}, the authors conduct an exploratory case study with the purpose of mapping how OSS-projects are conducted to form hypothesises on how they generally will perform. The authors also tries to compare their results with commercial projects. To make their generalisation trustworthy they have selected two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate that it should be sufficient to compare with other projects \cite{Mockus2002a}. The 6 questions are presented below. In our case study we will use parts of the presented questions. However, the majority of our data collection schema will be similar to the second study.
+As previously mentioned (section \ref{related_work}) there has been two studies conducted that is similar to ours. In the first, \cite{Mockus2002a}, Mockus et. al. conduct an exploratory case study with the purpose of mapping how OSS-projects are conducted to form hypothesises on how they generally will perform. The authors also tries to compare their results with commercial projects. To make their generalisation trustworthy they have selected two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate that it should be sufficient to compare with other projects \cite{Mockus2002a}. In our case study we will use parts of the presented questions. However, the majority of our data collection schema will be similar to the second paper. The 6 questions are presented in table \ref{tab:apache}.
 
-\begin{enumerate}
-	\item What were the processes used to develop Apache and Mozilla?
-	\item How many people wrote code for new functionality? How many people reported problems? How many people repaired defects?
-	\item Were these functions carried out by distinct groups of people, that is, did people primarily assume a single role? Did large numbers of people participate somewhat equally in these activities, or did a small number of people do most of the work?
-	\item Where did the code contributors work in the code? Was strict code ownership enforced on a file or module level?
-	\item What is the defect density of Apache and Mozilla code?
-	\item How long did it take to resolve problems? Were high priority problems resolved faster than low priority problems? Has resolution interval 	decreased over time?
-\end{enumerate}
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{0.9\textwidth} | }
+		\hline
+		\begin{enumerate}
+			\item What were the processes used to develop Apache and Mozilla?
+			\item How many people wrote code for new functionality? How many people reported problems? How many people repaired defects?
+			\item Were these functions carried out by distinct groups of people, that is, did people primarily assume a single role? Did large numbers of people participate somewhat equally in these activities, or did a small number of people do most of the work?
+			\item Where did the code contributors work in the code? Was strict code ownership enforced on a file or module level?
+			\item What is the defect density of Apache and Mozilla code?
+			\item How long did it take to resolve problems? Were high priority problems resolved faster than low priority problems? Has resolution interval 	decreased over time?
+		\end{enumerate}\\
+		\hline
+	\end{tabular}
+	\caption{Research questions for exploring OSS-projects}
+	\label{tab:apache}
+\end{table}
 
 % firefox and openemr (req. elicitation)
-The second study, \cite{Noll}, is also an case study on OSS-projects. But instead of being exploratory it is specific on what factors to compare between two projects, namely requirement elicitation. The authors have chosen to compare requirement elicitation between two extremes off OSS-projects, large and small in terms of end-users of the product and contributors to the project. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented below.
+The second study, \cite{Noll}, is also an case study on OSS-projects. But instead of being exploratory it is specific on what factors to compare between two projects, namely requirement elicitation. Noll and Liu have chosen to compare requirement elicitation between two extremes off OSS-projects, large, Firefox, and small, OpenEMR, in terms of end-users of the product and contributors to the project. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in table \ref(tab:openemr}.
 
-\begin{enumerate}
-	\item Identify the set of features delivered for project X after release M, up to and including release N.
-	\item Select a subset of these features for examination.
-	\item Examine Internet resources related to project X, such as archives of discussion forums, the project X issue database [...] to discover when the feature was first proposed, and what role the person proposing the feature played (such as user or developer).
-	\item Determine the initial implementation of the feature (prototype by a developer, patch submitted to the tracker, or enhancement committed directly to the codebase).
-	\item Categorize the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database; or derived from features found in competing products.
-\end{enumerate}
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{0.9\textwidth} | }
+		\hline
+		\begin{enumerate}
+			\item Identify the set of features delivered for OpenEMR after release 2.8.0, up to and including release 2.9.0.
+			\item Select a subset of these features for examination.
+			\item Examine Internet resources related to OpenEMR, such as archives of discussion forums, the OpenEMR issue database, the OpenEMR ''tracker'' on Sourceforge.net, and other online forums,  to discover when the feature was first proposed, and what role the person proposing the feature played (such as user or developer).
+			\item Determine the initial implementation of the feature (prototype by a developer, patch submitted to the tracker, or enhancement committed directly to the codebase).
+			\item Categorise the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database; or derived from features found in competing products.
+		\end{enumerate}\\
+		\hline
+	\end{tabular}
+	\caption{5 steps for gathering data from OSS-projects}
+	\label{tab:openemr}
+\end{table}
 
 %what do we want to do in our case study?
 In the following sections we present the approach for conducting our case study. We will use a combination of the two presented schemas and make some additions to them.
@@ -220,22 +239,9 @@ TODO:
 	\item We need to investigate if the projects have any other channel for communication. If so we should write it here.
 \end{itemize}
 
-\subsubsection{Collection process}
-Below we present a schema for our method on collecting the data. Every step which will generate data will define for what data will be collecting. We are then referring to the schema found in section~\ref{subsec:data}.
-
-\begin{enumerate}
-	\item Select a time period between release M and N for project X. (Where $ M < N $)
-	\item Extract the data specified in items D1-D5 for the selected time period.
-	\item Identify the set of features delivered for project X after release M, up to and including release N.
-	\item Select a subset of these features for examination.
-	\item Examine resources\footnote{Project resources are presented in section~\ref{subsec:sources}.} related to the project to discover how the feature was first proposed, what role the person proposing the feature played, and to what category the proposal belongs to. (D6-D8)
-	\item Determine when the feature was acknowledged as a requirement. (D9)
-	\item Determine when the feature was submitted. (D10)
-\end{enumerate}
-
-\subsubsection{Data}
+\subsubsection{Schema for Data}
 \label{subsec:data}
-Below we present a schema for what data we will collect.
+Below we present a schema for what data we will collect with a description.
 \begin{enumerate}[label=D\arabic*]
 	\item \emph{Problem reporters}
 	
@@ -272,6 +278,21 @@ Below we present a schema for what data we will collect.
 	\item \emph{Final implementation of feature}
 	
 	When and by whom was a feature implemented
+\end{enumerate}
+
+\subsubsection{Collection process}
+Below we present a schema for our method on collecting the data. Every step which will generate data will define for what data will be collecting. We are then referring to the schema found in section~\ref{subsec:data}.
+
+\begin{enumerate}
+	\item Select a time period between release M and N for project X.( Where $ M < N $)
+	
+	Project X is either Atom or Neovim. M and N are two versions of the software developed in project X. In order to compare the two projects M and N should be approximately within the same timespan.
+	\item Extract the data specified in items D1-D5 for the selected time period.
+	\item Identify the set of features delivered for project X after release M, up to and including release N.
+	\item Select a subset of these features for examination.
+	\item Examine resources\footnote{Project resources are presented in section~\ref{subsec:sources}.} related to the project to discover how the feature was first proposed, what role the person proposing the feature played, and to what category the proposal belongs to. (D6-D8)
+	\item Determine when the feature was acknowledged as a requirement. (D9)
+	\item Determine when the feature was submitted. (D10)
 \end{enumerate}
 
 \subsubsection{Tools}

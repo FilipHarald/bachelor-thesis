@@ -1,18 +1,11 @@
 import os
-from collections import defaultdict, Counter
+from collections import defaultdict
 from datetime import datetime
 from pprint import pprint
 
-import matplotlib.pyplot as plt
-from utils import cache, analyzer, plotter
+from utils import cache, analyzer
 
 file_name = os.path.basename(__file__)  # file cache key
-
-
-def analyze_users(repo, dict, label):
-    output = [repo['color'] + repo['name'], 'Unique users(' + str(len(dict)) + '): ' + str(dict)]
-    plt.plot(analyzer.get_distribution(dict), label=label)
-    return '\n'.join(output)
 
 
 def get_contributors_data(g, repo_name, since, until):
@@ -29,12 +22,6 @@ def get_contributors_data(g, repo_name, since, until):
             'deletions_dict': deletion_dict}
 
 
-def visualize_results(repos, datatype, contributors_data):
-    for repo in repos:
-        analyze_users(repo, contributors_data[repo['name']][datatype + '_dict'], repo['name'])
-    plotter.save('users (%)', datatype + ' (%)', 'code_contributors/' + datatype + '_dist')
-
-
 def run(g, config):
     print('----------------------------Code contributors START----------------------------')
     contributors_data = {}
@@ -47,9 +34,9 @@ def run(g, config):
                                                       since=datetime.fromtimestamp(int(repo['since'])),
                                                       until=datetime.fromtimestamp(int(repo['until'])))
         pprint(contributors_data)
-    visualize_results(config.repos, 'commits', contributors_data)
-    visualize_results(config.repos, 'additions', contributors_data)
-    visualize_results(config.repos, 'deletions', contributors_data)
+    analyzer.visualize_results(config.repos, 'commits', contributors_data, 'code_contributors/commits_dist')
+    analyzer.visualize_results(config.repos, 'additions', contributors_data, 'code_contributors/additions_dist')
+    analyzer.visualize_results(config.repos, 'deletions', contributors_data, 'code_contributors/deletions_dist')
 
     print('----------------------------Code contributors END----------------------------')
     pass

@@ -117,8 +117,23 @@ Text in English\ldots
 \renewcommand{\thepage}{\rempage}
 
 \section{Introduction}
+%Describe the problem we are trying to solve
+In this thesis we investigate a contemporary phenomenon (the differences in requirement elicitation between community- and firm-driven OSS projects) in depth and within its real-life context\cite{RobertK1994}.This leads to several challenges. First, software development is a knowledge-intensive activity with a large number of potentially confounding factors \cite{Curtis1986}, and this makes it difficult or impossible to discern the impact of commercial involvement. Second, to observe the impact of commercial involvement, it is important to compare the differences in contributions from developers, and to observe the work impact on projects over long period of time. Third, there is no easy way to learn companies, intentions motivating their involvement in the OSS community, and it is even more difficult to examine the effects of such involvement.
 
-\subsection{Background}
+% REDEFINE: related work
+	% TODO: Explain the context of the other two stuides and their findings/limitations
+	% TODO: Communicate to the reader that what WE are doing has not been done just yet. 
+	
+\label{related_work} In previous work within the area of OSS there are two studies that are more similar to ours than others. In the first the authors conduct two case studies from which they try to form theories on what it is that defines OSS-projects. They conclude the study by comparing their results with commercial, proprietary, projects\cite{Mockus2002a}. The second is a case study where the authors investigate the differences in requirement elicitation between large and small OSS-projects\cite{Noll}.\footnote{explain the context of the other two studies and their findings/limitations}
+
+%Deeper understanding of the process that OSS development
+The purpose of this study is that it will be able to be used as support for firms when considering if they want to make a software open source. Whether it would be an existing software or they are starting from scratch. However we will not research on the comparison between developing OSS and proprietary software. This is important because the results from our study will not list the pros and cons of moving from proprietary software- to OSS-development. Instead they will help the firm realise the potential differences of OSS-projects depending on the governing body.
+
+As a result of this study we will have made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use OSS development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about OSS development. (c) The scripts we will develop and use to process the documented discussions(history) of the two projects.
+
+This thesis presents a comparative case study of differences in requirement elicitation between firm-driven and community-driven OSS projects on Github: the hackable text editor Atom and CodeLite an cross platform IDE. We address key questions about their differences towards each other overall and within the area of requirement elicitation, based on data gathered from Github. Based on the work of \cite{Mockus2002a} and \cite{Noll} we framed a number of hypotheses that we conjectured would be true generally of both development and requirement elicitation within the area of OSS-development.
+
+\section{Background}
 
 \begin{displayquote}
 	A great babbling bazaar of differing agendas and approaches out of which a coherent and stable system could seemingly emerge only by a succession of miracles.
@@ -126,31 +141,19 @@ Text in English\ldots
 
 %introduce the reader to the section
 	%Introduce the reader to System Development
-In the evolution of software development different types of methods have been used to manage initiation, planning, execution, monitoring and closeout of a project. The project methods whom where first to adopt these phases are known as traditional development methods. The traditional development methods approach identifies a sequence of steps to be completed, where the work of a new step don't begin until the previous step is completed. However these project method was not optimal for software development, where the need of continuos integration is important.\cite{Jansson2015} Therefor on February 11?13\footnote{TODO}, 2001, at The Lodge at Snowbird ski resort in the Wasatch mountains of Utah, 17 people met to talk, ski, relax and try to find common ground. What emerged under this meeting was the Agile Software Development Alliance. From this alliance the Agile methods evolved based on a manifesto where the effort was to overcome perceived and actual weakness in conventional software engineering. This alliance wrote down the famous Agile Manifesto and their reason was simply to undercover better ways of developing software by doing it and helping others do it\cite{Fowler2001}. In contrast to the traditional methods the agile methods are based on incremental method managing the design and build activities of engineering\cite{Jansson2015} . regardless of the difference of the kind of method you use to develop a software system you would most likley need to handle requierments in one way or another. Requierment in software development are paragraphs that explains a functional or nonfunctional feature that the software must be able to handle. In the late 90's the Open Source Software (OSS) development method also made a name for itself through the uprise of systems like Redhat, Linux and Apache. \cite{Noll2008a, Mockus2002a, M.W.Godfrey2000}
+In the evolution of software development different types of methods have been used to manage initiation, planning, execution, monitoring and closeout of a software project. The project methods whom where first to adopt these phases are known as traditional development methods. The traditional development methods approach identifies a sequence of steps to be completed, where the work of a new step don't begin until the previous step is completed. However these project method was not optimal for software development, where the need of continuos integration is important.\cite{Jansson2015} Therefor on February 11?13\footnote{TODO}, 2001, at The Lodge at Snowbird ski resort in the Wasatch mountains of Utah, 17 people met to talk, ski, relax and try to find common ground. What emerged under this meeting was the Agile Software Development Alliance. From this alliance the Agile methods evolved based on a manifesto where the effort was to overcome perceived and actual weakness in conventional software engineering. This alliance wrote down the famous Agile Manifesto and their reason was simply to undercover better ways of developing software by doing it and helping others do it\cite{Fowler2001}. In contrast to the traditional methods the agile methods are based on incremental method managing the design and build activities of engineering\cite{Jansson2015} . Apart from the traditional and agile methods the open source software (OSS) development method started to recive alot of attention in the late 90's. OSS development is the process by which open-source, or similar software whose source code is publicly available, is developed. These are software products availabel eith its source code under a open-source license to study, cahnge and improve its desgin. For this reason the OSS was in the late 90's charachterized as a fundamentelly new way to develop software and was seen as a callengen to the comercail software bussinese that did dominate the vast majority of the software market\cite{Mockus2002a}. But time have proven that OSS are a development method that can be applied on commercial software and maintain quality.  Examples of some popular open-source software products are Mozilla Firefox, Google Chromium, Android, LibreOffice and the Apache OpenOffice Suite. Open-source software development has been a large part of the creation of the World Wide Web as we know it, with Tim Berners-Lee contributing his HTML code development as the original platform upon which the internet is now built. \cite{http://www.wired.co.uk/article/tim-berners-lee}
 
-%Introduce the reader to Community-driven projects and Requierment elicitaton
+	%TODO: More on the open source story
+
+	%Introduce the reader to Community-driven projects and Requierment elicitaton
 Regardless of the method a project choose to use in the develop a software system would most likley need to handle requierments in one way or another. Requierment in software development are paragraphs that explains a functional or nonfuntional feature that the software must be able to handle. While traditional and agile requierments are elicitaed from discussions with a client/customer OSS project handels the elicitation threw the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed. Developers voluntarily contributes to the software by implementing new features, fixing bugs and writing documentation \cite{Maccormack2006}. Well known community developed OSS systems have grown strong since the late 90's such as The Apache Server, RedHat or the success of Linux, a Unix-like operating system originally written by Linus Torvalds, but subsequently worked on by hundreds of other developers in the late 90's.\cite{M.W.Godfrey2000} The key decisions in project driven OSS communities are taken by a central group of software developers (core developers). Beyond this central group, are the peripheral developers these are developers who intermittently submit code contributions (called patches). The core group reviews the patches before they are incorporated into the projects source code. \cite{Crowston2006}
 
 
-%Introduce the reader to Firm-driven development
+	%Introduce the reader to Firm-driven development
 The Agile methods are popular to use in Software Companies for information systems development. Agile methods are claimed to encourage developers to be more flexible and efficient by means of arrangements in the development teams physical and social environment\cite{Jansson2015}. In recent years, however, we have seen a increased interest of using open source alongside with the Agile development\cite{Author2008} \cite{Jansson2015}. Big companies like Google have been striving towards a more open enviorment in both development projects but also in general work process\cite{How Google Works}\footnote{Fix a reference for the book in, couldn't find a pdf version, but i have it in the bookshelf in the apartment //Teddy}. Alongside with an interest and momentum of OSS it is now also considered to be, in a commercial settings, a more viable approach\cite{Author2008}. From a commercial stand point OSS development also promieses many advantages. Including reduced salary costs; reduced cycle time arising from' 'follow-the-sun'' software development; cross-site modularization of development work; access to a larger skilled developer pool; innovation and shared best practice; and closer proximity to customers\cite{Author2008}.\footnote{Include how open source with a firm in the background are structured}
 
-%Describe the problem we are trying to solve
-In this thesis we investigate a contemporary phenomenon (the differences in requirement elicitation between community- and firm-driven OSS projects) in depth and within its real-life context with the boundaries between phenomenon and context not being clearly evident\cite{RobertK1994}.This leads to several challenges. First, software development is a knowledge-intensive activity with a large number of potentially confounding factors \cite{Curtis1986}, and this makes it difficult or impossible to discern the impact of commercial involvement. Second, to observe the impact of commercial involvement, it is important to compare the differences in contributions from developers, and to observe the work impact on projects over long period of time. Third, there is no easy way to learn companies, intentions motivating their involvement in the OSS community, and it is even more difficult to examine the effects of such involvement.
-
-% related work
-\label{related_work}Out of the previous work that has been made on OSS there are two studies that are similar to ours. In the first the authors conduct two case studies from which they try to form theories on what it is that defines OSS-projects. They conclude the study by comparing their results with commercial, proprietary, projects\cite{Mockus2002a}. The second is a case study where the authors investigate the differences in requirement elicitation between large and small OSS-projects\cite{Noll}.
-%Describe why we want to solve it (goal)
-
-%Deeper understanding of the process that OSS development
-The purpose of this study is that it will be able to be used as support for firms when considering if they want to make a software open source. Whether it would be an existing software or they are starting from scratch. However we will not research on the comparison between developing OSS and proprietary software. This is important because the results from our study will not list the pros and cons of moving from proprietary software- to OSS-development. Instead they will help the firm realise the potential differences of OSS-projects depending on the governing body.
-
-As a result of this study we made the following three contributions. (a) As mentioned above our results can be used as support for a firm when deciding if they want to use OSS development. (b) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about OSS development. (c) The scripts we will develop and use to process the documented discussions(i.e. history) of the two projects.
-
-This article presents a comparative case study of differences in requirement elicitation between firm-driven and community-driven OSS projects on Github: the hackable text editor Atom and CodeLite an cross platform IDE. We address key questions about their differences towards each other overall and within the area of requirement elicitation, based on data gathered from Github. Based on the work of \cite{Mockus2002a} and \cite{Noll} we framed a number of hypotheses that we conjectured would be true generally of both development and requirement elicitation within the area of OSS-development.
-
 %TODO: Shortly describe structure of report
-Here we will describe the structure of the thesis and what we will include in each section.
+
 \subsection{Research Question}
 %Describe how this study will contribute to a solution or solve it completely
 \begin{enumerate}[label=RQ\arabic*]
@@ -170,11 +173,18 @@ The purpose of this study is to compare the effects two different types of gover
 With the given conditions mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. However, such a survey would risk to miss out on detailed information that is unique for each project.
 
 \subsection{Case Description}
-In this section we will describe the two projects we intend to do our case studies on. First we describe Atom, then we describe CodeLite.
+This section describes the two projects that we have conducted our case studies on. The two projects we investigated, Atom and NeoVim,  are open-source texteditors that are free too use and the source code from these projects are available too investigate on GitHub.
+% In this section we will describe the two projects we intend to do our case studies on. First we describe Atom, then we describe NeoVim.
 \subsubsection{Case 1: Atom}
-TODO
 
-\subsubsection{Case 2: CodeLite}
+Atom is a text editor that's modern, approachable, yet hackable to the core. A tool you can customize to do anything but also use productively without ever touching a config file.
+
+\subsubsection{Case 2: NeoVim}
+
+Neovim is a refactor of a highly configurable text editor called Vim. Vim itself are built to make creating and changing any kind of text very efficient. Neovim started 
+%Explain Vim
+
+Neovim is a refactor, and sometimes redactor, in the tradition of Vim (which itself derives from Stevie). It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist; some are very clever, but none are Vim. Neovim strives to be a superset of Vim except for some intentionally-removed misfeatures. It is built for users who want the good parts of Vim, and more.
 TODO
 
 \subsection{Case Study}
@@ -238,7 +248,22 @@ TODO:
 	\item We need to investigate if the projects have any other channel for communication. If so we should write it here.
 \end{itemize}
 
-\subsubsection{Schema for Data}
+
+\subsubsection{Collection process}
+Below we present a schema for our method on collecting the data. Every step which will generate data will define for what data will be collecting. We are then referring to the schema found in section~\ref{subsec:data}.
+
+\begin{enumerate}
+	\item Select a time period between release M and N for project X. (Where $ M < N $)
+	\item Extract the data specified in items D1-D5 for the selected time period. % D1-D5 mention before explained
+	\item Identify the set of features delivered for project X after release M, up to and including release N.
+	\item Select a subset of these features for examination.
+	\item Examine resources\footnote{Project resources are presented in section~\ref{subsec:sources}.} related to the project to discover how the feature was first proposed, what role the person proposing the feature played, and to what category the proposal belongs to. (D6-D8)
+	\item Determine when the feature was acknowledged as a requirement. (D9)
+	\item Determine when the feature was submitted. (D10)
+\end{enumerate}
+
+\subsubsection{Data} % Define a more clear header
+
 \label{subsec:data}
 Below we present a schema for what data we will collect with its description.
 \begin{enumerate}[label=D\arabic*]

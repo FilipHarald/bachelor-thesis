@@ -1,9 +1,9 @@
 import os
 from collections import defaultdict
 from datetime import datetime
-from pprint import pprint
 
 from utils import cache, analyzer
+from utils.pretty_printer import nc_print
 
 file_name = os.path.basename(__file__)  # file cache key
 
@@ -23,7 +23,7 @@ def get_contributors_data(g, repo_name, since, until):
 
 
 def run(g, config):
-    print('----------------------------Code contributors START----------------------------')
+    nc_print('----------------------------Code contributors START----------------------------')
     contributors_data = {}
     for repo in config.repos:
         print(repo['color'] + repo['name'])
@@ -33,10 +33,9 @@ def run(g, config):
                                                       repo_name=repo['name'],
                                                       since=datetime.fromtimestamp(int(repo['since'])),
                                                       until=datetime.fromtimestamp(int(repo['until'])))
-        pprint(contributors_data)
     analyzer.visualize_results(config.repos, 'commits', contributors_data, 'code_contributors/commits_dist')
     analyzer.visualize_results(config.repos, 'additions', contributors_data, 'code_contributors/additions_dist')
     analyzer.visualize_results(config.repos, 'deletions', contributors_data, 'code_contributors/deletions_dist')
 
-    print('----------------------------Code contributors END----------------------------')
+    nc_print('----------------------------Code contributors END----------------------------')
     pass

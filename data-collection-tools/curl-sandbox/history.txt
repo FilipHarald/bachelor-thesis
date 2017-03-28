@@ -3,3 +3,8 @@ curl --include https://api.github.com/repos/atom/atom - Tue Mar  7 14:28:35 CET 
 curl --include https://api.github.com/repos/atom/atom/contributors - Fri Mar 17 09:23:06 CET 2017
 curl --include https://api.github.com/repos/eranif/codelite/commits?sha=6c0938403d80defd14578918e3be7d242a2de0b8
  - Fri Mar 17 11:04:36 CET 2017
+curl --include https://api.github.com/repos/FilipHarald/bachelor-thesis - Mon Mar 27 11:25:35 CEST 2017
+curl --include https://api.github.com/repos/FilipHarald/bachelor-thesis/issues - Mon Mar 27 11:26:10 CEST 2017
+curl --include https://api.github.com/repos/FilipHarald/bachelor-thesis/issues - Mon Mar 27 11:26:55 CEST 2017
+curl --include https://api.github.com/repos/FilipHarald/bachelor-thesis/issues - Mon Mar 27 11:27:01 CEST 2017
+curl --include https://api.github.com/repos/FilipHarald/bachelor-thesis/issues?state=all - Mon Mar 27 16:06:55 CEST 2017

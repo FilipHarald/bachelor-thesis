@@ -2,6 +2,10 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-28`|6|X|X|Introduction and Methodology|
+|`2017-03-27`|1|X||Hand in 4th draft|
+|`2017-03-26`|5|X||Added code for feature proposers and problem reporters|
+|`2017-03-22`|2|X||Minor fixes|
 |`2017-03-21`|6|X|X|Developing [data-collection-tools](https://github.com/FilipHarald/bachelor-thesis/tree/master/data-collection-tools) and supervisor meeting|
 |`2017-03-17`|9|X||Developing [data-collection-tools](https://github.com/FilipHarald/bachelor-thesis/tree/master/data-collection-tools)|
 |`2017-03-16`|3|X||Methodology (Data & Tools)|

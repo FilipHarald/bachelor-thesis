@@ -24,7 +24,7 @@ def get_defect_repair_time(g, repo_name, since, until):
     issues = g.get_repo(repo_name).get_issues(since=since, labels=labels, state='closed')
     repair_times = []
     for issue in issues:
-        if issue.closed_at.strftime('%s') < until:
+        if int(issue.closed_at.strftime('%s')) < until:
             if not any(label.name == "duplicate" for label in issue.labels):
                 repair_times.append(((int(issue.closed_at.strftime('%s')) - int(issue.created_at.strftime('%s'))) / 3600)/24)
     return repair_times

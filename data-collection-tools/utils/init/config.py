@@ -21,6 +21,12 @@ neovim = {'name': 'neovim/neovim',
           'since_sha': 'c4826c300340a9e4df20964a14650caf64fc1b58',
           'until_sha': '0542baac28681050483c685c79efcb4d3c1e32ea'}
 
+linux = {'name': 'torvalds/linux',
+          'key': 'lin',
+          'color': '\033[99m',
+          'since_sha': '32b88194f71d6ae7768a29f87fbba454728273ee',
+          'until_sha': '07d9a380680d1c0eb51ef87ff2eab5c994949e69'}
+
 testrepo = {'name': 'FilipHarald/bachelor-thesis',
           'key': 'test',
           'color': '\033[0m',

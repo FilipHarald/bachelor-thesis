@@ -13,30 +13,34 @@ def get_issues_data(g, repo_name, since, labels):
     unique_users = defaultdict(int)
     issues = g.get_repo(repo_name).get_issues(since=since, labels=labels, state='closed')
     for issue in issues:
-        for method in dir(issue):
-            nc_print(method)
-        comments = issue.get_comments()
-        for comment in comments:
-            print(comment)
-            for method in dir(comment):
-                print(method)
         if not any(label.name == "duplicate" for label in issue.labels):
             unique_users[issue.user.login] += 1
-        break
     return unique_users
+
+
+def get_defect_repair_time(g, repo_name, since):
+    labels = [g.get_repo(repo_name).get_label("bug")]
+    issues = g.get_repo(repo_name).get_issues(since=since, labels=labels, state='closed')
+    repair_times = []
+    for issue in issues:
+        if not any(label.name == "duplicate" for label in issue.labels):
+            repair_times.append(((int(issue.closed_at.strftime('%s')) - int(issue.created_at.strftime('%s'))) / 3600)/24)
+    return repair_times
 
 
 def run(g, config):
     nc_print('----------------------------Other Contributors START----------------------------')
     problem_reporters_data = {}
     feature_proposers_data = {}
+    repair_times_data = {}
     for repo in config.repos:
         print(repo['color'] + repo['name'])
+        since = datetime.fromtimestamp(int(repo['since']))
         pr_dict = cache.cache(get_issues_data,
                               key=file_name + '_' + repo['key'] + '_problem_reporters',
                               g=g,
                               repo_name=repo['name'],
-                              since=datetime.fromtimestamp(int(repo['since'])),
+                              since=since,
                               labels=[g.get_repo(repo['name']).get_label("bug")])
         problem_reporters_data[repo['name']] = {}
         problem_reporters_data[repo['name']]['problem_reporters_dict'] = pr_dict
@@ -44,10 +48,17 @@ def run(g, config):
                               key=file_name + '_' + repo['key'] + '_feature_proposers',
                               g=g,
                               repo_name=repo['name'],
-                              since=datetime.fromtimestamp(int(repo['since'])),
+                              since=since,
                               labels=[g.get_repo(repo['name']).get_label("enhancement")])
         feature_proposers_data[repo['name']] = {}
         feature_proposers_data[repo['name']]['feature_proposers_dict'] = fp_dict
+        repair_times = cache.cache(get_defect_repair_time,
+                                   key=file_name + '_' + repo['key'] + '_repair_times',
+                                   g=g,
+                                   repo_name=repo['name'],
+                                   since=since)
+        repair_times_data[repo['name']] = {}
+        repair_times_data[repo['name']]['repair_times_array'] = repair_times
     analyzer.visualize_results(config.repos,
                                'problem_reporters',
                                problem_reporters_data,
@@ -56,5 +67,9 @@ def run(g, config):
                                'feature_proposers',
                                feature_proposers_data,
                                'feature_proposers/feature_proposers_dist')
+    analyzer.analyze_repair_time(config.repos,
+                                 'repair_times',
+                                 repair_times_data,
+                                 'repair_times/repair_times_dist')
     nc_print('----------------------------Other Contributors END----------------------------')
     pass

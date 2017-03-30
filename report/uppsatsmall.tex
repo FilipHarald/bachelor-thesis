@@ -261,40 +261,39 @@ Below we present a schema for our method on collecting the data. Every step whic
 
 \begin{enumerate}
 	\item Select a time period between release M and N for project X. (Where $ M < N $)
-	\item Extract the data specified in items D1-D5 for the selected time period. % D1-D5 mention before explained
+	\item Extract the data specified in items D1-D4 for the selected time period.
 	\item Identify the set of features delivered for project X after release M, up to and including release N.
 	\item Select a subset of these features for examination.
-	\item Examine resources\footnote{Project resources are presented in section~\ref{subsec:sources}.} related to the project to discover how the feature was first proposed, what role the person proposing the feature played, and to what category the proposal belongs to. (D6-D8)
-	\item Determine when the feature was acknowledged as a requirement. (D9)
-	\item Determine when the feature was submitted. (D10)
+	\item Examine resources\footnote{Project resources are presented in section~\ref{subsec:sources}.} related to the project to discover how the feature was first proposed, what role the person proposing the feature played, and to what category the proposal belongs to. (D5-D6)
+	\item Determine when the feature was acknowledged as a requirement. (D7)
+	\item Determine when the feature was submitted. (D8)
 \end{enumerate}
 
-\subsubsection{Data} % Define a more clear header
+\subsubsection{Data Schema}
 
 \label{subsec:data}
-Below we present a schema for what data we will collect with its description.
+Below we present a schema for what data we will collect with its description. The schema consists of two parts The first is statistical data for comparing the two projects(D1-D4). The second part(D5-D)8 is sampling data focusing on requirements elicitation.
+\subparagraph{Statistical Data}
 \begin{enumerate}[label=D\arabic*]
 	\item \emph{Problem reporters}
 	
 	How many people reported problems they had with the product? And how was the distribution of problem reports over these people? (Did everyone report an equal amount of problems?)
-	%\item \emph{Defect repairers}
-	
-	%How many people contributed by repairing defects? And how was the distribution of repaired defects over these people? (Did everyone repair an equal amount of defects?)
 	\item \emph{Defect repair time}
 	
 	How long did it take for a problem to be considered as an defect? And how long did it take for a reported problem to be repaired? If it was a defect. 
-	%\item \emph{Feature developers}
-	
-	%How many people contributed by developing features? And how was the distribution of the developed features over these people? (Did everyone develop an equal amount of features?)
 	\item \emph{Code contributors}
 	
-	How many contributors are there in the project? We define a contributor as someone who has wrote code to the project. %namely feature developer or defect repairers. Since a contributor can belong to both groups the amount of contributors(C) can be defined as: $ A_{feature-developers} + B_{defect-repairers} \leq C_{code-contributors} $
+	How many contributors are there in the project? We define a contributor as someone who has wrote code to the project. 
 	\item \emph{Feature proposers}
 	
 	How many proposed new features, that got implemented, to the project? And how were they distributed? 
+\end{enumerate}
+\subparagraph{Sample Data}
+\begin{enumerate}[label=D\arabic*]
+	\setcounter{enumi}{4}
 	\item \emph{Feature proposals}
 	
-	How and where were features first proposed?
+	Where were features first proposed?
 	\item \emph{Feature origin categories}
 	
 	Which of these categories did the feature belong to?

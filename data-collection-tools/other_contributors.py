@@ -62,14 +62,14 @@ def run(g, config):
     analyzer.visualize_results(config.repos,
                                'problem_reporters',
                                problem_reporters_data,
-                               'problem_reporters/problem_reporters_dist')
+                               'problem_reporters/problem_reporters')
     analyzer.visualize_results(config.repos,
                                'feature_proposers',
                                feature_proposers_data,
-                               'feature_proposers/feature_proposers_dist')
+                               'feature_proposers/feature_proposers')
     analyzer.analyze_repair_time(config.repos,
                                  'repair_times',
                                  repair_times_data,
-                                 'repair_times/repair_times_dist')
+                                 'repair_times/repair_times')
     nc_print('----------------------------Other Contributors END----------------------------')
     pass

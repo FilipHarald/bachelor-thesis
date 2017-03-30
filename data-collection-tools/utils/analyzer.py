@@ -29,7 +29,7 @@ def visualize_results(repos, datatype, contributors_data, filename):
     for repo in repos:
         data = analyze_users(repo, contributors_data[repo['name']][datatype + '_dict'], repo['name'], datatype)
         store(filename, repo, '.txt', data)
-    plotter.save('users (%)', datatype + ' (%)', filename)
+    plotter.save('users (%)', datatype + ' (%)', filename + '_dist')
 
 
 def analyze_repair_time(repos, datatype, repair_times_data, filename):

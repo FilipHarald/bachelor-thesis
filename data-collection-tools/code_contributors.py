@@ -33,9 +33,9 @@ def run(g, config):
                                                       repo_name=repo['name'],
                                                       since=datetime.fromtimestamp(int(repo['since'])),
                                                       until=datetime.fromtimestamp(int(repo['until'])))
-    analyzer.visualize_results(config.repos, 'commits', contributors_data, 'code_contributors/commits_dist')
-    analyzer.visualize_results(config.repos, 'additions', contributors_data, 'code_contributors/additions_dist')
-    analyzer.visualize_results(config.repos, 'deletions', contributors_data, 'code_contributors/deletions_dist')
+    analyzer.visualize_results(config.repos, 'commits', contributors_data, 'code_contributors/commits')
+    analyzer.visualize_results(config.repos, 'additions', contributors_data, 'code_contributors/additions')
+    analyzer.visualize_results(config.repos, 'deletions', contributors_data, 'code_contributors/deletions')
 
     nc_print('----------------------------Code contributors END----------------------------')
     pass

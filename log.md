@@ -2,6 +2,8 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-03-30`|5|X||Introduction corrections|
+|`2017-03-30`|7|X||Methodology and Research utilities|
 |`2017-03-28`|6|X|X|Introduction and Methodology|
 |`2017-03-27`|1|X||Hand in 4th draft|
 |`2017-03-26`|5|X||Added code for feature proposers and problem reporters|

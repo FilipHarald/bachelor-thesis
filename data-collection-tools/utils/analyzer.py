@@ -29,10 +29,11 @@ def analyze_users(repo, dict, label, datatype):
     return '\n'.join(output)
 
 
-def visualize_results(repos, datatype, contributors_data, filename, unit=None):
+def visualize_results(repos, datatype, contributors_data, filename, unit=None, x_axis=None):
     for repo in repos:
         data = analyze_users(repo, contributors_data[repo['name']][datatype + '_dict'], repo['name'], datatype)
         store(filename, repo, '.txt', data)
+    datatype = x_axis if x_axis else datatype
     datatype = datatype if not unit else datatype + ' (' + unit + ')'
     plotter.save(datatype, 'users (%)', filename + '_dist')
 

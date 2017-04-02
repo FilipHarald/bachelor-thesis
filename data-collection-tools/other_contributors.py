@@ -68,11 +68,13 @@ def run(g, config):
     analyzer.visualize_results(config.repos,
                                'problem_reporters',
                                problem_reporters_data,
-                               'problem_reporters/problem_reporters')
+                               'problem_reporters/problem_reporters',
+                               x_axis='problem reporters')
     analyzer.visualize_results(config.repos,
                                'feature_proposers',
                                feature_proposers_data,
-                               'feature_proposers/feature_proposers')
+                               'feature_proposers/feature_proposers',
+                               x_axis='feature proposers')
     analyzer.analyze_repair_time(config.repos,
                                  'repair_times',
                                  repair_times_data,

@@ -47,6 +47,18 @@ def init(g):
     print('**  Init done!  **\033[0m')
 
 
+def init_2():
+    """
+    This method is used if you want to gather information from the same date for all repos.
+    """
+    print('\033[91m**  Initializing config (method 2)  **')
+    for repo in repos:
+        repo['since'] = "1388577600"
+        # repo['until'] = "1483272000"
+        repo['until'] = "1391256000"
+    print('**  Init done!  **\033[0m')
+
+
 def commit_to_date(repo, sha_key, g):
     repo = repo
     sha_key = sha_key

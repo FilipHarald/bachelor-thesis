@@ -17,6 +17,11 @@
 \usepackage{csquotes} % For blockquote
 \usepackage{enumitem}
 
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+\DeclareGraphicsExtensions{.pdf,.png}
+
 \begin{document}
 
 \let\rempage=\thepage
@@ -168,6 +173,7 @@ The articles together summarize the differences between open-source projects in 
 	\item \emph{How can software companies benefit from engaging in corporate-driven OSS development?}\footnote{This question needs to be modified.}
 \end{enumerate}
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
 \section{Methodology}
 
 %Descirbe what we want to research 
@@ -215,6 +221,7 @@ TODO, should the numbers be rounded for easier comparison?
 	\label{tab:github_stats}
 \end{table}
 
+\FloatBarrier
 We can identify three things\footnote{HELP! a better word than 'thing'} from the data: the projects are similar on the amount of contributors, Atom has a greater amount of commits and Neovim seems to be larger in terms of LoC and amount of files. Below we will address the two differences.
 
 With Atom having more than 3 times as many commits as Neovim there is a significant difference. However the usage of how one would commit code could differ between the two projects. For example the amount of LoC committed could be approximately the same even if amount of commits differ.
@@ -252,6 +259,7 @@ As previously mentioned (section ~\ref{related_work}) there has been two studies
 	\label{tab:apache}
 \end{table}
 
+\FloatBarrier
 % firefox and openemr (req. elicitation)
 The second study, \cite{Noll}, is also an case study on OSS-projects. But instead of being exploratory it is specific on what factors to compare between two projects, namely requirement elicitation. Noll and Liu have chosen to compare requirement elicitation between two extremes off OSS-projects, large, Firefox, and small, OpenEMR, in terms of end-users of the product and contributors to the project. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in table \ref{tab:openemr}.
 \begin{table}[h]
@@ -271,6 +279,7 @@ The second study, \cite{Noll}, is also an case study on OSS-projects. But instea
 	\label{tab:openemr}
 \end{table}
 
+\FloatBarrier
 %what do we want to do in our case study?
 In the following sections we present the approach for conducting our case study. We will use a combination of the two presented schemas and make some additions to them.
 
@@ -371,18 +380,49 @@ Lastly a threat to validity when conducting a case study is that the researcher 
 \subsection{Hypothesis}
 It has been shown in OSS-projects that the requirement elicitation process is independent of project size\cite{Noll}. We think that this study will find that the process is also independent of a firm or a community being the governing body.
 
+\newpage
 \section{Result}
 In this section the results are presented. They are presented in the same order as they occur in section ~\ref{subsec:data}.
 
 \subsection{Statistical Data}
 \subsubsection{Code Contributors}
 D1
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{commits_dist}
+	\caption{Commits distribution}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{additions_dist}
+	\caption{Additions distribution}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{deletions_dist}
+	\caption{Deletions distribution}
+\end{figure}
+
+\FloatBarrier
 \subsubsection{Feature Proposers}
 D2
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{feature_proposers_dist}
+	\caption{Distribution of feature proposals over users.}
+\end{figure}
+
+\FloatBarrier
 \subsubsection{Problem Reporters}
-D3
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{problem_reporters_dist}
+	\caption{Distribution of problem reports over users.}
+\end{figure}
+
+\FloatBarrier
 \subsubsection{Defect Repair Time}
-D4 
+D4
 
 \subsection{Sample Data}
 \subsubsection{Feature Proposals}

@@ -194,26 +194,34 @@ Neovim is a free and open-source text and source code editor for macOs, Linux an
 \label{case_selection}
 To ensure our results reflect only the requirement elicitation process of the projects we selected projects that are similar on other aspects. Especially on product type, project age and project size. both project develop a product that is classified as a text-editor. Atom has a more graphical user interface than Neovim, but they are still both used for the same purpose. The projects were created 5- (Atom) and 3- (Neovim) years ago. When comparing project size we used the data available on the main page for each project on Github\cite{atom_pp,neovim_pp} and also counted project LoC \footnote{Lines of Code, this is a common metric for determining how big a software is.} and amount of files. The data is presented in the table \ref{tab:github_stats}.
 
+TODO, should the numbers be rounded for easier comparison?
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | c | c | c |}
+	\begin{tabular}{ | l | c | c | c | c |}
 		\hline
-		Data 		& Atom 	& Neovim 	& Difference			\\\hline
-		Contributors 	& 349 	& 303 	& 46					\\\hline
-		Commits 		& 31382 	& 7925 	& 23457				\\\hline
-		Forks 		& 6218 	& 1586 	& 4632				\\\hline
-		Stars 		& 35871 	& 22114 	& 13757				\\\hline
-		Watching 		& 2021 	& 957 	& 1064				\\\hline
-		Open Issues 	&1677 	& 599 	& 1078				\\\hline
-		Pull Requests 	& 105 	& 169 	& 64					\\\hline
-		LoC 			& 246741	& 57089 	& 189652\footnotemark	\\\hline
-		Number of files & 579 	& 388 	& 191				\\
+		\textbf{Data} 			& \textbf{Atom} 	& \textbf{Neovim}	& \textbf{Largest}	& \textbf{Difference}	\\\hline
+		Contributors	 		& 349 		& 303 			& Atom			& 46				\\\hline
+		Commits		 		& 31382 		& 7925 			& Atom			& 23457			\\\hline
+		%Forks 				& 6218 		& 1586		 	&				& 4632			\\\hline
+		%Stars 				& 35871	 	& 22114			&		 		& 13757			\\\hline
+		%Watching			& 2021 		& 957			&		 		& 1064			\\\hline
+		%Open Issues 			&1677 		& 599 			&				& 1078			\\\hline
+		%Open Pull Requests 	& 105 		& 169 			&				& 64				\\\hline
+		LoC 					& 57089		&  246741			& Neovim			& 189652			\\\hline
+		Number of files 			& 388		& 579		 	& Neovim			& 191			\\
 		\hline 
 	\end{tabular}
-	\caption{Project statistics found on Github as of March 2017.}
+	\caption{Project statistics found on Github as of March 2017\cite{atom_pp,neovim_pp}.}
 	\label{tab:github_stats}
 \end{table}
-\footnotetext{As mentioned in section \ref{neo_vim} Neovim is a product built on the text editor Vim. The result of this is that Neovim has a lot of code which has been transferred from Vim.}
+
+We can identify three things\footnote{HELP! a better word than 'thing'} from the data: the projects are similar on the amount of contributors, Atom has a greater amount of commits and Neovim seems to be larger in terms of LoC and amount of files. Below we will address the two differences.
+
+With Atom having more than 3 times as many commits as Neovim there is a significant difference. However the usage of how one would commit code could differ between the two projects. For example the amount of LoC committed could be approximately the same even if amount of commits differ.
+
+The last, and perhaps most significant, is the difference in amount of LoC and files. As mentioned in section \ref{neo_vim} Neovim is a product that uses a lot of the functionality from Vim. The result of this is that Neovim has a lot of code which has been transferred from Vim. Vim has 328722 LoC and 230 files.
+
+The two addressed differences were considered when constructing and conducting the case study. And even with these differences, Atom and Neovim are the most similar firm- and comunity-driven OSS projects of the ones investigated. Other candidates were, Google Chrome and Mozilla Firefox(difference in age and location of codebase) and Codelite instead of Neovim(Codelite was considerably smaller and older than Atom).
 
 \subsection{Case Study}
 %what is a case study?

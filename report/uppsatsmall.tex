@@ -192,7 +192,7 @@ Neovim is a free and open-source text and source code editor for macOs, Linux an
 
 \subsubsection{Motivation for Selection of Cases}
 \label{case_selection}
-To ensure our results reflect only the requirement elicitation process of the projects we selected projects that are similar on other aspects. Especially on product type, project age and project size. both project develop a product that is classified as a text-editor. Atom has a more graphical user interface than Neovim, but they are still both used for the same purpose. The projects were created 5- (Atom) and 3- (Neovim) years ago. When comparing project size we used the data available on the main page for each project on Github\cite{atom_pp,neovim_pp} and also counted project LoC \footnote{Lines of Code, this is a common metric for determining how big a software is.} and amount of files. The data is presented in the table \ref{tab:github_stats}.
+To ensure our results reflect only the requirement elicitation process of the projects we selected projects that are similar on other aspects. Especially on product type, project age and project size. both project develop a product that is classified as a text-editor. Atom has a more graphical user interface than Neovim, but they are still both used for the same purpose. The projects were created 5- (Atom) and 3- (Neovim) years ago. When comparing project size we used the data available on the main page for each project on Github\cite{atom_pp,neovim_pp} and also counted project LoC \footnote{Lines of Code, this is a common metric for determining how big a software is.} and amount of files. The data is presented in the table ~\ref{tab:github_stats}.
 
 TODO, should the numbers be rounded for easier comparison?
 \begin{table}[h]
@@ -232,7 +232,7 @@ In \cite{Oates2005} the author says that case study can favourably be used when 
 
 %what have others done in their case studies?
 % apache and mozilla
-As previously mentioned (section \ref{related_work}) there has been two studies conducted that is similar to ours. In the first, \cite{Mockus2002a}, Mockus et. al. conduct an exploratory case study with the purpose of mapping how OSS-projects are conducted to form hypothesises on how they generally will perform. The authors also tries to compare their results with commercial projects. To make their generalisation trustworthy they have selected two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate that it should be sufficient to compare with other projects \cite{Mockus2002a}. In our case study we will use parts of the presented questions. However, the majority of our data collection schema will be similar to the second paper. The 6 questions are presented in table \ref{tab:apache}.
+As previously mentioned (section ~\ref{related_work}) there has been two studies conducted that is similar to ours. In the first, \cite{Mockus2002a}, Mockus et. al. conduct an exploratory case study with the purpose of mapping how OSS-projects are conducted to form hypothesises on how they generally will perform. The authors also tries to compare their results with commercial projects. To make their generalisation trustworthy they have selected two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate that it should be sufficient to compare with other projects \cite{Mockus2002a}. In our case study we will use parts of the presented questions. However, the majority of our data collection schema will be similar to the second paper. The 6 questions are presented in table ~\ref{tab:apache}.
 
 \begin{table}[h]
 	\centering
@@ -295,23 +295,22 @@ Below we present a schema for our method on collecting the data. Every step whic
 \end{enumerate}
 
 \subsubsection{Data Schema}
-\label{data_schema}
 \label{subsec:data}
 Below we present a schema for what data we will collect with its description. The schema consists of two parts The first,D1-D4, is statistical data that can be used to comparing the two projects with themselves and other open source projects. The second part, D5-D8, is sampling data focusing on the requirements elicitation process of the two projects. A more extensive description and technical definition of each data point can be found in Appendix Y\footnote{TODO}.
 \subparagraph{Statistical Data}
 \begin{enumerate}[label=D\arabic*]
+	\item \emph{Code contributors}
+	
+	How many contributors are there in the project? We define a contributor as someone who has wrote code to the project.
+	\item \emph{Feature proposers}
+	
+	How many proposed new features, that got implemented, to the project? And how were they distributed? 
 	\item \emph{Problem reporters}
 	
 	How many people reported problems they had with the product? And how was the distribution of problem reports over these people? (Did everyone report an equal amount of problems?)
 	\item \emph{Defect repair time}
 	
-	How long did it take for a problem to be considered as an defect? And how long did it take for a reported problem to be repaired? If it was a defect. 
-	\item \emph{Code contributors}
-	
-	How many contributors are there in the project? We define a contributor as someone who has wrote code to the project. 
-	\item \emph{Feature proposers}
-	
-	How many proposed new features, that got implemented, to the project? And how were they distributed? 
+	How long did it take for a problem to be considered as an defect? And how long did it take for a reported problem to be repaired? If it was a defect.
 \end{enumerate}
 \subparagraph{Sample Data}
 \begin{enumerate}[label=D\arabic*]
@@ -363,9 +362,9 @@ To minimise the risk of making manual HTTP-request (in the command prompt) or ma
 TODO
 
 \subsection{Threats to Validity}
-When conducting a case study it is important to select a case that is representable for the researched phenomenon in order to use the results to draw generalised conclusions. If a representable case is not selected this poses a threat to the external validity of the thesis. To minimise this threat we collect the statistical data, D1-D4 in section \ref{data_schema}. This data can be used to compare to other projects and the projects that are researched in the previous studies, \cite{Mockus2002a} and \cite{Noll}.
+When conducting a case study it is important to select a case that is representable for the researched phenomenon in order to use the results to draw generalised conclusions. If a representable case is not selected this poses a threat to the external validity of the thesis. To minimise this threat we collect the statistical data, D1-D4 in section ~\ref{subsec:data}. This data can be used to compare to other projects and the projects that are researched in the previous studies, \cite{Mockus2002a} and \cite{Noll}.
 
-Furthermore it is important when selecting cases that they have similar attributes that are not intended to study. In our study we want to see the differences of the governing body and not size of the project, product type or project age. Ensuring the similarity on these factors would increase the internal validity of our study. This is initially ensured in section\ref{case_selection} and also with the statistical data\footnote{D1-D4 in section \ref{data_schema}} 
+Furthermore it is important when selecting cases that they have similar attributes that are not intended to study. In our study we want to see the differences of the governing body and not size of the project, product type or project age. Ensuring the similarity on these factors would increase the internal validity of our study. This is initially ensured in section~\ref{case_selection} and also with the statistical data\footnote{D1-D4 in section ~\ref{subsec:data}} 
 
 Lastly a threat to validity when conducting a case study is that the researcher affects the results by being in the context for which he/she researches\cite{Oates2005}. This however is not applicable for our case since we are not researching on a present phenomenon but rather on something that is in the past.
 
@@ -373,21 +372,28 @@ Lastly a threat to validity when conducting a case study is that the researcher 
 It has been shown in OSS-projects that the requirement elicitation process is independent of project size\cite{Noll}. We think that this study will find that the process is also independent of a firm or a community being the governing body.
 
 \section{Result}
-\begin{tabular}{ | l | c | r |}
-	\hline
-	& Atom & Neovim \\ \hline
-	Problem reporters & & \\\hline
-	Defect repairers & & \\\hline
-	Defect repair time & & \\\hline
-	Feature developers & & \\\hline
-	Code contributors & & \\\hline
-	Feature proposers & & \\\hline
-	Feature proposals & & \\\hline
-	Feature origin categories & & \\\hline
-	Feature acknowledgement & & \\\hline
-	Final implementation of feature & & \\
-	\hline 
-\end{tabular}
+In this section the results are presented. They are presented in the same order as they occur in section ~\ref{subsec:data}.
+
+\subsection{Statistical Data}
+\subsubsection{Code Contributors}
+D1
+\subsubsection{Feature Proposers}
+D2
+\subsubsection{Problem Reporters}
+D3
+\subsubsection{Defect Repair Time}
+D4 
+
+\subsection{Sample Data}
+\subsubsection{Feature Proposals}
+D5
+\subsubsection{Feature Origin Categories}
+D6
+\subsubsection{Feature Acknowledgement}
+D7
+\subsubsection{First Implementation of Feature}
+D8
+
 \section{Analysis}
 
 \section{Discussion}

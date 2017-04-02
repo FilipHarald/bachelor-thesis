@@ -44,7 +44,8 @@ def analyze_repair_time(repos, datatype, repair_times_data, filename):
         data_dict = {'lowest': repair_array[0],
                      'highest': repair_array[len(repair_array) - 1],
                      'avarage': sum(repair_array) / len(repair_array),
-                     'median': repair_array[int(len(repair_array) / 2)]}
+                     'median': repair_array[int(len(repair_array) / 2)],
+                     'amount': len(repair_array)}
         store(filename, repo, '.txt', data_dict)
 
 

@@ -427,39 +427,57 @@ D4
 For the specified timespan\footnote{TODO: define!} Atom had 303 and Neovim 176 issues with the label bug. 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | c | c |}
+	\begin{tabular}{ | l | c | c | }
 		\hline
 		\textbf{Data Type} 	& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
 		Average 			& 185 		& 128 			\\\hline
 		Median	 		& 65			& 58 				\\\hline
 		Highest			& 1098		& 691			\\\hline
-		Lowest			& <1			& <1		 	\\
-		\hline
+		Lowest			& <1			& <1		 		\\
+		\hline 
 	\end{tabular}
 	\caption{Showing repair time measured in days.}
 \end{table}
 
 \FloatBarrier
 \subsection{Sample Data}
+\subsubsection{Summary}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{User Group} 		& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
+		feature proposals 		& 1 			& 1 				\\\hline
+		categories A	 		& 1			& 1 				\\\hline
+		categories B	 		& 1			& 1 				\\\hline
+		categories C	 		& 1			& 1 				\\\hline
+		core devs	 			& 1			& 1 				\\\hline
+		devs	 				& 1			& 1 				\\\hline						
+		end-users(proposers)	& 1			& 1				\\
+		\hline
+	\end{tabular}
+	\caption{Showing amount of users in user groups.}
+\end{table}
+\FloatBarrier
 \subsubsection{Feature Proposals}
 D5
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | c | c |}
+	\begin{tabular}{ | l | c | c | }
 		\hline
-		\textbf{Username} 	& \textbf{Feature proposals}	& \textbf{User status}	\\\hline
+		\textbf{Username} 	& \textbf{Feature Proposals}	& \textbf{User Status}	\\\hline
 		damieng	 		& 3		 				& core dev.			\\\hline
 		celrenheit	 		& 2		 				& dev.				\\\hline
 		codingbelief	 	& 2		 				& dev.				\\\hline
 		fracalo	 		& 2		 				& dev.				\\\hline
 		mnquintana	 	& 1		 				& core dev.			\\\hline
 		bgriffith	 		& 1		 				& dev.				\\\hline
-		boustanihani	 	& 1		 				& end-user.			\\\hline
 		caleb531	 		& 1		 				& dev.				\\\hline
 		astrojie	 		& 1		 				& dev.				\\\hline
 		alhadis	 		& 1		 				& dev.				\\\hline
 		kevindeleon	 	& 1		 				& dev.				\\\hline
 		MichaelAquiliana	& 1		 				& dev.				\\\hline
+		boustanihani	 	& 1		 				& end-user.			\\\hline
 		jamesonquinn	 	& 1		 				& end-user.			\\\hline
 		jesseleite	 		& 1		 				& end-user			\\\hline
 		karai17	 		& 1		 				& end-user			\\\hline
@@ -486,9 +504,9 @@ D5
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | c | c |}
+	\begin{tabular}{ | l | c | c | }
 		\hline
-		\textbf{Username} 	& \textbf{Feature proposals}	& \textbf{User status}	\\\hline
+		\textbf{Username} 	& \textbf{Feature Proposals}	& \textbf{User Status}	\\\hline
 		bfredl			& 4  						& core dev.			\\\hline
 		justinmk			& 2  						& core dev.			\\\hline
 		tweekmonster 		& 2  						& core dev.			\\\hline
@@ -518,26 +536,90 @@ D5
 \end{table}
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | c | c |}
+	\begin{tabular}{ | l | c | c | }
 		\hline
-		\textbf{Data Type} 	& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
+		\textbf{User Group} 	& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
 		core devs 			& 1 			& 1 				\\\hline
 		devs	 			& 1			& 1 				\\\hline
-		core devs			& 1			& 1				\\\hline
-		feature proposals	& 4			& 6		 		\\
-		\hline 
+		end-users			& 1			& 1				\\
+		\hline
 	\end{tabular}
-	\caption{Showing repair time measured in days.}
+	\caption{Showing amount of users in user groups.}
 \end{table}
 
 \FloatBarrier
 \subsubsection{Feature Origin Categories}
 D6
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | c | c |}
+		\hline
+		\textbf{Proposal Category} 	& \textbf{Atom} 	& \textbf{Neovim}	& \textbf{User Need}			& \textbf{Developer Experience} 	\\\hline
+		A						& 1 			& 1				& 1						& 0					\\\hline
+		B		 				& 1			& 1 				& 0						& 1		 			\\\hline
+		C						& 1			& 1				& 1						& 1					\\
+		\hline
+	\end{tabular}
+	\caption{Showing amount of proposals for each category.}
+\end{table}
+
+\FloatBarrier
 \subsubsection{Feature Acknowledgement}
 D7
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Username} 	& \textbf{Feature Acknowledgements}	& \textbf{User Status}	\\\hline
+		Teddy 			& 2  								& core dev.			\\\hline
+		Filip	 			& 1				 				& dev.				\\\hline
+		Last				& 1		 						& end-user			\\
+		\hline
+	\end{tabular}
+	\caption{Showing Atom users with amount of feature acknowledgements.}
+\end{table}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Username} 	& \textbf{Feature Acknowledgements}	& \textbf{User Status}	\\\hline
+		NeoTeddy 		& 2  								& core dev.			\\\hline
+		NeoFilip			& 3		 						& dev.				\\\hline
+		Last				& 1		 						& end-user			\\
+		\hline
+	\end{tabular}
+	\caption{Showing Neovim users with amount of feature acknowledgements.}
+\end{table}
+
+\FloatBarrier
 \subsubsection{First Implementation of Feature}
 D8
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Username} 	& \textbf{First Feature Implementations}	& \textbf{User Status}	\\\hline
+		Teddy 			& 2  								& core dev.			\\\hline
+		Filip	 			& 1				 				& dev.				\\\hline
+		Last				& 1		 						& end-user			\\
+		\hline
+	\end{tabular}
+	\caption{Showing Atom users with amount of first feature implementations.}
+\end{table}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Username} 	& \textbf{First Feature Implementations}	& \textbf{User Status}	\\\hline
+		NeoTeddy 		& 2  								& core dev.			\\\hline
+		NeoFilip			& 3		 						& dev.				\\\hline
+		Last				& 1		 						& end-user			\\
+		\hline
+	\end{tabular}
+	\caption{Showing Neovim users with amount of first feature implementations.}
+\end{table}
 
+\FloatBarrier
 \section{Analysis}
 
 \section{Discussion}

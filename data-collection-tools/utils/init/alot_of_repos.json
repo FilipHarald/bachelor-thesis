@@ -1,0 +1,72 @@
+[
+    {
+        "color": "\u001b[91m",
+        "bug": "bug",
+        "enhancement": "feature",
+        "name": "meteor/meteor",
+        "key": "met"
+    },
+    {
+        "color": "\u001b[92m",
+        "bug": "bug",
+        "enhancement": "enhancement",
+        "name": "expressjs/express",
+        "key": "exp"
+    },
+    {
+        "color": "\u001b[93m",
+        "bug": "bug",
+        "enhancement": "enhancement",
+        "name": "pallets/flask",
+        "key": "flask"
+    },
+    {
+        "color": "\u001b[94m",
+        "bug": "kind/bug",
+        "enhancement": "kind/enhancement",
+        "name": "Microsoft/TypeScript",
+        "key": "ts"
+    },
+    {
+        "color": "\u001b[95m",
+        "bug": "bug",
+        "enhancement": "suggestion",
+        "name": "docker/docker",
+        "key": "d"
+    },
+    {
+        "color": "\u001b[96m",
+        "bug": "bug",
+        "enhancement": "enhancement",
+        "name": "jashkenas/coffeescript",
+        "key": "cs"
+    },
+    {
+        "color": "\u001b[97m",
+        "bug": "bug",
+        "enhancement": "feature-request",
+        "name": "Microsoft/vscode",
+        "key": "vsc"
+    },
+    {
+        "color": "\u001b[98m",
+        "bug": "starter bug",
+        "enhancement": "enhancement",
+        "name": "adobe/brackets",
+        "key": "br"
+    },
+    {
+        "color": "\u001b[92m",
+        "bug": "bug",
+        "enhancement": "enhancement",
+        "name": "atom/atom",
+        "key": "aa"
+    },
+    {
+        "color": "\u001b[96m",
+        "bug": "bug",
+        "enhancement": "enhancement",
+        "name": "neovim/neovim",
+        "key": "nv"
+    }
+]

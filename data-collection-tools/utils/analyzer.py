@@ -13,11 +13,12 @@ def get_distribution(dict):
     tot_keys = len(dict)
     sum_values = sum(dict.values()) if sum(dict.values()) > 0 else 1
     sorted_values = sorted(dict.values())
-    output['y'] = [0, sum_values]
+    output['y'] = np.linspace(0, sum_values, num=100)
     output['x'] = []
-    for i in range(1, 101):
+    for i in range(0, 100):
         n = math.ceil(tot_keys * i/100)
         output['x'].append(sum(islice(sorted(sorted_values), n)) / sum_values*100)
+    print(output['x'])
     return output
 
 
@@ -25,7 +26,7 @@ def analyze_users(repo, dict, label, datatype):
     output = [repo['color'] + repo['name'], 'Unique users (' + datatype + '): ' + str(len(dict)),
               'Amount of ' + datatype + ': ' + str(sum(dict.values()))]
     dist_data = get_distribution(dict)
-    plt.plot(np.arange(dist_data['y'][0], dist_data['y'][1], dist_data['y'][1]/100), dist_data['x'], label=label)
+    plt.plot(dist_data['y'], dist_data['x'], label=label)
     return '\n'.join(output)
 
 

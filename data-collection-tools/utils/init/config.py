@@ -53,8 +53,8 @@ def init_2(new_repos):
     """
     print('\033[91m**  Initializing config (method 2)  **')
     for repo in new_repos:
-        repo['since'] = "1388577600"  # 01 Jan 2014
-        repo['until'] = "1401580800"  # 01 Jun 2014
+        repo['since'] = "1451606400"  # 01 Jan 2016
+        repo['until'] = "1464739200"  # 01 Jun 2016
     print('**  Init done!  **\033[0m')
     return new_repos
 

@@ -19,9 +19,9 @@ def get_issues_data(g, repo_name, since, until, labels):
     return unique_users
 
 
-def get_defect_repair_time(g, repo_name, since, until):
-    labels = [g.get_repo(repo_name).get_label("bug")]
-    issues = g.get_repo(repo_name).get_issues(since=since, labels=labels, state='closed')
+def get_defect_repair_time(g, repo, since, until):
+    labels = [g.get_repo(repo['name']).get_label(repo['bug'])]
+    issues = g.get_repo(repo['name']).get_issues(since=since, labels=labels, state='closed')
     repair_times = []
     for issue in issues:
         if int(issue.closed_at.strftime('%s')) < until:
@@ -45,7 +45,7 @@ def run(g, config):
                               repo_name=repo['name'],
                               since=since,
                               until=until,
-                              labels=[g.get_repo(repo['name']).get_label("bug")])
+                              labels=[g.get_repo(repo['name']).get_label(repo['bug'])])
         problem_reporters_data[repo['name']] = {}
         problem_reporters_data[repo['name']]['problem_reporters_dict'] = pr_dict
         fp_dict = cache.cache(get_issues_data,
@@ -54,13 +54,13 @@ def run(g, config):
                               repo_name=repo['name'],
                               since=since,
                               until=until,
-                              labels=[g.get_repo(repo['name']).get_label("enhancement")])
+                              labels=[g.get_repo(repo['name']).get_label(repo['enhancement'])])
         feature_proposers_data[repo['name']] = {}
         feature_proposers_data[repo['name']]['feature_proposers_dict'] = fp_dict
         repair_times = cache.cache(get_defect_repair_time,
                                    key=file_name + '_' + repo['key'] + '_repair_times',
                                    g=g,
-                                   repo_name=repo['name'],
+                                   repo=repo,
                                    since=since,
                                    until=until,)
         repair_times_data[repo['name']] = {}

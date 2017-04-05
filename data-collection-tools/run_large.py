@@ -15,7 +15,7 @@ if os.path.exists(repos_file):
         new_repos = json.load(file)
     config.repos = config.init_2(new_repos)
     code_contributors.run(g=g, config=config)
-    # other_contributors.run(g=g, config=config)
+    other_contributors.run(g=g, config=config)
 else:
     print('repos_file :' + repos_file + ' does not exist')
 

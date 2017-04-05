@@ -27,9 +27,9 @@
 \let\rempage=\thepage
 {
 \renewcommand{\thepage}{\relax}
-\begin{picture}(44,0)(15,10)%
-\special{psfile=mahlogo-name.eps}
-\end{picture}%
+\begin{figure}
+	\includegraphics[width=0.18\textwidth]{mahlogo-name}
+\end{figure}
 
 \vspace*{-30mm}
 \hfill\begin{minipage}[t]{10em}\large
@@ -297,13 +297,13 @@ Below we present a schema for what data we will collect with its description. Th
 \begin{enumerate}[label=D\arabic*]
 	\item \emph{Code contributors}
 	
-	How many contributors are there in the project? We define a contributor as someone who has wrote code to the project.
+	How many contributors are there in the project, and what is their distribution? We define a contributor as someone who has wrote code to the project.
 	\item \emph{Feature proposers}
 	
-	How many proposed new features, that got implemented, to the project? And how were they distributed? 
+	How many proposed new features, that got implemented, to the project, and what is their distribution? And how were they distributed? 
 	\item \emph{Problem reporters}
 	
-	How many people reported problems they had with the product? And how was the distribution of problem reports over these people? (Did everyone report an equal amount of problems?)
+	How many people reported problems they had with the product, and what is their distribution? And how was the distribution of problem reports over these people? (Did everyone report an equal amount of problems?)
 	\item \emph{Defect repair time}
 	
 	How long did it take for a problem to be considered as an defect? And how long did it take for a reported problem to be repaired? If it was a defect.
@@ -372,46 +372,84 @@ It has been shown in OSS-projects that the requirement elicitation process is in
 In this section the results are presented. They are presented in the same order as they occur in section~\ref{subsec:data}.
 
 \subsection{Statistical Data}
+
 \subsubsection{Code Contributors}
-D1
+The amount of code contributors were similar for the two projects as seen in table~\ref{tab:contributors_amount}. Around 5\% of the code contributors did approximately 90\% of the contributions, as seen in figures~\ref{fig:commits_dist},~\ref{fig:additions_dist} and~\ref{fig:deletions_dist}. There is also a significant difference between amounts of commits between the two projects, figure ~\ref{fig:commits_dist}. And there is a similarity in amount of additions and deletions in LoC, figures~\ref{fig:additions_dist} and~\ref{fig:deletions_dist}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Data Type} 		& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
+		Amount of contributors	& ?			& ?		 		\\
+		\hline 
+	\end{tabular}
+	\caption{Showing amount of code contributors.}
+	\label{tab:contributors_amount}
+\end{table}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{commits_dist}
 	\caption{Commits distribution}
+	\label{fig:commits_dist}
 \end{figure}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{additions_dist}
-	\caption{Additions distribution}
+	\caption{Additions distribution}	
+	\label{fig:additions_dist}
 \end{figure}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{deletions_dist}
 	\caption{Deletions distribution}
+	\label{fig:deletions_dist}
 \end{figure}
 
 \FloatBarrier
-\subsubsection{Feature Proposers}
-D2
+\subsubsection{Feature Proposers \& Problem Reporters}
+The amount of feature proposers were ? for the two projects as seen in table~\ref{tab:other_contributors}. The amount of problem reporters were ? for the two projects as seen in table~\ref{tab:other_contributors}. A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in figures~\ref{fig:feature_proposers} and ~\ref{fig:problem_reporters}.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Data Type} 			& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
+		Amount of feature proposers	& ?			& ?		 		\\\hline
+		Amount of problem reporters	& ?			& ?		 		\\
+		\hline 
+	\end{tabular}
+	\caption{Showing amount of feature proposers.}
+	\label{tab:other_contributors}
+\end{table}
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{feature_proposers_dist}
 	\caption{Distribution of feature proposals over users.}
+	\label{fig:feature_proposers}
 \end{figure}
-
-\FloatBarrier
-\subsubsection{Problem Reporters}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{problem_reporters_dist}
 	\caption{Distribution of problem reports over users.}
+	\label{fig:problem_reporters}
 \end{figure}
 
 \FloatBarrier
 \subsubsection{Defect Repair Time}
-D4
+To two projects differed in the amount of defects repaired and the repair time. With Atom having almost twice as many defects, seen in table ~\ref{tab:defects} and a longer repair time, seen in table~\ref{tab:repair_times}.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | c | c | }
+		\hline
+		\textbf{Data Type} 	& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
+		Amount defects		& 303		& 153		 	\\
+		\hline 
+	\end{tabular}
+	\caption{Showing amount of reported defects.}
+	\label{tab:defects}
+\end{table}
 
-For the specified timespan\footnote{TODO: define!} Atom had 303 and Neovim 176 issues with the label bug. 
 \begin{table}[h]
 	\centering
 	\begin{tabular}{ | l | c | c | }
@@ -424,6 +462,7 @@ For the specified timespan\footnote{TODO: define!} Atom had 303 and Neovim 176 i
 		\hline 
 	\end{tabular}
 	\caption{Showing repair time measured in days.}
+	\label{tab:repair_times}
 \end{table}
 
 \FloatBarrier

@@ -2,8 +2,9 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
-|`2017-04-2`|9|X|X|Results, analyzing how results should be presented|
-|`2017-04-1`|6|X|X|Researching (sample data from issuetracker and forums)|
+|`2017-04-04`|5|X|X|Polishing background and methodology|
+|`2017-04-02`|9|X|X|Results, analyzing how results should be presented|
+|`2017-04-01`|6|X|X|Researching (sample data from issuetracker and forums)|
 |`2017-03-31`|5|X||Methodology and research utilities (Sample template)|
 |`2017-03-30`|5|X||Introduction corrections|
 |`2017-03-30`|7|X||Methodology and research utilities (Data definitions)|

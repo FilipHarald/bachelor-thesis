@@ -26,6 +26,7 @@ def analyze_users(repo, dict, label, datatype):
               'Amount of ' + datatype + ': ' + str(sum(dict.values()))]
     dist_data = get_distribution(dict)
     plt.plot(dist_data['y'], dist_data['x'], label=label)
+    # plt.plot(dist_data['x'], label=label)
     return '\n'.join(output)
 
 

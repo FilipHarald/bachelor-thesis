@@ -15,10 +15,9 @@ def get_distribution(dict):
     sorted_values = sorted(dict.values())
     output['y'] = np.linspace(0, sum_values, num=100)
     output['x'] = []
-    for i in range(0, 100):
+    for i in range(1, 101):
         n = math.ceil(tot_keys * i/100)
         output['x'].append(sum(islice(sorted(sorted_values), n)) / sum_values*100)
-    print(output['x'])
     return output
 
 

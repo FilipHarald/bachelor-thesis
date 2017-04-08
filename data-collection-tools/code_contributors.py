@@ -1,22 +1,47 @@
+import json
 import os
 from collections import defaultdict
 from datetime import datetime
 
 from utils import cache, analyzer
 from utils.pretty_printer import nc_print
+from utils.init import config
+from github.GithubException import RateLimitExceededException
 
 file_name = os.path.basename(__file__)  # file cache key
+json_file = os.path.join(os.path.dirname(__file__), os.pardir) + 'commits_counter.json'
 
 
 def get_contributors_data(g, repo_name, since, until):
+    try:
+        commits = g.get_repo(repo_name).get_commits(since=since, until=until)
+        commit_data = get_commits_data(commits)
+    except RateLimitExceededException:
+        print("RATE LIMIT EXCEEDED TRYING WITH NEW ACCOUNT")
+        g = config.get_other_g(g)
+        commits_rest = g.get_repo(repo_name).get_commits(since=since, until=until)
+        with open(json_file, "r") as file:
+            counter = json.load(file)
+        one = commits[:counter]
+        two = commits_rest[counter:]
+        print(type(one))
+        new_commits = one + two
+        commit_data = get_commits_data(new_commits)
+    return commit_data
+
+
+def get_commits_data(commits):
     unique_users = defaultdict(int)
     addition_dict = defaultdict(int)
     deletion_dict = defaultdict(int)
-    commits = g.get_repo(repo_name).get_commits(since=since, until=until)
+    counter = 0
     for commit in commits:
+        with open(json_file, 'w') as file:
+            json.dump(counter, file)
         unique_users[commit.commit.author.name] += 1
         addition_dict[commit.commit.author.name] += commit.stats.additions
         deletion_dict[commit.commit.author.name] += commit.stats.deletions
+        counter += 1
     return {'commits_dict': unique_users,
             'additions_dict': addition_dict,
             'deletions_dict': deletion_dict}

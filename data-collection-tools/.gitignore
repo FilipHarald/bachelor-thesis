@@ -1,3 +1,4 @@
-*credentials.json
+*credentials*.json
+*commits_counter*.json
 *__pycache__*
 *.idea*

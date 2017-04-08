@@ -22,8 +22,8 @@
     },
     {
         "color": "\u001b[95m",
-        "bug": "bug",
-        "enhancement": "suggestion",
+        "bug": "kind/bug",
+        "enhancement": "kind/enhancement",
         "name": "docker/docker",
         "key": "d"
     },

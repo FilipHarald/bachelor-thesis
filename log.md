@@ -2,6 +2,8 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-04-08`|6|X||Final fix to code|
+|`2017-04-06`|1|X|X|Supervisor meeting|
 |`2017-04-04`|5|X|X|Polishing background and methodology|
 |`2017-04-02`|9|X|X|Results, analyzing how results should be presented|
 |`2017-04-01`|6|X|X|Researching (sample data from issuetracker and forums)|

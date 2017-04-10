@@ -163,10 +163,10 @@ The second highly relevant article\cite{Noll} requirements elicitation in open s
 %Communicate to the reader that what WE are doing has not been done just yet. 
 The articles together summarize the differences between open-source projects in different aspects. Audris Mokus, Roy T Fielding and James D Herbsleb investigate two case studies from which they try to form theories on what it is that defines OSS-projects. They conclude the study by comparing their results with commercial, proprietary, projects\cite{Mockus2002a}. John Noll and Wei-Ming Liu on the other hand  investigate the differences in requirement elicitation between large and small OSS-projects\cite{Noll}. These project are the closest and most reliable sources we could find in the comparison with focus on the difference between requirement elicitation in firm driven OSS project and community driven OSS project.
 
-%TODO: Shortly describe structure of report
+%Shortly describe structure of report
+The remainder of this paper is organised as follows: the next sub section will present the research questions; the next section will explain methods for similar studies and present the chosen method for this study; next are the results; they are followed by an analysis and discussion of their implications; lastly we present a conclusion and suggestions for future work.
 
-\subsection{Research Question}
-%Describe how this study will contribute to a solution or solve it completely
+\subsection{Research Question} 
 \begin{enumerate}[label=RQ\arabic*]
 	\item \emph{What are the characteristics of community-driven OSS development?}
 	\item \emph{What are the characteristics of firm-driven OSS development?}
@@ -382,7 +382,7 @@ The amount of code contributors were similar for the two projects as seen in tab
 	\begin{tabular}{ | l | c | c | }
 		\hline
 		\textbf{Data Type} 		& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
-		Amount of contributors	& ?			& ?		 		\\
+		Amount of contributors	& 128		& 113		 	\\
 		\hline 
 	\end{tabular}
 	\caption{Showing amount of code contributors.}
@@ -396,15 +396,33 @@ The amount of code contributors were similar for the two projects as seen in tab
 \end{figure}
 \begin{figure}[!h]
 	\centering
+	\includegraphics[width=0.7\textwidth]{all_commits_dist}
+	\caption{Commits distribution for other popular OSS-projects}
+	\label{fig:all_commits_dist}
+\end{figure}
+\begin{figure}[!h]
+	\centering
 	\includegraphics[width=0.7\textwidth]{additions_dist}
 	\caption{Additions distribution}	
 	\label{fig:additions_dist}
 \end{figure}
 \begin{figure}[!h]
 	\centering
+	\includegraphics[width=0.7\textwidth]{all_additions_dist}
+	\caption{Additions distribution for other popular OSS-projects}
+	\label{fig:all_additions_dist}
+\end{figure}
+\begin{figure}[!h]
+	\centering
 	\includegraphics[width=0.7\textwidth]{deletions_dist}
 	\caption{Deletions distribution}
 	\label{fig:deletions_dist}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{all_deletions_dist}
+	\caption{Deletions distribution for other popular OSS-projects}
+	\label{fig:all_deletions_dist}
 \end{figure}
 
 \FloatBarrier
@@ -415,8 +433,8 @@ The amount of feature proposers were ? for the two projects as seen in table~\re
 	\begin{tabular}{ | l | c | c | }
 		\hline
 		\textbf{Data Type} 			& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
-		Amount of feature proposers	& ?			& ?		 		\\\hline
-		Amount of problem reporters	& ?			& ?		 		\\
+		Amount of feature proposers	& 108		& 50		 		\\\hline
+		Amount of problem reporters	& 230		& 141		 	\\
 		\hline 
 	\end{tabular}
 	\caption{Showing amount of feature proposers.}
@@ -431,9 +449,21 @@ The amount of feature proposers were ? for the two projects as seen in table~\re
 \end{figure}
 \begin{figure}[!h]
 	\centering
+	\includegraphics[width=0.7\textwidth]{all_feature_proposers_dist}
+	\caption{Distribution of feature proposals over users for other popular OSS-projects.}
+	\label{fig:all_feature_proposers}
+\end{figure}
+\begin{figure}[!h]
+	\centering
 	\includegraphics[width=0.7\textwidth]{problem_reporters_dist}
 	\caption{Distribution of problem reports over users.}
 	\label{fig:problem_reporters}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{all_problem_reporters_dist}
+	\caption{Distribution of problem reports over users for other popular OSS-projects.}
+	\label{fig:all_problem_reporters}
 \end{figure}
 
 \FloatBarrier
@@ -444,7 +474,7 @@ The two projects differed in the amount of defects repaired and the repair time.
 	\begin{tabular}{ | l | c | c | }
 		\hline
 		\textbf{Data Type} 	& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
-		Amount defects		& 303		& 153		 	\\
+		Amount defects		& 271		& 148		 	\\
 		\hline 
 	\end{tabular}
 	\caption{Showing amount of reported defects.}
@@ -456,9 +486,9 @@ The two projects differed in the amount of defects repaired and the repair time.
 	\begin{tabular}{ | l | c | c | }
 		\hline
 		\textbf{Data Type} 	& \textbf{Atom} 	& \textbf{Neovim}	\\\hline
-		Average 			& 185 		& 128 			\\\hline
-		Median	 		& 65			& 58 				\\\hline
-		Highest			& 1098		& 691			\\\hline
+		Average 			& 200 		& 151 			\\\hline
+		Median	 		& 81			& 82 				\\\hline
+		Highest			& 1098		& 807			\\\hline
 		Lowest			& <1			& <1		 		\\
 		\hline 
 	\end{tabular}

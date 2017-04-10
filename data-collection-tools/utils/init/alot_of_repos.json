@@ -21,16 +21,9 @@
         "key": "flask"
     },
     {
-        "color": "\u001b[94m",
+        "color": "\u001b[95m",
         "bug": "kind/bug",
         "enhancement": "kind/enhancement",
-        "name": "Microsoft/TypeScript",
-        "key": "ts"
-    },
-    {
-        "color": "\u001b[95m",
-        "bug": "bug",
-        "enhancement": "suggestion",
         "name": "docker/docker",
         "key": "d"
     },
@@ -40,13 +33,6 @@
         "enhancement": "enhancement",
         "name": "jashkenas/coffeescript",
         "key": "cs"
-    },
-    {
-        "color": "\u001b[97m",
-        "bug": "bug",
-        "enhancement": "feature-request",
-        "name": "Microsoft/vscode",
-        "key": "vsc"
     },
     {
         "color": "\u001b[98m",

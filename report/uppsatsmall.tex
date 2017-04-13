@@ -519,8 +519,8 @@ In previous section Statistical Data \ref{stat_data} we described statistical da
 In this section we will present to you the sampel data that we have collected from the Atom project and the Neovim project. The diffrent data categories that we have investigated are described in \ref{subsec:data}.
 
 \subsubsection{Feature Proposals (D5)}
-The results of feature proposals displayed in table 5 and 6 shows the amount of proposals made by individual users categorised in core developers, contributing developers and end users. From this data we can summarize that there where a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers where in the Atom project a total of 12 in contrast to the Neovim project which had 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
-In table 7 we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) where 2 in the Atom project and  7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category contributing developers (dev) where Atom had a total of 9 unique contributing developers and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users came from  proposals from end users\footnote{We need to explain what we define as a end user} did not where only unique events where Atom had 4 end users proposing features and Neovim had a total of 3.
+The results of feature proposals displayed in Table \ref{Proposals:Atom} and \ref{Proposals:Neovim} shows the amount of proposals made by individual users categorised in core developers, contributing developers and end users. From this data we can summarize that there where a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers where in the Atom project a total of 12 in contrast to the Neovim project which had 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
+In Table \ref{Proposals:Groups} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) where 2 in the Atom project and  7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category contributing developers (dev) where Atom had a total of 9 unique contributing developers and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users came from  proposals from end users\footnote{We need to explain what we define as a end user} did not where only unique events where Atom had 4 end users proposing features and Neovim had a total of 3.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{ | l | c | c | }
@@ -545,6 +545,7 @@ In table 7 we can also see the number of unique users that that proposed a featu
 		\hline
 	\end{tabular}
 	\caption{Showing Atom users with amount of feature proposals.}
+	\label{Proposals:Atom}
 \end{table}
 
 \begin{table}[h]
@@ -575,6 +576,7 @@ In table 7 we can also see the number of unique users that that proposed a featu
 		\hline
 	\end{tabular}
 	\caption{Showing Neovim users with amount of feature proposals.}
+	\label{Proposals:Neovim}
 \end{table}
 \begin{table}[h]
 	\centering
@@ -587,6 +589,7 @@ In table 7 we can also see the number of unique users that that proposed a featu
 		\hline
 	\end{tabular}
 	\caption{Showing amount of feature proposers in user groups.}
+	\label{Proposals:Groups}
 \end{table}
 
 \FloatBarrier
@@ -608,7 +611,7 @@ Presented in this section are the result for proposals in category A, B and C de
 
 \FloatBarrier
 \subsubsection{Feature Acknowledgement (D7)}
-The two tables (12 and 13) below presents sample data for feature acknowledgement\ref{subsec:data}. The tables includes data regarding unique user status (contributing developer or core developer), the amount of features they have acknowledge during the time period and the unique username. Table 12 presents sample data from the Atom project and table 13 present sample data from the Neovim project.
+The two tables \ref{Acknowledgements:atom, Acknowledgements:Neovim} below presents sample data for feature acknowledgement\ref{subsec:data}. The tables includes data regarding unique user status (contributing developer or core developer), the amount of features they have acknowledge during the time period and the unique username. Table 12 presents sample data from the Atom project and table 13 present sample data from the Neovim project.
 
 \begin{table}[h]
 	\centering
@@ -631,6 +634,7 @@ The two tables (12 and 13) below presents sample data for feature acknowledgemen
 		\hline
 	\end{tabular}
 	\caption{Showing Atom users with amount of feature acknowledgements.}
+	\label{Acknowledgements:atom}
 \end{table}
 \begin{table}[h]
 	\centering
@@ -649,6 +653,7 @@ The two tables (12 and 13) below presents sample data for feature acknowledgemen
 		\hline
 	\end{tabular}
 	\caption{Showing Neovim users with amount of feature acknowledgements.}
+	\label{Acknowledgements:Neovim}
 \end{table}
 
 \FloatBarrier
@@ -700,25 +705,34 @@ This section presents the collected sample data for whom a first feature impleme
 \FloatBarrier
 \newpage
 \section{Analysis}
+In the previous section, we presented and described the results from our statistical and sampel data gathering that we have conducted.
 In this section we will analyse our results presented in the previous section. The analysis consist of three parts: validate the selection of cases, identify similarities and differences in requirement elicitation process and other findings.
 
 \subsection{Validate Selection of Cases}
 
 \subsection{Identify Similarities and Differences from Sample Data}
-In general, participants in a open sources show a strong sense of engagement in, and ownership of, the project, without having any reward for the engagement. This is shown throughout both the Atom project and the Neovim project, in this engagement we have found certain differences and similarities in feature proposals, origin, acknowledgement and in the first implementation of a feature. 
-In the process of proposing new features the projects 
-
-sense of engagement in, and ownership of, the project, as the fol- lowing excerpt from a posting by one of the OpenEMR core users illustrates:
-
+In general, participants in a open source software development show a strong sense of engagement in, and ownership of, the project, without having any particular reward for the time they spent on contributing to the development. In the case of Atom and Neovim there are no exceptions however within this engagement among participants we have seen certain differences and similarities within feature proposals, origin, acknowledgement and in the first implementation of a feature the engagement among participants. 
 
 % Feature Proposals
-	%implementation took under a day to implement no time when the proposal 
+The results from feature proposals shows us the amount of proposals made by individual users categorised in core developers, peripheral developers and end users. From this data we can summarize that there where a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from peripheral developers where a total of 12 in the Atom project in contrast to the Neovim project which had a total of 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
+
+We can also see the number of unique users that proposed a feature in each category for each project.The total amount of unique users among core developers where 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category peripheral developers where Atom had a total of 9 and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users.
 
 % Feature Origin
+Looking into the sample data for feature origin it where clear in both cases that the majority of proposal originated from a developer's personal experience or knowledge of user needs, 72,7 \% in the Atom Project and 66,7 \% in the Neovim Project. There where 9.1 \% proposals coming from end users in the atom project and 2,2 \% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim hade 1,1 \% feature proposals. 
 
 % Feature Acknowledgement
+Acknowledgment of features are the singel most interesting aspect of the sampel data. The findings that we have made here are that core developers 
+Regarding the acknowledgement of features we did findings that where not ex
 
 % First Implementation of feature
+
+	%implementation took under a day to implement no time when the proposal 
+ 	%Time to implementation in the aspects of the proposer
+
+
+\footnote{Link the numbers to data tables and explanations}
+
 
 
 
@@ -726,6 +740,7 @@ sense of engagement in, and ownership of, the project, as the fol- lowing excerp
 
 \newpage
 \section{Discussion}
+One could argue if there are a point in putting energy into
 In this section we will discuss our results analysis
 
 \newpage

@@ -278,7 +278,7 @@ The second study,~\cite{Noll}, is also an case study on OSS-projects. But instea
 	\begin{tabular}{ | p{0.9\textwidth} |}
 		\hline
 		\begin{enumerate}
-			\item Identify the set of features delivered for OpenEMR after release 2. 8. 0, up to and including release 2. 9. 0.
+			\item Identify the set of features delivered for OpenEMR after release 2.8.0, up to and including release 2.9.0.
 			\item Select a subset of these features for examination.
 			\item Examine Internet resources related to OpenEMR, such as archives of discussion forums, the OpenEMR issue database, the OpenEMR ''tracker'' on Sourceforge. net, and other online forums, to discover when the feature was first proposed, and what role the person proposing the feature played (such as user or developer).
 			\item Determine the initial implementation of the feature (prototype by a developer, patch submitted to the tracker, or enhancement committed directly to the codebase).
@@ -357,10 +357,10 @@ Below we present a schema for our method on collecting the data. Every step whic
 \end{enumerate}
 
 \subsubsection{Tools}
-In our research we make use of two tools that needs further explanation. They are the Github API and the scripts that we programmed for the purpose of this research. First we describe the Github API, then we will describe the scripts.
+In our research we make use of two tools that needs further explanation. They are the Github API\footnote{Application Programming Interface} and the scripts that we programmed for the purpose of this research. First we describe the Github API, then we will describe the scripts.
 
 % Explain Github API
-In order to retrieve the desired data from the two projects we will use the Github API\footnote{Application Programming Language}. This is a service offered by Github for users to programatically extract, and to some extent process, data hosted on Github. The API is accessible with the use of HTTPl\footnote{Hyper Text Transfer Protocol, one of the most common protocols used on the Internet today.}. The API have different addresses, called end-points, for different kinds of data. Our research requires us to make use of multiple end-points to have enough data. Our used end-points will be described in Appendix X\footnote{TODO}.
+In order to retrieve the desired data from the two projects we will use the Github API. This is a service offered by Github for users to programatically extract, and to some extent process, data hosted on Github. The API is accessible with the use of HTTPl\footnote{Hyper Text Transfer Protocol, one of the most common protocols used on the Internet today.}. The API have different addresses, called end-points, for different kinds of data. Our research requires us to make use of multiple end-points to have enough data. Our used end-points will be described in Appendix X\footnote{TODO}.
 
 % Explain the constructed scripts
 To minimise the risk of making manual HTTP-request (in the command prompt) or manual processing of data. We wrote scripts to automate as much as possible. The scripts are written in the programming language Python. Our scripts are described in Appendix X\footnote{TODO}.
@@ -393,7 +393,7 @@ In this section the results from the methods specified in section~\ref{sec:metho
 \subsection{Statistical Data}
 \label{stat_data}
 
-\subsubsection{Code Contributors}
+\subsubsection{Code Contributors (D1)}
 The amount of code contributors were similar for the two projects as seen in Table~\ref{tab:contributors_amount}. Around 5\% of the code contributors did approximately 90\% of the contributions, as seen in Figures~\ref{fig:commits_dist},~\ref{fig:additions_dist} and~\ref{fig:deletions_dist}. There is also a difference between amounts of commits between the two projects, Figure~\ref{fig:commits_dist}. And there is a similarity in amount of additions and deletions in LoC, Figures~\ref{fig:additions_dist} and~\ref{fig:deletions_dist}. Compared to other popular OSS-projects both Atom and Neovim can be considered similar as seen in Tables~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist} and~\ref{fig:all_deletions_dist}.
 
 \begin{table}[h]
@@ -445,7 +445,7 @@ The amount of code contributors were similar for the two projects as seen in Tab
 \end{figure}
 
 \FloatBarrier
-\subsubsection{Feature Proposers \& Problem Reporters}
+\subsubsection{Feature Proposers \& Problem Reporters (D2 \& D3)}
 The amount of feature proposers were 108 for the two projects as seen in Table~\ref{tab:other_contributors}. The amount of problem reporters were 50 for the two projects as seen in Table~\ref{tab:other_contributors}. A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in Figures~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Compared to other popular OSS-projects Atom and Neovim can be considered similar as seen in Tables~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters_dist}.
 \begin{table}[h]
 	\centering
@@ -486,7 +486,7 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
 \end{figure}
 
 \FloatBarrier
-\subsubsection{Defect Repair Time}
+\subsubsection{Defect Repair Time (D4)}
 The two projects differed in the amount of defects repaired and the repair time. With Atom having almost twice as many defects, seen in Table~\ref{tab:defects} and a longer repair time, seen in Table~\ref{tab:repair_times}.
 \begin{table}[h]
 	\centering

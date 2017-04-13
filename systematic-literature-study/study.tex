@@ -1,0 +1,93 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                			% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}
+
+\usepackage[UKenglish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\usepackage[section]{placeins}
+
+\title{Systematic Literature Study}
+\author{Teddy Andersson (ae5701) and Filip Harald (ae8556)}
+
+\begin{document}
+\maketitle
+\newpage
+To ensure that our thesis is credible we first have to make sure that we are well informed on the subject we're researching. In order to do this we've performed a systematic literature review. which is presented in this document.
+
+When searching we used three different databases: \emph{ACM Digital Library} (\texttt{ACM}), \emph{IEEE Xplore Digital Library} (\texttt{IEEE}) and \emph{Google Scholar} (\texttt{GOOGLE}). The first two, \texttt{ACM} and \texttt{IEEE}, are well-known within the area of computer science and they were used for searching for articles using keywords and search phrases. The last, \texttt{GOOGLE}, was used for forward and backward snowballing.
+
+When searching in \texttt{ACM} and \texttt{IEEE} we used different combinations of keywords and sometimes filters to refine the search. As we read more papers on the subject the list of keywords was extended. We used the following keywords: \emph{''open source'', open, source, success, software, development, community, requirements, corporate, firm, project, ''case study''} and \emph{case, study}. Used search phrases with their results are presented in table~\ref{tab:results}.
+
+\begin{table}[!h]
+	\begin{tabular}{ | l | c | c | c |}
+		\hline
+		\textbf{Search Phrase} 								& \textbf{Filters}			& \textbf{\texttt{ACM}} 	& \textbf{\texttt{IEEE}}	\\\hline
+		''open source'' AND success			 				& - 						& 333 				& 330				\\\hline
+		''open source'' AND success	 						& only matching in title		& 6 					& 21					\\\hline
+		open AND source AND software AND development	 		& - 						& 2618 				& 260				\\\hline
+		open AND source AND software AND development	 		& only matching in title		& 99 					& 0					\\\hline
+		open AND source AND development AND community	 	& - 						& 1129 				& 684				\\\hline
+		open AND source AND development AND community	 	& only matching in title		& 25 					& 0					\\\hline
+		open AND source AND development AND requirements	 	& - 						& 734 				& 137				\\\hline
+		open AND source AND development AND requirements	 	& only matching in title		& 5 					& 0					\\\hline		
+		''open source'' AND corporate AND project		 		& - 						& 1689 				& 28					\\\hline
+		''open source'' AND corporate AND project		 		& only matching in title		& 67 					& 0					\\\hline
+		''open source'' AND firm AND project				 		& - 						& 20 					& 2264				\\\hline
+		''open source'' AND firm AND project				 		& only matching in title		& -					& 45					\\\hline
+		''open source'' AND firm AND community				 	& - 						& 14 					& 1412				\\\hline
+		''open source'' AND firm AND community				 	& only matching in title		& 0 					& 39					\\\hline
+		''open source'' AND corporate AND project AND community	& - 						& 540 				& 0					\\\hline
+		''open source'' AND corporate AND project AND community	& only matching in title		& 15 					& 0					\\\hline
+		case AND study\footnotemark							& only matching in title		& 384 				& 156				\\\hline
+	\end{tabular}
+	\caption{Used search phrases and filters and amount of results.}
+	\label{tab:results}
+\end{table}
+
+\FloatBarrier
+\footnotetext{We read through most of these even though they were more than 100}
+When the amount of search results were maximum 100 we went through the studies titles and abstracts to determine if the study could be relevant. If so, we read the rest of the report and if it was in fact relevant we added it to our reference manger, Mendely. From the studies in the results we also looked at their references to see if they were relevant.
+
+For all studies that was added to Mendeley we used \texttt{GOOGLE} to snowball more studies. This was done in three parts for every study: (1) search for all references used in the study, (2) search for all studies that referenced to the study and (3) search for more studies written by the same author(s). Searches in \texttt{GOOGLE} sometimes generated a huge amount of results and also the results did not always have the article itself available for download. In those cases we used \texttt{ACM} and \texttt{IEEE} to limit the result or find the article.
+
+For all our studies added to Mendeley we performed an analysis of the study were highlighted important sections, statements and wrote our own summary. All our relevant studies are presented in table~\ref{tab:relevant}.
+
+\begin{table}[!h]
+	\begin{tabular}{  p{0.8\textwidth}  p{0.2\textwidth} }
+		\hline
+		\textbf{Name of Article}	& \textbf{How it was found}	\\\hline
+		A Case Study of Open Source software Development: the Apache server	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		A first step towards translating evidence into practice: Heart failure in a community practice-based research network & ?	\\\hline
+		Agila projektledningsmetoder och motivation & \texttt{GOOGLE}	\\\hline
+		An analysis of requirements evolution in open source projects: recommendations for issue trackers	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		Balancing act: community and local requirements in an open source development process	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		Case Study Research: Design and Methods	& Snowballed	\\\hline
+		Challenges and recommendations for the design and conduct of global software engineering courses: A systematic review	& ?	\\\hline
+		Classifying Developers into Core and Peripheral: An Empirical Study on Count and Network Metrics	& Personal recommendation 	\\\hline
+		Comparative Case Studies	& Snowballed	\\\hline
+		Evolution in open source software: a case study	& ?	\\\hline
+		Exploring the Structure of Complex Software Designs: An Empirical Study of Open Source and Proprietary Code	& Snowballed	\\\hline
+		Free/Libre open-source software development	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		From a Firm-Based to a Community-Based Model of Knowledge Creation: The Case of the Linux Kernel Development	& Snowballed	\\\hline
+		How Can Open Source Software Development Help Requirements Management Gain the Potential of Open Innovation: An Exploratory Study	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		How Google Works	& ?	\\\hline
+		Inflow and Retention in OSS Communities with Commercial Involvement	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		Information systems success in free and open source software development: Theory and measures	& Snowballed	\\\hline
+		Innovation Model : Issues for Organization Science Open Source Software and the ? Private-Collective ? Innovation Model : Issues for Organization Science	& Snowballed	\\\hline
+		Open Sources: Voices from the Open Source Revolution	& Snowballed	\\\hline
+		Outsourcing to an Unknown Workforce: Exploring Opensourcing as a Global Sourcing Strategy	& ?	\\\hline
+		Peripheral Developer Participation in Open Source Projects	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		Requirements acquisition in open source development: Firefox 2.0	& Snowballed	\\\hline
+		Requirements elicitation in open source software development: a case study	& Course literature from previous course	\\\hline
+		Researching information systems and computing	& \texttt{ACM} or \texttt{IEEE}	\\\hline
+		Software Psychology: The Need for an Interdisciplinary Program	& Snowballed	\\\hline
+		The agile manifesto	& \texttt{GOOGLE}	\\\hline
+		Two case studies of open source software development: Apache and Mozilla	& Snowballed	\\\hline
+		Why do users contribute to firm-hosted user communities? The case of computer-controlled music instruments	& Personal recommendation	\\\hline
+	\end{tabular}
+	\caption{Shows the names of the articles relevant to our thesis and how they were found.}
+	\label{tab:relevant}
+\end{table}
+\end{document}

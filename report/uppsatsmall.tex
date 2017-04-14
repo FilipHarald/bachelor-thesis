@@ -463,7 +463,7 @@ The amount of code contributors were similar for the two projects as seen in Tab
 
 \FloatBarrier
 \subsubsection{Feature Proposers \& Problem Reporters (D2 \& D3)}
-The amount of feature proposers were 108 for the two projects as seen in Table~\ref{tab:other_contributors}. The amount of problem reporters were 50 for the two projects as seen in Table~\ref{tab:other_contributors}. A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in Figures~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Compared to other popular OSS-projects Atom and Neovim can be considered similar as seen in Tables~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters_dist}.
+The amount of feature proposers were 108 for the two projects as seen in Table~\ref{tab:other_contributors}. The amount of problem reporters were 50 for the two projects as seen in Table~\ref{tab:other_contributors}. A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in Figures~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Compared to other popular OSS-projects Atom and Neovim can be considered similar as seen in Tables~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{ | l | c | c |}
@@ -499,7 +499,7 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
 	\centering
 	\includegraphics[width=0.5\textwidth]{all_problem_reporters_dist}
 	\caption{Distribution of problem reports over users for other popular OSS-projects.}
-	\label{fig:all_problem_reporters_dist}
+	\label{fig:all_problem_reporters}
 \end{figure}
 
 \FloatBarrier
@@ -730,7 +730,10 @@ This section presents the collected sample data for whom a first feature impleme
 In the previous section, we presented and described the results from our statistical and sampel data gathering that we have conducted.
 In this section we will analyse our results presented in the previous section. The analysis consist of three parts: validate the selection of cases, identify similarities and differences in requirement elicitation process and other findings.
 
-\subsection{Validate Selection of Cases}
+\subsection{Validity of Selected Cases}
+From the results we can identify two things. First, the two projects are similar in size on a number of aspects, as seen in Table~\ref{tab:contributors_amount} and Figures~\ref{fig:additions_dist},~\ref{fig:deletions_dist},~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Second, the distribution of the gathered statistical data are very similar both between the projects, but also compared to other popular OSS-projects as seen in Figures~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist},~\ref{fig:all_deletions_dist},~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}. With this information the two selected projects can be considered suitable for comparison on requirement elicitation.
+
+The difference in amounts of commits as seen in Figure~\ref{fig:commits_dist} could, as mentioned before in section~\ref{sec:case_selection}, be a difference in how the two projects use commits.
 
 \subsection{Identify Similarities and Differences from Sample Data}
 
@@ -742,10 +745,10 @@ The results from feature proposals shows us the amount of proposals made by indi
 We can also see the number of unique users that proposed a feature in each category for each project.The total amount of unique users among core developers where 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category peripheral developers where Atom had a total of 9 and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users.
 
 % Feature Origin
-Looking into the sample data for feature origin it where clear in both cases that the majority of proposal originated from a developer's personal experience or knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There where 9.1\% proposals coming from end users in the atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim hade 1,1\% feature proposals.
+Looking into the sample data for feature origin it where clear in both cases that the majority of proposal originated from a developer's personal experience or knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There where 9.1\% proposals coming from end users in the atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% feature proposals.
 
 % Feature Acknowledgement
-Acknowledgment of features are the singel most interesting aspect of the sampel data. The findings that we have made here are that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgements came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that makes these numbers interesting. First several peripheral developers in both projects have the authorities to acknowledge a feature for implementation without a core developers involvement, to our known knowledge. The Second interesting finding are the fact that the Atom project driven by Github~\ref{subsec:case:atom} allow more than half of their features to be acknowledge by peripheral developers outside of the central group of core developers described in \ref{subsec:background} while the Neovim project only have 14,5\% acknowledgments from. Furthermore the developers in the Atom project that made the most acknowledgements where peripheral developers while the Neovim project hade core developers in the top. Potential reasons for this great number of acknowledgement from peripheral developers are discussed in~\ref{section:discussion}. We also found that there are a significant spread among acknowledgement from unique developers in the projects, in the Neovim the core developer ''justinmk'' stands for 44,4\% of the acknowledgement while the highest developer ''fracalo'' in the Atom project stands for 18,2\%.
+Acknowledgment of features are the single most interesting aspect of the sample data. The findings that we have made here are that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgements came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that makes these numbers interesting. First several peripheral developers in both projects have the authorities to acknowledge a feature for implementation without a core developers involvement, to our known knowledge. The Second interesting finding are the fact that the Atom project driven by Github~\ref{subsec:case:atom} allow more than half of their features to be acknowledge by peripheral developers outside of the central group of core developers described in \ref{subsec:background} while the Neovim project only have 14,5\% acknowledgments from. Furthermore the developers in the Atom project that made the most acknowledgements where peripheral developers while the Neovim project had core developers in the top. Potential reasons for this great number of acknowledgement from peripheral developers are discussed in~\ref{section:discussion}. We also found that there are a significant spread among acknowledgement from unique developers in the projects, in the Neovim the core developer ''justinmk'' stands for 44,4\% of the acknowledgement while the highest developer ''fracalo'' in the Atom project stands for 18,2\%.
 
 % First Implementation of feature
 

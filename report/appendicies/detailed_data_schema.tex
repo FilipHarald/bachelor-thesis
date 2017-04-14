@@ -1,0 +1,38 @@
+\section{Detailed Data Schema for Statistical Data}
+\label{ap:detail_data}
+In this appendix we will give a detailed description for how we define each of the data type presented in the thesis. Before presenting the definitions we will explain some Git-terms.
+
+\subsection*{Git-terms}
+Git is, as mentioned in the thesis, a version control system. Below we present the Git-terms used to present the data schema definitions.
+
+\begin{itemize}
+	\item\texttt{commit}
+
+	A set of changes to the source code. The \texttt{commit} always has an author and an ID, typically a message describing the \texttt{commit} is also included.
+	\item\texttt{issue}
+
+	An \texttt{issue} is a suggestion for improvement, task or question related to the project. An \texttt{issue} can be created by anyone. An \texttt{issue} can have the status \texttt{open} or \texttt{closed}.
+
+	\item\texttt{label}
+
+	An \texttt{issue} can optionally also have one or many \texttt{label}s. A \texttt{label} provides meta data to the \texttt{issue}. Projects can define their own labels, popular \texttt{label}s are for example \texttt{duplicate}, \texttt{enhancement} and \texttt{bug}.
+\end{itemize}
+
+\subsection*{Code contributor}
+Any author of a \texttt{commit} to the project is a code contributor.
+\subsection*{Feature proposer}
+Any author of an \texttt{issue} to the project with the following criterias: (1) the \texttt{issue} is \texttt{label}ed as an enhancement, (2) the \texttt{issue} is not labeled as a duplicate and (3) the \texttt{issue} is \texttt{closed}.
+\begin{enumerate}
+	\setcounter{enumi}{1}
+	\item If there are two \texttt{issues} proposing the same thing. One of them is labeled as a duplicate. We only need to count the one that is not.
+	\item To ensure that the \texttt{issue} is in fact not a duplicate it needs to already be \texttt{closed}. This means that a user has seen the issue, and if it is a duplicate the user would have labeled it as such.
+\end{enumerate}
+\subsection*{Problem reporters}
+Any author of a problem report which we define as an \texttt{issue} to the project with the following criterias: (1) the \texttt{issue} is \texttt{label}ed as an bug, (2) the \texttt{issue} is not labeled as a duplicate and (3) the \texttt{issue} is \texttt{closed}.
+\begin{enumerate}
+	\setcounter{enumi}{1}
+	\item If there are two \texttt{issues} reporting the same thing. One of them is labeled as a duplicate. We only need to count the one that is not.
+	\item To ensure that the \texttt{issue} is in fact not a duplicate it needs to already be \texttt{closed}. This means that a user has seen the issue, and if it is a duplicate the user would have labeled it as such.
+\end{enumerate}
+\subsection*{Defect repair time}
+Defect repair time is the time between the creation of a problem report and when it was \texttt{closed}.

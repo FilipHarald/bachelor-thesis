@@ -2,6 +2,9 @@
 
 | Date | Time (hours) | Filip | Teddy | Description |
 | ---- |:------------:|:-----:|:-----:|:----------- |
+|`2017-04-15`|6|X||Appendicies and assignment 2|
+|`2017-04-14`|7|X||Appendicies and systematic literature study|
+|`2017-04-13`|6|X|X|Started on analysis|
 |`2017-04-12`|5|X||Data analysis and corrections to report|
 |`2017-04-08`|6|X||Final fix to code|
 |`2017-04-06`|1|X|X|Supervisor meeting|

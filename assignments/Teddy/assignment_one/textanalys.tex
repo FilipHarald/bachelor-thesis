@@ -1,0 +1,131 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                			% See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}
+
+\usepackage[parfill]{parskip}    			% Begin paragraphs with an empty line rather than an indent
+
+\usepackage[swedish]{babel}			% Swedish
+\usepackage[T1]{fontenc}				% Swedish
+\usepackage[latin1]{inputenc}			% Swedish
+%\usepackage{amssymb}
+
+\title{Textanalysuppgift 1}
+\author{Filip Harald, ae8556}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+\section{Requirements Elicitation in Open Source Software Development: A Case Study}
+\subsection{Sammanfattning}
+I \cite{Noll2010} g�r f�rfattarna en j�mf�relse mellan tv� OSS\footnote{Open Source Software}-projekt f�r att f�rs�ka hitta liknelser i hur kravst�llningen p� projekten g�rs. Artikeln p�visar att tidigare forskning som gjorts p� stora OSS-projekt har kommit fram till f�ljande. Ist�llet f�r att unders�ka behoven fr�n slutanv�ndarna och dokumentera dessa i en specifikation, sedan analysera dessa och validera specifikationen, s� antar utvecklarna att ett specifikt krav finns och implementerar funktionalitet f�r det. Dessutom s� dokumenteras �ven kraven oftast informellt, och validering sker mellan utvecklare snarare �n gentemot slutanv�ndarna.
+
+Med tidigare forskning som grund vill f�rfattarna se om kravst�llningsprocessen �r den samma f�r mindre OSS-projekt. De anv�nder sig av samma metod som \cite{Noll2008} f�r att sedan �ven kunna j�mf�ra med dess resultat. I b�da studierna g�r de en fallstudie av projekten. I fallstudien identifierar de �ndringar och funktioner som implementerats i en version av programmet. Sedan f�rs�ker de g� bak�t och hitta var id�en f�rst f�reslogs och hur den best�mdes att den skulle  implementeras. I \cite{Noll2010} har forskarna medvetet valt ett mindre OSS-projekt, OpenEMR. OpenEMR skiljer sig dessutom gentemot de tidigare unders�kta projekten genom att slutanv�ndaren troligen inte �r en utvecklare. OpenEMR �r en elektronisk medicinsk journal. I \cite{Noll2008} unders�ks webbl�saren Firefox vilket utvecklare skulle kunna vara en slutanv�ndare av.
+
+F�rfattarna kom fram till att OpenEMR, precis som den tidigare studien av Firefox, f�ljer f�ljande m�nster f�r kravst�llning. Utvecklarna antar de flesta kraven; n�gra f�resl�s av anv�ndare; inga var influerade av konkurrerande produkter. Validering och dokumentering av krav sker oftast i inofficiella diskussioner online mellan utvecklare. F�rfattarna noterar �ven att det �r ett ''f�rv�nande'' stort antal av bidrag av id�er fr�n slutanv�ndare i projektet. De menar att OSS-projekt oftast antas f� sin innovation fr�n utvecklare.
+
+
+\subsection{Textanalys}
+\subsubsection{Inneh�ll}
+Artikeln skrevs av John Noll och Wei-Ming Liu \cite{Noll2010}. John Noll publicerade sin f�rsta artikel 1991 \cite{Angeles1991}. Under �ren 2010-2015 har han bl.a. skrivit 4 vetenskapliga artiklar\cite{Noll2010, Monasor2014a, Monasor2014, Clear2015} p� temat OSS och GSD\footnote{Global Software Development}. Wei-Ming Lius tidigare arbeten har p� omr�det skiljt sig fr�n \cite{Noll2010}. De artiklarna har en mer teknisk pr�gel och syftar till att utforma, f�rb�ttra eller testa algoritmer \cite{Li,Yang2011}.
+
+\cite{Noll2010} publicerades i \emph{''FLOSS-3 workshop\footnote{Proceedings of the 3rd International Workshop on Emerging Trends in Free/Libre/Open Source Software Research and Development}''}. Workshoppen syftade till att analysera konkurrerande OSS-projekt f�r att identifiera bl.a.: hur projekten styrs, hur social och teknisk kommunikation sker mellan och inom projekten, hur eventuell korporativ p�verkan sker och hur beroenden och �teranv�ndning sker mellan projekten. J�mf�relsen som g�rs mellan de tv� projekten i \cite{Noll2010} g�r att den var l�mplig att publicera i detta forum.
+
+Artikeln anv�nder artikeln anv�nder sig av ett spr�k med f� fackliga termer och ett enkelt akademiskt spr�k. Vilket g�r att den kan f�rst�s av l�sare fr�n olika kategorier. Artikeln l�mpar sig dock mer �t anv�ndare av OSS-system �n forskare och akademiker. Man f�r n�stan k�nslan av att man kan anv�nda artikeln som ett underlag f�r ens tillv�gag�ngss�tt f�r att p�verka ett OSS-projekt. Eftersom forskarna har anv�nt sig av en fallstudie f�r att g�ra j�mf�relsen �r det ocks� l�mpligt att de presenterar sina observationer p� ett mer vardagligt s�tt. Detta kan j�mf�ras med att om de hade gjort empiriska studier, fr�n vilka de hade kunnat dra mer generella slutsatser.
+
+Man f�r inte k�nslan av att artikeln �r vinklad eller skriven med ett motiv att p�verka l�saren. Med det sagt, s� garanterar inte f�rfattarna sin objektivitet i fr�gan. Dock kan man i metodavsnittet se f�ljande: ''\emph{The investigation of each feature was performed by the second author and checked by the first author. In the case of disagreement, differences were discussed and a final determination agreed.}''. Detta bevisar n�dv�ndigtvis inte f�rfattarnas objektivitet.
+
+I studien har f�rfattarna 34 st referenser, 1-25 �r referenser till meddelanden som skrivits p� \emph{sourceforge.net}. Merparten av dem �r inte l�ngre tillg�ngliga vilket g�r det sv�rt att granska deras resultat. Dock �r deras vetenskapliga p�st�ende alltid grundade i tidigare studier som utg�rs av referenser 26-34. Bland k�llorna �r merparten orienterade artiklar inom omr�det OSS, men �ven fler fallstudier av ''open-source''-projekt till exempel \emph{Apache server, Mozilla och OpenEMR}. F�rfattarna har inkluderat merparten av den litteratur som finns p� �mnet och det finns inget behov att komplettera referenslistan.
+
+Artikeln har en relativt smal ansats d� den endast fokuserar p� vissa attribut fr�n ett visst projekt. Detta kan fr�mst motiveras av att resultaten anv�nds f�r att j�mf�ra med resultat fr�n den tidigare studien p� Firefox\cite{Noll2008}. F�rfattarna har fokuserat p� att j�mf�ra ursprunget f�r de id�er som l�g till grund f�r den inf�rda funktionaliteten. De har dock inte med en j�mf�relse av de krav som inte genomf�rdes. De kan ha medvetet uteslutit det ur artikeln eftersom det kanske inte �r n�gon skillnad, men det n�mns i vilket fall inte.
+
+\subsubsection{Form och struktur}
+
+Artikeln har f�ljande avsnitt: abstract, inledning, metod, resultat, slutsats, erk�nnanden. Avsnittet resultat tar upp mer �n h�lften av artikelns 6 sidor, metod tar upp 1 sida, och �vriga avsnitt ungef�r en halv sida var. F�rfattarna har valt att g�ra underrubriker f�r resultatavsnittet. Det g�r att hela artikeln k�nns l�ttl�st. F�rfattarna har med m�nga exempel p� deras sammanst�llda resultat vilket g�r att man under l�sandet av avsnittet n�stan drar samma slutsats som de senare g�r. Detta kan vara en m�jlig anledning till deras uppl�gg. Dessutom talar dessa resultat f�r att det finns en liknelse mellan stora och sm� OSS-projekt, vilket kanske va vad f�rfattarna ville se.
+
+Inledning, metod, resultat och slutsats �r skrivna s� att de kan l�sas f�r sig sj�lva, man g�r inga antaganden eller h�nvisningar till andra avsnitt. Texten i artikeln kan ses som formell men �ven l�ttl�st i det avseendet att inga fackliga eller sv�ra tekniska termer anv�nds. Detta kan, som tidigare n�mnt, bero p� detta �r ett �mne som borde intressera slutanv�ndare, av OSS-projekt, som vill p�verka utvecklingen av ett system. Dessa �r inte n�dv�ndigtvis inte familj�ra med akademiska texter. F�rfattarna anv�nder preteritum i samtliga avsnitt f�rutom abstract, d�r anv�nds presens.
+
+I avsnitten metod och resultat anv�nds \emph{vi-form} det ger en k�nsla av att vi utf�r studien tillsammans med f�rfattarna, texten blir �ven enklare att l�sa. I �vriga avsnitt anv�nds passiv form vilket g�r det enkelt att identifiera de olika p�st�enden som g�rs. Referenserna kommer ofta i direkt anslutning till ett p�st�ende, det g�r det l�tt att att f�rst� i vilken referens de har hittat det. De har anv�nt sig av Oxford-standarden f�r att referera. Som tidigare n�mnt s� �r deras webbreferenser inte l�ngre tillg�ngliga d� de �r gamla forum-inl�gg som tagits bort.
+
+Artikeln verkar ha anv�nt \LaTeX standardformatering f�r artiklar. F�rutom att en kandidatuppsatsen l�mpligen skrivs utan tv� spalter per sida s� kan artikelns layout och formatering anv�ndas vid skrivande av uppsatsen.
+
+
+\newpage
+\section{An Analysis of Requirements Evolution in Open Source Projects: Recommendations for Issue Trackers}
+\subsection{Sammanfattning}
+I \cite{Heck2013} unders�ker f�rfattarna m�ngden dubbletter av f�rslag p� funktionalitet i OSS\footnote{Open Source Software}-projekts �rendehanteringssystem. F�rfattarna unders�ker �ven vad det finns f�r orsaker till att dessa f�rslag skapas flera g�nger. Unders�kningarna g�rs genom en unders�kande studie och en fallstudie f�r en rad OSS-projekt. I artikeln identifierar f�rfattarna olika �rendehanteringssystem. Github och Google Code n�mns de beskrivs som genomarbetade och dess funktionalitet beskrivs. F�rfattarna f�rklarar att merparten av de unders�kta OSS-projekten anv�nder Bugzilla som �rendehanteringssystem.
+
+I studien unders�ks dubbletter av f�rslag p� funktionalitet fr�n 14 olika OSS-projekt. Innan avsnittet ''Research Strategy'' presenterar forskarna hur m�nga dubbletter av f�rslag p� funktionalitet som finns i varje projekt. Denna data har de tagit fram genom att s�ka p� alla �renden som har taggats med ''duplicate'', eller liknande, i respektive projekts tracking system. Vidare s� presenterar forskarna att de valt att g�ra en fallstudie p� ett av projekten, Apache HTTPD, som de bed�mer har en strikt policy f�r hur man ger f�rslag p� funktionalitet. De n�mner olika kriterier f�r vad som ska anses som en ''�kta'' dubblett och �ven n�gra fr�gest�llningar kring den. T.ex. ''var rapporterades den f�rst?'' och ''var det n�gon skillnad i tid mellan de olika f�rslagen?''.  Senare i samma avsnitt ber�ttar f�rfattarna att de valt att anv�nda samma teknik p� ytterligare 5 projekt.
+
+F�rfattarna g�r vidare i artikeln med att presentera olika kategorier av dubbletter och beskriva dem. Det visas �ven en tabell f�r resultatet fr�n fallstudierna d�r samtliga projekts dubbletter presenteras under sina respektive kategorier. Under samma  rubrik, ''Categorization'', analyserar och diskuterar f�rfattarna resultatet av deras datainsamling och kategorisering. Under rubriken ''Further Observations'' presenterar f�rfattarna observationer de gjort under studien. Bl.a. att sidor som kr�ver att anv�ndaren unders�ker om det redan finns ett f�rslag har l�gre antal dubbletter, att det �r sv�rt att s�kert veta om man skapar en dubblett och att det inte finns ett bra s�tt att enkelt representera f�rh�llanden mellan f�rslag och dubletter.
+
+F�rfattarna g�r vidare med att presentera f�rslag p� hur man kan undvika dubbletter vid s�kande och skapande av f�rslag. Och dessutom ger f�rslag p� verktyg som kan anv�ndas av �rendehanteringssystemen f�r att minimera antalet dubbletter. De diskuterar �ven efter detta sina resultat, vad de kan inneb�ra och relaterar dem till tidigare arbeten.
+
+Slutligen knyter de an till sina forskningsfr�gor genom att f�resl� fortsatt forskning. De passar �ven p� att styrka sin validitet och n�mner att deras verktyg g�r att applicera p� projekt som inte �r OSS. I sammanfattningen s�ger de vad de har gjort i studien och s�ger vad de ska g�ra f�r framtida arbete p� omr�det.
+
+\subsection{Textanalys}
+\subsubsection{Inneh�ll}
+Artikeln �r skriven av Petra Heck och Andy Zaidman. Petra Heck har innan \cite{Heck2013} publicerat 12 olika artiklar.Ut av dem �r det ungef�r h�lften som kan knytas till kravframst�llning och kravhantering. Ingen av de 12 kan kopplas till OSS. Andy Zaidman har innan \cite{Heck2013} publicerat fler �n 20 artiklar d�r mer �n h�lften �r kopplade till OSS. Och merparten av dem �r �ven kopplade till kravhantering. Det �r sv�rt att hitta en direkt motivering till varf�r de skriver den mer �n att de verkar vara intresserade av det omr�det.
+
+Artikeln publicerades i \emph{Proceedings of the International Workshop on Principles of Software Evolution}. Eftersom artikeln behandlar just problematik som kan uppst� under evolutionen av ett system s� passar den utm�rkt in i n�mnda workshop. Det n�mns inte n�got i artikeln som motiverar att artikeln skrevs vid just den tidpunkten.
+
+Artikeln �r skriven med mycket vardagligt tal och det �r sv�rt att motivera f�r att den ska riktas mot n�got annat �n intresserad allm�nhet. De begrepp och organisationer som introduceras f�rklaras oftast f�r l�saren �ven om det inte alltid �r s�.
+
+Artikeln �r inte objektivt skriven. Man f�r en k�nsla av att f�rfattarna anv�nder artikeln f�r att rekommendera l�saren till vilka metoder och verktyg som �r bra f�r att undvika problemet de introducerar oss till. De har en underrubrik, \emph{6.2 Validity}, d�r de vill styrka sin validitet. Men det g�rs bristf�lligt och dessutom s� n�mner de tv� saker som de under studien inte har validerat.
+
+De har sammanlagt 29 k�llor varav 3 �r deras egna tidigare arbeten. Samtliga k�llor �r korrekt anv�nda i texten och de har dessutom varit noggranna med att styrka varje p�st�ende med en k�lla. Samtliga k�llor �r dessutom vetenskapliga artiklar.
+
+Artikeln har en v�ldigt bred ansats. F�rfattarna f�rs�ker ge rekommendationer p� tillv�gag�ngss�tt f�r att l�sa m�nga olika fr�gor. Det �r sv�rt att f� en r�d tr�d n�r man l�ser artikeln. Man f�r inte uppfattningen av att n�got utel�mnas p� grund av den breda ansatsen. D�remot s� k�nns den slarvigt komponerad och den har sv�rt att ge trov�rdighet att resultaten �r korrekta.
+
+\subsubsection{Form och struktur}
+Artikelns 10 sidor �r f�rdelade �ver f�ljande avsnitt: abstract, introduction, open source requirements, duplicate feature requests, assisting user to avoid duplicate requests, related work, discussion and future work och conclusion. Avsnitten abstract och introduction �r de enda som kan l�sas frist�ende
+
+Artikeln �r skriven i preteritum, �ven om artikeln �r r�rig s� hj�lper valet av tempus att g�ra det lite mer l�ttl�st. Dessutom �r f�rfattarna konsekventa med att anv�nda vi-form vilket ger en k�nsla av att vi som l�sare �r delaktiga i arbetet.
+
+Som tidigare n�mnt styrker f�rfattarna sina p�st�enden med en referens. Detta g�r direkt efter p�st�endet. Inte efter stycket. Oxford-standarden anv�nds f�r att lista referenserna.
+
+Artikeln verkar ha anv�nt \LaTeX standardformatering f�r artiklar. F�rutom att en kandidatuppsatsen l�mpligen skrivs utan tv� spalter per sida s� kan artikelns layout och formatering anv�ndas vid skrivande av uppsatsen.
+
+
+\newpage
+\section{Balancing Act: Community and Local Requirements In an Open Source Development Process}
+\subsection{Sammanfattning}
+F�rfattaren inleder med att f�rklara f�r l�saren att OSS\footnote{Open Source Software}-system anv�nds flitigt inom universitetsv�rlden. Dessutom ser de en trend i att universitet �ven deltar i eller initierar utvecklingen av dessa system. Trots denna trend av allt fler bidrag till OSS-projekt fr�n universitet. S� ser man fortfarande ett behov av en strukturell process som m�jligg�r att universitet kan koordinera OSS-projekt b�ttre. F�rfattaren n�mner �ven problematiken som uppst�r n�r system som utvecklas inte l�ngre har alla sina slutanv�ndare p� samma geografiska plats. Som praktiskt exempel tar man upp Sakai-projektet\footnote{Ett OSS-projekt f�r att bedriva online-undervisning.}, vilket st�r inf�r dessa utmaningar.
+
+Vidare s� introduceras l�saren till tv� olika kravframst�llningsprocesser, den etablerade- och den agila processen. De sammanfattas kort och j�mf�rs sinsemellan. F�rfattaren framh�ver att den agila processen i st�rre utstr�ckning ger utrymme till att anpassa produkten f�r slutanv�ndaren genom dialog med slutanv�ndaren. Detta har dock kommit att bli ett problem i OSS-projekt eftersom utvecklarna �r geografiskt distribuerade och f�r sv�rt att uppr�tth�lla en kontinuerlig kommunikation med slutanv�ndaren.
+
+F�rfattaren presenterar verktyget JIRA som anv�nds i Sakai-projektet f�r att hantera f�rslag p� ny och f�r�ndrad funktionalitet. �ven om JIRA �r �ppet f�r slutanv�ndarna att se historiken och f�rh�llandena mellan kraven. S� beskrivs en process d�r oftast en utvecklaren ger f�rslagen p� beg�ran av en slutanv�ndare. Men f�r att engagera slutanv�ndaren s� skickar Sakai-projektet �rligen ut en lista p� krav f�r slutanv�ndare att r�sta p� vilka de �nskar f� implementerade. Och dessutom g�rs det f�rhandsvisningar p� funktionalitet som implementeras f�r att f� in feedback fr�n anv�ndarna.
+
+F�rfattaren avslutar med att s�ga att samla in och f�rst� behoven hos en distribuerad grupp slutanv�ndares behov fortfarande �r tidskr�vande och omr�det har stort behov av f�rb�ttringar.
+
+\subsection{Textanalys}
+\subsubsection{Inneh�ll}
+F�rfattaren Owen G. McGarth, fr�n U.C. Berkeley, har, innan denna artikeln, publicerat tre artiklar. Inga av dem p� temat OSS eller kravhantering. I artikeln n�mns det att det s.k. Sakai: Gradebook ursprungligen var ett system p� U.C. Berekely som integrerats i Sakai. M�jligtvis var det i samband med detta f�rfattaren introducerades till OSS.
+
+\cite{McGrath2006} publicerades i \emph{Proceedings of the 34th annual ACM SIGUCCS fall conference: expanding the boundaries}. M�ssan syftar till att uppt�cka ny mark och nya s�tt att jobba. Kanske var detta anledningen till att den publicerades i detta forum.
+
+Texten i artikeln h�ller en h�g akademisk kvalit�. Samtidigt har f�rfattaren �ven utformat artikeln s� att l�saren enkelt kan f�rst� den utan f�rkunskapskrav eller insikt i �mnet. Artikeln �r skriven f�r de akademiker som jobbar i Sakai-projektet eller de som vill introduceras i det.
+
+F�rfattaren garanterar inte l�saren sin objektivitet, men artikeln �r skriven p� ett objektivt och trov�rdigt s�tt.
+
+F�rfattaren anv�nder sig av tre olika typer av referenser hemsidor, publicerade vetenskapliga artiklar och l�rob�cker. Hemsidorna anv�nds inte som k�llor utan refererar endast till de verktyg som anv�nds i projektet och n�mns i artikeln. De vetenskapliga artiklarna och l�rob�ckerna anv�nds f�r att styrka ett p�st�ende i texten och �r korrekt formaterade
+
+Artikeln har en smal ansats, den f�rs�ker endast belysa den problematik som finns i kravinsamlingsprocessen i OSS-projekt. Dessutom relaterar bara artikeln till ett projekt, Sakai, vilket g�r ansatsen �nnu smalare. Man kan tro att f�rfattaren vill genom denna smala ansats f�rs�ka uppmuntra l�saren till att forts�tta forskning i kunskapsluckan som identifieras. Denna teori f�rst�rks ytterligare av att f�rfattaren l�gger energi p� att beskriva Sakai-projektet till l�saren.
+
+\subsubsection{Form och struktur}
+Den 5 sidor l�nga artikeln f�rdelas p� f�ljande avsnitt. Abstract, Inledning, Requirements Approaches (tillv�gag�ngss�tt f�r framst�llning av krav), Community Software (gemenskaps mjukvara), Sammanfattning. L�ngden p� styckena �r j�mnt f�rdelade och trots den korta artikeln lyckas f�rfattaren bra med att formulera problemet, beskriva dom�nen f�r problemet och f�resl� fortsatt forskning.
+
+De olika avsnitten skulle kunna l�sas frist�ende i det avseendet att de inte bygger p� varandra. Dock s� finns det inte tillr�ckligt mycket information i respektive avsnitt att det skulle vara givande att l�sa dem var och en f�r sig.
+
+F�rfattaren anv�nder sig konsekvent av preteritum. Det ger en enkel l�supplevelse. Artikeln �r snarare en litteraturstudie och f�rfattaren utf�r ingen unders�kning varf�r varken vi eller du f�rekommer i texten. Det g�r inte att man som l�sare inte k�nner sig delaktig i studien. Med det sagt s� k�nner man sig heller inte exkluderad utan n�got mellan de tv�.
+
+F�rfattaren styrker alltid sina p�st�enden, direkt efter, med en k�lla. Oxford-standarden anv�nds f�r k�llhantering och det �r enkelt att �terkoppla till den refererade litteraturen.
+
+Artikeln verkar ha anv�nt \LaTeX standardformatering f�r artiklar. F�rutom att en kandidatuppsatsen l�mpligen skrivs utan tv� spalter per sida s� kan artikelns layout och formatering anv�ndas vid skrivande av uppsatsen.
+
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

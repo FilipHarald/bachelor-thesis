@@ -315,7 +315,7 @@ In the following sections we present the approach for conducting our case study.
 \label{subsec:sources}
 Several data sources have been used to collect different type of data for this thesis. The biggest source of data for this thesis is Github, a web-based version-control and collaboration platform for software developers, which have provided us with data from both Atom- and Neovim-project. The data is for example, project participants, developer discussions, contribution history and feature suggestions. Data form Github have been used in two occasions. The first occasion are gathering of statistical data from the Github API for both Atom and Neovim, the second occasion are gathering of sample data from Atom and Neovim. The data gathering for the occasions are presented in section~\ref{subsec:data}.
 
-Too further prove the liability in the Github sample data we have also turned to Atom and Neovims forums for development discussions. Within these forums proposals for features and issues alongside with instructions and tips to the users can be found. Atom uses its own discussion forum that can be found on their official website~\cite{atom_wp}. Neovim on the other hand use Reddit~\cite{neovimreddit}, a social news aggregation, web content rating, and discussion website, and Github as discussion channels. The gathering of this sample data are presented in section~\ref{subsec:data}.
+Too further prove the liability in the Github sample data we have also turned to Atom and Neovims forums for development discussions. Within these forums proposals for features and issues alongside with instructions and tips to the users can be found. Atom uses its own discussion forum that can be found on their official website~\cite{atom_wp}. Neovim on the other hand use both Reddit\footnote{Reddit is a social news aggregation, web content rating, and discussion website~\cite{reddit}} and Github as discussion channels. The gathering of this sample data are presented in section~\ref{subsec:data}.
 
 \subsubsection{Data Schema}
 \label{subsec:data}
@@ -741,16 +741,67 @@ In general, participants in a open source software development show a strong sen
 % Feature Proposals
 The results from feature proposals shows us the amount of proposals made by individual users categorised in core developers, peripheral developers and end users. From this data we can summarize that there where a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from peripheral developers where a total of 12 in the Atom project in contrast to the Neovim project which had a total of 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | c | }
+		\hline
+		\\
+		In Neovim around 50\% of the feature proposals was from core developers. \\In Atom they were only 20\%.\\
+		\\
+		\hline
+	\end{tabular}
+	\label{tab:more_devs_in_neovim_analysis}
+\end{table}
+
 We can also see the number of unique users that proposed a feature in each category for each project.The total amount of unique users among core developers where 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category peripheral developers where Atom had a total of 9 and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users.
 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | c | }
+		\hline
+		\\
+		The amount of suggestions per user is approximately the same for the two projects.\\
+		\\
+		\hline
+	\end{tabular}
+	\label{tab:same_suggestions_analysis}
+\end{table}
+
 % Feature Origin
-Looking into the sample data for feature origin it where clear in both cases that the majority of proposal originated from a developer's personal experience or knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There where 9.1\% proposals coming from end users in the atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% feature proposals.
+Looking into the sample data for feature origin it was in both cases clear that the majority of proposals originated from a developer's personal experience or his knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There where 9.1\% proposals coming from end users in the Atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% of the feature proposals.
 
 % Feature Acknowledgement
-Acknowledgment of features are the single most interesting aspect of the sample data. The findings that we have made here are that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgements came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that makes these numbers interesting. First several peripheral developers in both projects have the authorities to acknowledge a feature for implementation without a core developers involvement, to our known knowledge. The Second interesting finding are the fact that the Atom project driven by Github~\ref{subsec:case:atom} allow more than half of their features to be acknowledge by peripheral developers outside of the central group of core developers described in \ref{subsec:background} while the Neovim project only have 14,5\% acknowledgments from. Furthermore the developers in the Atom project that made the most acknowledgements where peripheral developers while the Neovim project had core developers in the top. Potential reasons for this great number of acknowledgement from peripheral developers are discussed in~\ref{section:discussion}. We also found that there are a significant spread among acknowledgement from unique developers in the projects, in the Neovim the core developer ''justinmk'' stands for 44,4\% of the acknowledgement while the highest developer ''fracalo'' in the Atom project stands for 18,2\%.
+Acknowledgment of features are the single most interesting aspect of the sample data. In our results we can see that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgements came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that makes these numbers interesting. First several peripheral developers in both projects have the authorities to acknowledge a feature for implementation, for what we can see, without a core developers involvement. The Second interesting finding is the fact that the Atom project allow more than half of their features to be acknowledge by peripheral developers while the Neovim project only have 14,5\% acknowledgments by peripheral developers. Furthermore the developers in the Atom project that made the most acknowledgements were peripheral developers while the Neovim project had core developers in the top.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | c | }
+		\hline
+		\\
+		Peripheral developers are in both projects allowed to acknowledge feature proposals.
+		\\ \\
+		In Atom more that 50\% of the feature acknowledgements came from peripheral developers.\\ In Neovim it was only 14,5\%.\\
+		\\
+		
+		\hline
+	\end{tabular}
+	\label{tab:acknowledgements_analysis}
+\end{table}
+
+We also found that there are a significant spread among acknowledgement from unique developers in the projects, in the Neovim the core developer ''justinmk'' stands for 44,4\% of the feature acknowledgements while the developer ''fracalo'' in the Atom project stands for 18,2\%.
 
 % First Implementation of feature
-Moving on to analyze the first implementation of a feature we can confirm that from the features that had been proposed in the Atom project 27,3\% of them where first implemented from a core developer and 72,7\% where implemented by a peripheral developer. The Neovim project on the other hand had 86,6\% of first feature implementation done by core developers and 15,4\% from peripheral developers. Furthermore the data also shows that that the core developer ?justinmk? stands for 38,5\% of the first feature implementations in the Neovim project and the top spot with 13,6\% in Atom is shared between the core developer ?damieng? and the peripheral developer ?bastillian?. Overall there are a total of 12 peripheral developers and 4 core developers in the Atom project doing first implementation of a feature while Neovim has a total of 4 core developers and 4 peripheral developers.
+Moving on to analyse the first implementation of a feature we can confirm that from the features that had been proposed in the Atom project 27,3\% of them where first implemented by a core developer and 72,7\% where implemented by a peripheral developer. The Neovim project on the other hand had 86,6\% of first feature implementation done by core developers and 15,4\% from peripheral developers. Furthermore the data also shows that that the core developer ''justinmk'' stands for 38,5\% of the first feature implementations in the Neovim project and the top spot with 13,6\% in Atom is shared between the core developer ''damieng'' and the peripheral developer ''bastillian''. Overall there are a total of 12 peripheral developers and 4 core developers in the Atom project doing first implementation of a feature while Neovim has a total of 4 core developers and 4 peripheral developers.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | c | }
+		\hline
+		\\
+		In Atom the majority of feature implementations were done by peripheral developers.\\ For Neovim it was the opposite.\\
+		\\
+		\hline
+	\end{tabular}
+	\label{tab:feature_implementations_analysis}
+\end{table}
 
 \subsection{Other Findings}
 	%implementation took under a day to implement no time when the proposal

@@ -15,7 +15,6 @@
 
 \begin{document}
 \maketitle
-\newpage
 To ensure that our thesis is credible we first have to make sure that we are well informed on the subject we're researching. In order to do this we've performed a systematic literature review. which is presented in this document.
 
 When searching we used three different databases: \emph{ACM Digital Library} (\texttt{ACM}), \emph{IEEE Xplore Digital Library} (\texttt{IEEE}) and \emph{Google Scholar} (\texttt{GOOGLE}). The first two, \texttt{ACM} and \texttt{IEEE}, are well-known within the area of computer science and they were used for searching for articles using keywords and search phrases. The last, \texttt{GOOGLE}, was used for forward and backward snowballing.
@@ -50,17 +49,18 @@ When searching in \texttt{ACM} and \texttt{IEEE} we used different combinations 
 
 \FloatBarrier
 \footnotetext{We read through most of these even though they were more than 100}
-When the amount of search results were maximum 100 we went through the studies doing the first pass of Keshavs \emph{three-pass approach}\cite{Keshav}. If the article was found interesting we added it to our reference manager to later perform the second and third pass on. For each article which after the second pass still was found relevant we noted the references to snowball more articles, this process is described in the next section. 
+When the amount of search results were maximum 100 we went through the studies doing the first pass of Keshavs \emph{three-pass approach}~\cite{Keshav}. If the article was found interesting we added it to our reference manager to later perform the second and third pass on. For each article which after the second pass still was found relevant we noted the references to snowball more articles, this process is described in the next section. 
 
-We used \texttt{GOOGLE} to snowball more studies. This was done in three parts for every study: (1) search for all references used in the study, (2) search for all studies that referenced to the study and (3) search for more studies written by the same author(s). Searches in \texttt{GOOGLE} sometimes generated a huge amount of results and also the results did not always have the article itself available for download. In those cases we used \texttt{ACM} and \texttt{IEEE} to limit the result or find the article. Keshavs \emph{three-pass approach} was also here used for selecting relevant articles\cite{Keshav}. All our relevant studies are presented in table~\ref{tab:relevant}.
+We used \texttt{GOOGLE} to snowball more studies. This was done in three parts for every study: (1) search for all references used in the study, (2) search for all studies that referenced to the study and (3) search for more studies written by the same author(s). Searches in \texttt{GOOGLE} sometimes generated a huge amount of results and also the results did not always have the article itself available for download. In those cases we used \texttt{ACM} and \texttt{IEEE} to limit the result or find the article. Keshavs \emph{three-pass approach} was also here used for selecting relevant articles~\cite{Keshav}. All our relevant studies are presented in Table~\ref{tab:relevant}.
 
+TEDDY, titta i tabellen
 \begin{table}[!h]
 	\begin{tabular}{  p{0.8\textwidth}  p{0.2\textwidth} }
 		\hline
 		\textbf{Name of Article}	& \textbf{How it was found}	\\\hline
 		A Case Study of Open Source software Development: the Apache server	& \texttt{ACM} or \texttt{IEEE}	\\\hline
-		A first step towards translating evidence into practice: Heart failure in a community practice-based research network & \texttt{GOOGLE}	\\\hline
-		Agila projektledningsmetoder och motivation & \texttt{GOOGLE}	\\\hline
+		TEDDY A first step towards translating evidence into practice: Heart failure in a community practice-based research network & \texttt{GOOGLE}	\\\hline
+		Agila projektledningsmetoder och motivation~\cite{} & \texttt{GOOGLE}	\\\hline
 		An analysis of requirements evolution in open source projects: recommendations for issue trackers	& \texttt{ACM} or \texttt{IEEE}	\\\hline
 		Balancing act: community and local requirements in an open source development process	& \texttt{ACM} or \texttt{IEEE}	\\\hline
 		Case Study Research: Design and Methods	& Snowballed	\\\hline
@@ -90,6 +90,40 @@ We used \texttt{GOOGLE} to snowball more studies. This was done in three parts f
 	\caption{Shows the names of the articles relevant to our thesis and how they were found.}
 	\label{tab:relevant}
 \end{table}
+
+\FloatBarrier
+Out of the studies presented in Table~\ref{tab:relevant} we currently use seven of them. The studies and how they were found are presented below.
+
+\begin{enumerate}
+	\item \textbf{Software Psychology: The Need for an Interdisciplinary Program~\cite{Curtis1986}}
+	
+	The search phrase \texttt{acmdTItle:(+"open source" +corporate +project +community)} on \texttt{ACM} resulted in 15 hits. One of them was~\cite{Zhou2016} which after the second pass we still found relevant. When going through its references we found the following relevant articles:~\cite{RobertK1994},~\cite{Goodrick2014} and also~\cite{Curtis1986} which is used in our thesis.
+	
+	\item \textbf{Agila projektledningsmetoder och motivation}
+	
+	TEDDY
+	
+	\item \textbf{Classifying Developers into Core and Peripheral : An Empirical Study on Count and Network Metrics~\cite{Joblin}}
+	
+	This article was recommended to us by our supervisor. Other than~\cite{Joblin}, the references also yielded~\cite{Crowston2006}.
+	
+	\item \textbf{Exploring the Structure of Complex Software Designs: An Empirical Study of Open Source and Proprietary Code ~\cite{Maccormack2006}}
+	
+	This article was recommended to us by our supervisor.
+	
+	\item \textbf{Requirements elicitation in open source software development: a case study~\cite{Noll}}
+	
+	This article was found out of the 99 hits we got from \texttt{acmdlTitle:(+open +source +software +development)}.
+		
+	\item \textbf{Two case studies of open source software development: Apache and Mozilla~\cite{Mockus2002a}}
+	
+	The search phrase \texttt{acmdlTitle:(+open +source +software +development)} on \texttt{ACM} resulted in 99 hits. One of them was~\cite{Noll} which after the second pass we still found relevant. When going through its references we found the following relevant articles:~\cite{Noll2008a} and also~\cite{Mockus2002a} which is used in our thesis.
+	
+	\item \textbf{A first step towards translating evidence into practice: Heart failure in a community practice-based research network}
+	
+	TEDDY
+\end{enumerate}
+
 \bibliographystyle{plain}
 \bibliography{refs}
 \end{document}

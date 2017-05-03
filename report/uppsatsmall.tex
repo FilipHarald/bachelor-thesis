@@ -17,6 +17,9 @@
 \usepackage{csquotes} % For blockquote
 \usepackage{enumitem}
 
+\usepackage{caption}
+\usepackage{subcaption}
+
 \usepackage[section]{placeins} % FloatBarrier
 \usepackage{graphicx} % Figures
 \graphicspath{{./figures/}} % Simplify figure importing
@@ -538,41 +541,56 @@ The amount of code contributors were similar for the two projects as seen in Tab
 	\caption{Showing amount of code contributors.}
 	\label{tab:contributors_amount}
 \end{table}
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{commits_dist}
-	\caption{Commits distribution.}
-	\label{fig:commits_dist}
+	\caption{Commits distribution compared to\dots}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{commits_dist}
+		\caption{\dots each other.}
+		\label{fig:commits_dist}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{all_commits_dist}
+		\caption{\dots other popular OSS-projects.}
+		\label{fig:all_commits_dist}
+	\end{subfigure}
 \end{figure}
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{all_commits_dist}
-	\caption{Commits distribution for other popular OSS-projects.}
-	\label{fig:all_commits_dist}
+	\caption{Additions distribution compared to\dots}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{additions_dist}
+		\caption{\dots each other.}
+		\label{fig:additions_dist}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{all_additions_dist}
+		\caption{\dots other popular OSS-projects.}
+		\label{fig:all_additions_dist}
+	\end{subfigure}
 \end{figure}
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{additions_dist}
-	\caption{Additions distribution.}
-	\label{fig:additions_dist}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{all_additions_dist}
-	\caption{Additions distribution for other popular OSS-projects.}
-	\label{fig:all_additions_dist}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{deletions_dist}
-	\caption{Deletions distribution.}
-	\label{fig:deletions_dist}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{all_deletions_dist}
-	\caption{Deletions distribution for other popular OSS-projects.}
-	\label{fig:all_deletions_dist}
+	\caption{Deletions distribution compared to\dots}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{deletions_dist}
+		\caption{\dots each other.}
+		\label{fig:deletions_dist}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{all_deletions_dist}
+		\caption{\dots other popular OSS-projects.}
+		\label{fig:all_deletions_dist}
+	\end{subfigure}
 \end{figure}
 
 \FloatBarrier
@@ -593,27 +611,36 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{feature_proposers_dist}
-	\caption{Distribution of feature proposals over users.}
-	\label{fig:feature_proposers}
+	\caption{Distribution of feature proposals over users compared to\dots}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{feature_proposers_dist}
+		\caption{\dots each other.}
+		\label{fig:feature_proposers}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{all_feature_proposers_dist}
+		\caption{\dots other popular OSS-projects.}
+		\label{fig:all_feature_proposers}
+	\end{subfigure}
 \end{figure}
+
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{all_feature_proposers_dist}
-	\caption{Distribution of feature proposals over users for other popular OSS-projects.}
-	\label{fig:all_feature_proposers}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{problem_reporters_dist}
-	\caption{Distribution of problem reports over users.}
-	\label{fig:problem_reporters}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{all_problem_reporters_dist}
-	\caption{Distribution of problem reports over users for other popular OSS-projects.}
-	\label{fig:all_problem_reporters}
+	\caption{Distribution of problem reports over users compared to\dots}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{problem_reporters_dist}
+		\caption{\dots each other.}
+		\label{fig:problem_reporters}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{all_problem_reporters_dist}
+		\caption{\dots other popular OSS-projects.}
+		\label{fig:all_problem_reporters}
+	\end{subfigure}
 \end{figure}
 
 \FloatBarrier

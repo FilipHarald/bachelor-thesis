@@ -192,11 +192,11 @@ The remainder of this paper is organised as follows: the next sub section will p
 
 \subsection{Research Question}
 \label{sec:rq}
-Based on our research interests in studying the commonalities and differences between community and firm driven OSS projects, we present our research questions below. The first research question (RQ) addresses the characteristics of community-driven OSS development. The second RQ addresses the characteristics of firm-driven OSS development. The third and last RQ addresses the benefits companies can gain by engaging themselves in OSS development.
+Based on our research interests in studying the commonalities and differences between community and firm driven OSS projects, we present our research questions below. The first research question (RQ) addresses the characteristics of community-driven OSS development. The second RQ addresses the characteristics of firm-driven OSS development. The third and last RQ addresses the result of what the first two and what they imply.
 \begin{enumerate}[label=RQ\arabic*]
 	\item \emph{What are the characteristics of community-driven OSS development?}
 	\item \emph{What are the characteristics of firm-driven OSS development?}
-	\item \emph{How can software companies benefit from engaging in OSS development?}
+	\item \emph{What are the implications of the differences between firm- and community-driven OSS development?}
 \end{enumerate}
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -431,14 +431,14 @@ In the following sections we present the approach for conducting our case study.
 \subsection{Data Collection}
 \subsubsection{Sources}
 \label{subsec:sources}
-Several data sources have been used to collect different type of data for this thesis. The biggest source of data for this thesis is Github, a web-based version-control and collaboration platform for software developers, which have provided us with data from both Atom- and Neovim-project. The data is for example, project participants, developer discussions, contribution history and feature suggestions. Data form Github have been used in two occasions. The first occasion are gathering of statistical data from the Github API for both Atom and Neovim, the second occasion are gathering of sample data from Atom and Neovim. The data gathering for the occasions are presented in section~\ref{subsec:data}.
+Several data sources have been used to collect different type of data for this thesis. The biggest source of data for this thesis is Github, a web-based version-control and collaboration platform for software developers, which have provided us with data from both Atom- and Neovim-project. The data is for example, project participants, developer discussions, contribution history and feature suggestions. Data form Github have been used in two occasions. The first occasion are gathering of overview data from the Github API for both Atom and Neovim, the second occasion are gathering of detailed data from Atom and Neovim. The data gathering for the occasions are presented in section~\ref{subsec:data}.
 
-Too further prove the liability in the Github sample data we have also turned to Atom and Neovims forums for development discussions. Within these forums proposals for features and issues alongside with instructions and tips to the users can be found. Atom uses its own discussion forum that can be found on their official website~\cite{atom_wp}. Neovim on the other hand use both Reddit\footnote{Reddit is a social news aggregation, web content rating, and discussion website~\cite{reddit}} and Github as discussion channels. The gathering of this sample data are presented in section~\ref{subsec:data}.
+Too further prove the liability in the Github detailed data we have also turned to Atom and Neovims forums for development discussions. Within these forums proposals for features and issues alongside with instructions and tips to the users can be found. Atom uses its own discussion forum that can be found on their official website~\cite{atom_wp}. Neovim on the other hand use both Reddit\footnote{Reddit is a social news aggregation, web content rating, and discussion website~\cite{reddit}} and Github as discussion channels. The gathering of this detailed data are presented in section~\ref{subsec:data}.
 
 \subsubsection{Data Schema}
 \label{subsec:data}
-Below we present a schema for what data we will collect with its description. The schema consists of two parts The first, D1-D4, is statistical data that can be used to comparing the two projects with themselves and other open source projects. The second part, D5-D8, is sampling data focusing on the requirements elicitation process of the two projects. A more extensive description and technical definition of each statistical data point can be found in Appendix~\ref{ap:detail_data}.
-\subparagraph{Statistical Data}
+Below we present a schema for what data we will collect with its description. The schema consists of two parts The first, D1-D4, is overview data that can be used to comparing the two projects with themselves and other open source projects. The second part, D5-D8, is sampling data focusing on the requirements elicitation process of the two projects. A more extensive description and technical definition of each overview data point can be found in Appendix~\ref{ap:detail_data}.
+\subparagraph{Overview Data}
 \begin{enumerate}[label=D\arabic*]
 	\item \emph{Code contributors}
 
@@ -453,7 +453,7 @@ Below we present a schema for what data we will collect with its description. Th
 
 	How long did it take for a problem to be considered as an defect? And how long did it take for a reported problem to be repaired? If it was a defect.
 \end{enumerate}
-\subparagraph{Sample Data}
+\subparagraph{Detailed Data}
 \begin{enumerate}[label=D\arabic*]
 	\setcounter{enumi}{4}
 	\item \emph{Feature proposals}
@@ -501,18 +501,18 @@ To minimise the risk of making manual HTTP-request (in the command prompt) or ma
 
 \subsection{Threats to Validity}
 \label{sec:vthreats}
-When conducting a case study it is important to select a case that is representable for the researched phenomenon in order to use the results to draw generalised conclusions. If a representable case is not selected this poses a threat to the external validity of the thesis. To minimise this threat we collect the statistical data, D1-D4 in section~\ref{subsec:data}. This data can be used to compare to other projects and the projects that are researched in the previous studies,~\cite{Mockus2002a} and~\cite{Noll}.
+When conducting a case study it is important to select a case that is representable for the researched phenomenon in order to use the results to draw generalised conclusions. If a representable case is not selected this poses a threat to the external validity of the thesis. To minimise this threat we collect the overview data, D1-D4 in section~\ref{subsec:data}. This data can be used to compare to other projects and the projects that are researched in the previous studies,~\cite{Mockus2002a} and~\cite{Noll}.
 
-Furthermore it is important when selecting cases that they have similar attributes that are not intended to study. In our study we want to see the differences of the governing body and not size of the project, product type or project age. Ensuring the similarity on these factors would increase the internal validity of our study. This is initially ensured in section~\ref{sec:case_selection} and also with the statistical data\footnote{D1-D4 in section~\ref{subsec:data}}.
+Furthermore it is important when selecting cases that they have similar attributes that are not intended to study. In our study we want to see the differences of the governing body and not size of the project, product type or project age. Ensuring the similarity on these factors would increase the internal validity of our study. This is initially ensured in section~\ref{sec:case_selection} and also with the overview data\footnote{D1-D4 in section~\ref{subsec:data}}.
 
 Lastly a threat to validity when conducting a case study is that the researcher affects the results by being in the context for which he/she researches~\cite{Oates2005}. This however is not applicable for our case since we are not researching on a present phenomenon but rather on something that is in the past.
 
 \subsection{Data Analysis}
 The analysis of the data will consist of three parts, which will be described in the following paragraphs, they are: (1) validate the selection of cases, (2) identify similarities and differences in requirement elicitation process and (3) other potential findings.
 
-In section~\ref{sec:vthreats} we mentioned that selecting two very different projects will greatly affect the results of this study. Therefore we start by analysing the results from statistical data, to compare the two projects on both size compared to each other and also similarities with other OSS-projects.
+In section~\ref{sec:vthreats} we mentioned that selecting two very different projects will greatly affect the results of this study. Therefore we start by analysing the results from overview data, to compare the two projects on both size compared to each other and also similarities with other OSS-projects.
 
-In order to answer our first two research questions, RQ1 and RQ2, presented in section~\ref{sec:rq} we need to analyse the results from sample data. From the analysis of this data combined with other potential findings we will draw a conclusion that can answer the last research question RQ3.
+In order to answer our first two research questions, RQ1 and RQ2, presented in section~\ref{sec:rq} we need to analyse the results from detailed data. From the analysis of this data combined with other potential findings we will draw a conclusion that can answer the last research question, RQ3.
 
 When conducting a case study it is possible that one can discover things that was not initially intended to research. In our case that would be if we discovered something not related to the the data types presented in section~\ref{subsec:data}. These discoveries we categorise as other potential findings.
 
@@ -524,7 +524,7 @@ When conducting a case study it is possible that one can discover things that wa
 \section{Result}
 In this section the results from the methods specified in section~\ref{sec:method} are presented. They are presented in the same order as they occur in section~\ref{subsec:data}.
 
-\subsection{Statistical Data}
+\subsection{Overview Data}
 \label{stat_data}
 
 \subsubsection{Code Contributors (D1)}
@@ -674,10 +674,10 @@ The two projects differed in the amount of defects repaired and the repair time.
 \end{table}
 
 \FloatBarrier
-\subsection{Sample Data}
-In previous section Statistical Data~\ref{stat_data} we described statistical data to show you that the the projects are on the same level for this comparison to be more accurate. We also showed you the two projects in a bigger picture with a comparison towards several other general known open source projects that can be found on Github.
+\subsection{Detailed Data}
+In previous section Overview Data~\ref{stat_data} we described overview data to show you that the the projects are on the same level for this comparison to be more accurate. We also showed you the two projects in a bigger picture with a comparison towards several other general known open source projects that can be found on Github.
 
-In this section we will present to you the sample data that we have collected from the Atom project and the Neovim project. The different data categories that we have investigated are described in section~\ref{subsec:data}. The raw collected data can be found in Appendix~\ref{ap:raw_sample_data}.
+In this section we will present to you the detailed data that we have collected from the Atom project and the Neovim project. The different data categories that we have investigated are described in section~\ref{subsec:data}. The raw collected data can be found in Appendix~\ref{ap:raw_detailed_data}.
 
 \subsubsection{Feature Proposals (D5)}
 The results of feature proposals displayed in Tables~\ref{tab:proposals_atom} and~\ref{tab:proposals_neovim} shows the amount of proposals made by individual users categorised in core developers, peripheral developers and end users. From this data we can summarize that there where a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers where in the Atom project a total of 12 in contrast to the Neovim project which had 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
@@ -772,7 +772,7 @@ Presented in this section are the result for proposals in category A, B and C de
 
 \FloatBarrier
 \subsubsection{Feature Acknowledgement (D7)}
-The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neovim} below presents sample data for feature acknowledgement~\ref{subsec:data}. The tables includes data regarding unique user status (peripheral developer or core developer), the amount of features they have acknowledge during the time period and the unique username. Table~\ref{tab:acknowledgements_atom}  presents sample data from the Atom project and Table~\ref{tab:acknowledgements_neovim} present sample data from the Neovim project.
+The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neovim} below presents detailed data for feature acknowledgement~\ref{subsec:data}. The tables includes data regarding unique user status (peripheral developer or core developer), the amount of features they have acknowledge during the time period and the unique username. Table~\ref{tab:acknowledgements_atom}  presents detailed data from the Atom project and Table~\ref{tab:acknowledgements_neovim} present detailed data from the Neovim project.
 
 \begin{table}[h]
 	\centering
@@ -819,7 +819,7 @@ The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neo
 
 \FloatBarrier
 \subsubsection{First Implementation of Feature (D8)}
-This section presents the collected sample data for whom a first feature implementation came from. Table~\ref{tab:implementation_atom} presents this data for the Atom project and Table~\ref{tab:implementation_neovim} presents the data for the Neovim project. Both Table~\ref{tab:implementation_atom}  and Table~\ref{tab:implementation_neovim} includes data regarding the amount of first implementation from a unique user, the status of that unique user (core developer or peripheral developer) and the unique username.
+This section presents the collected detailed data for whom a first feature implementation came from. Table~\ref{tab:implementation_atom} presents this data for the Atom project and Table~\ref{tab:implementation_neovim} presents the data for the Neovim project. Both Table~\ref{tab:implementation_atom}  and Table~\ref{tab:implementation_neovim} includes data regarding the amount of first implementation from a unique user, the status of that unique user (core developer or peripheral developer) and the unique username.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{ | l | c | c |}
@@ -868,15 +868,15 @@ This section presents the collected sample data for whom a first feature impleme
 \newpage
 \section{Analysis}
 \label{sec:analysis}
-In the previous section, we presented and described the results from our statistical and sample data gathering that we have conducted.
+In the previous section, we presented and described the results from our overview and detailed data gathering that we have conducted.
 In this section we will analyse our results presented in the previous section. The analysis consist of three parts: validate the selection of cases and identify similarities and differences in requirement elicitation process.
 
 \subsection{Validity of Selected Cases}
-From the results we can identify two things. First, the two projects are similar in size on a number of aspects, as seen in Table~\ref{tab:contributors_amount} and Figures~\ref{fig:additions_dist},~\ref{fig:deletions_dist},~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Second, the distribution of the gathered statistical data are very similar both between the projects, but also compared to other popular OSS-projects as seen in Figures~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist},~\ref{fig:all_deletions_dist},~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}. With this information the two selected projects can be considered suitable for comparison on requirement elicitation.
+From the results we can identify two things. First, the two projects are similar in size on a number of aspects, as seen in Table~\ref{tab:contributors_amount} and Figures~\ref{fig:additions_dist},~\ref{fig:deletions_dist},~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Second, the distribution of the gathered overview data are very similar both between the projects, but also compared to other popular OSS-projects as seen in Figures~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist},~\ref{fig:all_deletions_dist},~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}. With this information the two selected projects can be considered suitable for comparison on requirement elicitation.
 
 The difference in amounts of commits as seen in Figure~\ref{fig:commits_dist} could, as mentioned before in section~\ref{sec:case_selection}, be a difference in how the two projects use commits.
 
-\subsection{Identify Similarities and Differences from Sample Data}
+\subsection{Identify Similarities and Differences from Detailed Data}
 
 In general, participants in a open source software development show a strong sense of engagement in, and ownership of, the project, without having any particular reward for the time they spent on contributing to the development. In the case of Atom and Neovim there are no exceptions however within this engagement among participants we have seen certain differences and similarities within feature proposals, origin, acknowledgement and in the first implementation of a feature the engagement among participants.
 
@@ -910,7 +910,7 @@ We can also see the number of unique users that proposed a feature in each categ
 \end{table}
 
 % Feature Origin
-Looking into the sample data for feature origin it was in both cases clear that the majority of proposals originated from a developer's personal experience or his knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There where 9.1\% proposals coming from end users in the Atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% of the feature proposals.
+Looking into the detailed data for feature origin it was in both cases clear that the majority of proposals originated from a developer's personal experience or his knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There where 9.1\% proposals coming from end users in the Atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there where a also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% of the feature proposals.
 
 \begin{table}[h]
 	\centering
@@ -925,7 +925,7 @@ Looking into the sample data for feature origin it was in both cases clear that 
 \end{table}
 
 % Feature Acknowledgement
-Acknowledgment of features are the single most interesting aspect of the sample data. In our results we can see that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgements came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that makes these numbers interesting. First several peripheral developers in both projects have the authorities to acknowledge a feature for implementation, for what we can see, without a core developers involvement. The Second interesting finding is the fact that the Atom project allow more than half of their features to be acknowledge by peripheral developers while the Neovim project only have 14,5\% acknowledgments by peripheral developers. Furthermore the developers in the Atom project that made the most acknowledgements were peripheral developers while the Neovim project had core developers in the top.
+Acknowledgment of features are the single most interesting aspect of the detailed data. In our results we can see that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgements came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that makes these numbers interesting. First several peripheral developers in both projects have the authorities to acknowledge a feature for implementation, for what we can see, without a core developers involvement. The Second interesting finding is the fact that the Atom project allow more than half of their features to be acknowledge by peripheral developers while the Neovim project only have 14,5\% acknowledgments by peripheral developers. Furthermore the developers in the Atom project that made the most acknowledgements were peripheral developers while the Neovim project had core developers in the top.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{ | c | }
@@ -1018,6 +1018,7 @@ In this section we will summarise the answer for all three research questions. A
 \newpage
 \input{appendicies/programmed_scripts.tex}
 \newpage
-\input{appendicies/sample_results_raw_data.tex}
+\input{appendicies/detailed_results_raw_data.tex}
+
 
 \end{document}

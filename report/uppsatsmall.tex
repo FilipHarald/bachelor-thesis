@@ -32,9 +32,9 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \lstset{
-    basicstyle=\tiny,
-    frame=single,
-    breaklines=true
+  basicstyle=\tiny,
+  frame=single,
+  breaklines=true
 }
 % ----- Format code files end
 
@@ -145,12 +145,12 @@ Knowledge about the variety of options among project process when starting up a 
 \label{sec:intro}
 
 %Problem and challenges
-Today we are constantly introduced to new software applications and systems that we install on our smartphones, tablets and computers. Behind each software that we choose to install and use on our devices is a development process with several defined steps to be completed before we can put our hands on the software and try it out. The steps that takes a software from an idea to a final product are many and the different methods to solve this process are often hard to choose for those who are set to develop the software. Choosing a method to follow throughout this process are therefore important in the aspects of expenses, time and software quality. Despite the choice of method there will always be an constant work to understand the user needs, from the needs necessary functionality can be written down in paragraphs, in the area of computer science we call these paragraphs requirements, so the software developers know what to implement into the software during the process. The elicitation of these requirements in a development process based on a Open Source Software(OSS) development method, a development method where the source code of a software is available and open to anyone, are faced by several challenges.  First, Curtis et al \cite{Curtis1986} explain in 1986 that software development is a knowledge-intensive activity with a large number of potentially confounding factors, in 2016 Minghui et al \cite{cite} further explained that this makes it difficult or impossible to discern the impact of commercial involvement from different types of companies. Second, Minghui et al \cite{cite} continues to explain that to observe the impact of commercial involvement, it is important to compare the differences in contributions from developers, and to observe the work impact on projects over a long period of time. Third, there is no easy way to learn companies', intentions motivating their involvement in the Open Source Software (OSS) community, and it is even more difficult to examine the effects of such involvement.
+Today we are constantly introduced to new software applications and systems that we install on our smartphones, tablets and computers. Behind each software that we choose to install and use on our devices is a development process with several defined steps to be completed before we can put our hands on the software and try it out. The steps that takes a software from an idea to a final product are many and the different methods to solve this process are often hard to choose for those who are set to develop the software. Choosing a method to follow throughout this process are therefore important in the aspects of expenses, time and software quality. Despite the choice of method there will always be an constant work to understand the user needs, from the needs necessary functionality can be written down in paragraphs, in the area of computer science we call these paragraphs requirements, so the software developers know what to implement into the software during the process. The elicitation of these requirements in a development process based on a Open Source Software(OSS) development method, a development method where the source code of a software is available and open to anyone, are faced by several challenges. First, Curtis et al \cite{Curtis1986} explain in 1986 that software development is a knowledge-intensive activity with a large number of potentially confounding factors, in 2016 Minghui et al. \cite{Zhou2016} further explained that this makes it difficult or impossible to discern the impact of commercial involvement from different types of companies. Second, Minghui et al. \cite{Zhou2016} continues to explain that to observe the impact of commercial involvement, it is important to compare the differences in contributions from developers, and to observe the work impact on projects over a long period of time. Third, there is no easy way to learn companies', intentions motivating their involvement in the Open Source Software (OSS) community, and it is even more difficult to examine the effects of such involvement.
 
 %Problem and challenges(Old introduction): Today there are several methods to choose from when you decide to develop or continue the integration of software, and every method has its own benefits and fits some software projects better than others. While deciding which method to choose there are always a variety of factors that must be taken into consideration. One of these factors is elicitation of the requirements, paragraphs that explain a functional or nonfunctional feature requirement that the software must be able to handle. In a development project, this factor is effected by several challenges. First, software development is a knowledge-intensive activity with a large number of potentially confounding factors~\cite{Curtis1986}, and this makes it difficult or impossible to discern the impact of commercial involvement. Second, to observe the impact of commercial involvement, it is important to compare the differences in contributions from developers, and to observe the work impact on projects over a long period of time. Third, there is no easy way to learn companies', intentions motivating their involvement in the Open Source Software (OSS) community, and it is even more difficult to examine the effects of such involvement.
 
 %Purpose
-The challenges described above are key factors for this thesis purpose, to enlighten the decision of developing software with an open source software (OSS) development approach. By providing this information of governing bodies, regardless if there is a firm or a community managing the project, the initial decision of choosing a software development approach could be made easier. This thesis will however not make a comparison between open source and proprietary software. Therefore this thesis will  also not provide pros and cons of the transition from proprietary software to OSS. Bottom line, the thesis will help governing bodies realise that OSS truly can deliver quality software, enthusiastic developers, better costumer relationships and commercial available software.
+The challenges described above are key factors for this thesis purpose, to enlighten the decision of developing software with an open source software (OSS) development approach. By providing this information of governing bodies, regardless if there is a firm or a community managing the project, the initial decision of choosing a software development approach could be made easier. This thesis will however not make a comparison between open source and proprietary software. Therefore this thesis will also not provide pros and cons of the transition from proprietary software to OSS. Bottom line, the thesis will help governing bodies realise that OSS truly can deliver quality software, enthusiastic developers, better costumer relationships and commercial available software.
 
 %Contribution
 As a result of this study we will have made the following three contributions. (a) When studying the characteristics of two OSS-projects the results will of course contribute to the general knowledge about OSS development. (b) As mentioned above our results can be used as support for a firm when deciding if they want to use OSS development. (c) The scripts we have programmed and used to process the project artefacts of the two projects. These scripts are modular and can be used to retrieve information about a large group of open source projects.
@@ -172,7 +172,7 @@ In the evolution of software development different types of methods have been us
 	%TODO: More on the open source story
 
 	%Introduce the reader to Community-driven projects and Requierment elicitaton
-Regardless of the development process a project chooses to use when developing a software system they would most likely need a way to handle requirements in one way or another. While requirements in traditional and agile development processes are elicited from discussions with a client/customer OSS project handles the elicitation through the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed~\cite{Maccormack2006}. Joblin et al.~\cite{joblin} describes the two vital roles of developers in a OSS project, where they so called core developers are developers with a substantial, long-term involvement, and in a abstract sense these developers plays an essential role in developing the system architecture and forming the general leadership structure. In contrast, peripheral developers  are typically involved in bug fixes or small enhancements, and they they have irregular or short-term involvement. 
+Regardless of the development process a project chooses to use when developing a software system they would most likely need a way to handle requirements in one way or another. While requirements in traditional and agile development processes are elicited from discussions with a client/customer OSS project handles the elicitation through the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed~\cite{Maccormack2006}. Joblin et al.~\cite{joblin} describes the two vital roles of developers in a OSS project, where they so called core developers are developers with a substantial, long-term involvement, and in a abstract sense these developers plays an essential role in developing the system architecture and forming the general leadership structure. In contrast, peripheral developers are typically involved in bug fixes or small enhancements, and they they have irregular or short-term involvement. 
 
 %The key decisions in project driven by OSS communities are taken by a central group of software developers (core developers). Beyond this central group, are the peripheral developers; these are developers who intermittently submit code contributions (called patches). The core group reviews and acknowledge the patches before they are incorporated into the projects source code~\cite{Crowston2006}. 
 
@@ -181,16 +181,63 @@ The Agile methods are popular to use in software companies for information syste
 \subsection{Related Work}
 \label{related_work}
 %Explain the context of the other two studies and their findings/limitations
-In previous work within the area of OSS and requirement elicitation there are two highly relevant studies for this thesis. The first article~\cite{Mockus2002a} presents two case studies of the development and maintenance of major OSS projects: the Apache server and Mozilla. Where Mockus et al. address key questions about the development process, and about the software that is the result of the processes. Based on results from a earlier study made on Apache, covered in the article A Case Study of Open Source software Development: the Apache server, they framed a number of hypotheses that they conjectured would be true generally of open source developments. The second case study in the article~\cite{Mockus2002a} examined data from the Mozilla project based on the analyses and hypothesis that were framed from the Apache project. Mockus et al. came to the conclusion that the essential differences in which elements of commercial and open source processes coordinate, select, and assign work could be combined.
 
-In the second highly relevant article,~\cite{Noll}, Noll et al. presents a case study of the OpenEMR, an open source project developing electronic medical record (EMR) software. The goal of the study was to understand how requirements are elicited, documented, agreed and validated in a small open source software project. The study followed the same approach as of an earlier study of the Firefox web browser~\cite{Noll2008a}. The comparison between the both projects showed that, similar to the Firefox study, the majority of OpenEMR requirements are asserted by developers. Documentation was informal, consisting mainly of archived discussions. Contributors to the OpenEMR project were medical practitioners such as doctors or clinic administrations, who use the product in their practices and also developers which does not use the product at all. The implication for software development in general is that developers can be a significant source of innovation.
+% apache and mozilla
+In previous work within the area of OSS and requirement elicitation there are two highly relevant studies for this thesis. The first article~\cite{Mockus2002a} presents two case studies of the development and maintenance of major OSS projects: the Apache server and Mozilla. Where Mockus et al. address key questions about the development process, and about the software that is the result of the processes. Based on results from a earlier study made on Apache, covered in the article A Case Study of Open Source software Development: the Apache server, they framed a number of hypotheses that they conjectured would be true generally of open source developments. The second case study in the article~\cite{Mockus2002a} examined data from the Mozilla project based on the analyses and hypothesis that were framed from the Apache project. Mockus et al. came to the conclusion that the essential differences in which elements of commercial and open source processes coordinate, select, and assign work could be combined. To make their generalisation trustworthy they selected the two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate should be sufficient to compare with other projects~\cite{Mockus2002a}. The 6 questions are presented in Table~\ref{tab:apache}.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | p{0.9\textwidth} |}
+		\hline
+		\begin{enumerate}
+			\item What were the processes used to develop Apache and Mozilla?
+			\item How many people wrote code for new functionality? How many people reported problems? How many people repaired defects?
+			\item Were these functions carried out by distinct groups of people, that is, did people primarily assume a single role? Did large numbers of people participate somewhat equally in these activities, or did a small number of people do most of the work?
+			\item Where did the code contributors work in the code? Was strict code ownership enforced on a file or module level?
+			\item What is the defect density of Apache and Mozilla code?
+			\item How long did it take to resolve problems? Were high priority problems resolved faster than low priority problems? Has resolution interval 	decreased over time?
+		\end{enumerate}\\
+		\hline
+	\end{tabular}
+	\caption{Research questions for exploring OSS-projects~\cite{Mockus2002a}.}
+	\label{tab:apache}
+\end{table}
+
+\FloatBarrier
+
+% firefox and openemr (req. elicitation) 
+In the second highly relevant article,~\cite{Noll}, Noll et al. presents a case study of the OpenEMR, an open source project developing electronic medical record (EMR) software. The goal of the study was to understand how requirements are elicited, documented, agreed and validated in a small open source software project. The study followed the same approach as of an earlier study of the Firefox web browser~\cite{Noll2008a}. The comparison between the both projects showed that, similar to the Firefox study, the majority of OpenEMR requirements are asserted by developers. Documentation was informal, consisting mainly of archived discussions. Contributors to the OpenEMR project were medical practitioners such as doctors or clinic administrations, who use the product in their practices and also developers which does not use the product at all. The implication for software development in general is that developers can be a significant source of innovation. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in Table~\ref{tab:openemr}.
+
+% firefox and openemr (req. elicitation) 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | p{0.9\textwidth} |}
+		\hline
+		\begin{enumerate}
+			\item Identify the set of features delivered for OpenEMR after release 2.8.0, up to and including release 2.9.0.
+			\item Select a subset of these features for examination.
+			\item Examine Internet resources related to OpenEMR, such as archives of discussion forums, the OpenEMR issue database, the OpenEMR ''tracker'' on Sourceforge.net, and other online forums, to discover when the feature was first proposed, and what role the person proposing the feature played (such as user or developer).
+			\item Determine the initial implementation of the feature (prototype by a developer, patch submitted to the tracker, or enhancement committed directly to the codebase).
+			\item Categorise the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database; or derived from features found in competing products.
+		\end{enumerate}\\
+		\hline
+	\end{tabular}
+	\caption{5 steps for gathering data from OSS-projects~\cite{Noll}.}
+	\label{tab:openemr}
+\end{table}
+
+\FloatBarrier
 
 %Communicate to the reader that what WE are doing has not been done just yet.
 
-The articles together summarise the differences between open-source projects in different aspects. Mockus et al. investigate two cases from which they try to form theories on what it is that defines OSS-projects. They conclude the study by comparing their results with commercial, proprietary, projects~\cite{Mockus2002a}. Noll et al. on the other hand investigate the differences in requirement elicitation between large and small OSS-projects~\cite{Noll}. These articles are the two most relevant studies in comparing requirement elicitation in OSS projects.
+The articles together summarise the differences between open-source projects in different aspects. Mockus et al.~\cite{Mockus2002a} investigate two cases from which they try to form theories on what it is that defines OSS-projects. They conclude the study by comparing their results with commercial, proprietary, projects. Noll et al.OSS-projects~\cite{Noll} on the other hand investigate the differences in requirement elicitation between large and small OSS-projects. These articles are the two most relevant studies in comparing requirement elicitation in OSS projects due to the contributions in form of methods that can be applied to several aspects in comparing different types of OSS-projects.
 
-%Shortly describe structure of report
-The remainder of this paper is organised as follows: the next sub section will present the research questions; the next section will present our systematic literature review which we conducted to familiarise  with the subject; the next section will present the chosen method for this study; next are the results; they are followed by an analysis and discussion of their implications; lastly we present a conclusion and suggestions for future work.
+\subsubsection{Case Study}
+%what is a case study?
+Oates refers to a case study as being research strategy for which one tries to describe a case, or phenomenon, from within its natural context~\cite{Oates2005}. Rather than just confirming a phenomenons existence, which could be done by for example conducting a survey, a case study aims to discover why it occurred. This is done, as a researcher, by aiming to give a detailed description of not just the phenomenon but also it's context. It is from the context the researcher can identify factors which might have caused the phenomenon to occur. The amount of factors varies from case to case and the probability of multiple causing factors should be taken into account.
+
+%internet case studies
+Oates says that case study can favourably be used when ''studying the 'life' on the Internet''~\cite{Oates2005}. However the author mentions particular issues with conducting this kind of research. The first is the problem of boundary. Namely how does one define the boundaries for which the study is being conducted. The second is the problem of offline/online existence. That is one might not get all the details for a case by only studying it online, since some information might only be available offline, such as communications between participants of the studied case. These problems are taken into consideration when constructing our method for conducting the case study. However, the first problem will have minimal effect on our research since it's easy to define what is part and not of the development process of a product and what is not. The second problem on the other hand could affect our research to greater extent. The nature of OSS is that everything related to the project is stored and displayed online. But even though developers might never meet face-to-face, they may still communicate on other channels than those provided through the project. These channels are not always displayed online and can therefore be seen, from a researchers perspective, as offline.
 
 \subsection{Research Question}
 \label{sec:rq}
@@ -200,6 +247,9 @@ Based on our research interests in studying the commonalities and differences be
 	\item \emph{What are the characteristics of firm-driven OSS development?}
 	\item \emph{What are the implications of the differences between firm- and community-driven OSS development?}
 \end{enumerate}
+
+%Shortly describe structure of report
+The remainder of this paper is organised as follows: the next section will present our systematic literature review which we conducted to familiarise with the subject; the next section will present the chosen method for this study; next are the results; they are followed by an analysis and discussion of their implications; lastly we present a conclusion and suggestions for future work.
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \newpage
@@ -243,7 +293,7 @@ When the amount of search results were maximum 100 we went through the studies d
 We used \texttt{GOOGLE} to snowball more studies. This was done in three parts for every study: (1) search for all references used in the study, (2) search for all studies that referenced to the study and (3) search for more studies written by the same author(s). Searches in \texttt{GOOGLE} sometimes generated a huge amount of results and also the results did not always have the article itself available for download. In those cases we used \texttt{ACM} and \texttt{IEEE} to limit the result or find the article. Keshavs \emph{three-pass approach} was also here used for selecting relevant articles~\cite{Deming2010}. All our relevant studies are presented in Table~\ref{tab:relevant}.
 
 \begin{table}
-	\resizebox{!}{.35\paperheight}{\begin{tabular}{  p{0.6\textwidth}  | p{0.15\textwidth} | p{0.1\textwidth} | p{0.4\textwidth}}
+	\resizebox{!}{.35\paperheight}{\begin{tabular}{ p{0.6\textwidth} | p{0.15\textwidth} | p{0.1\textwidth} | p{0.4\textwidth}}
 		\hline
 		\textbf{Name of Article}	& \textbf{How it was found}	& \textbf{How many articles was snowballed form this}	& \textbf{Used search phrase}\\\hline
 		A Case Study of Open Source software Development: the Apache server	& \texttt{ACM} or \texttt{IEEE}	& 0 & SEARCHPHRASE \\\hline
@@ -251,7 +301,7 @@ We used \texttt{GOOGLE} to snowball more studies. This was done in three parts f
 		An analysis of requirements evolution in open source projects: recommendations for issue trackers	& \texttt{ACM} or \texttt{IEEE}	& 0 & SEARCHPHRASE \\\hline
 		Balancing act: community and local requirements in an open source development process	& \texttt{ACM} or \texttt{IEEE}	& 0 & SEARCHPHRASE \\\hline
 		Case Study Research: Design and Methods	& Snowballed	& 0 & SEARCHPHRASE \\\hline
-		Challenges and recommendations for the design and conduct of global software engineering courses: A systematic review	&  \texttt{ACM}	& 0 & SEARCHPHRASE \\\hline
+		Challenges and recommendations for the design and conduct of global software engineering courses: A systematic review	& \texttt{ACM}	& 0 & SEARCHPHRASE \\\hline
 		Classifying Developers into Core and Peripheral: An Empirical Study on Count and Network Metrics	& Personal recommendation 	& 0 & SEARCHPHRASE \\\hline
 		Comparative Case Studies	& Snowballed	& 0 & SEARCHPHRASE \\\hline
 		Evolution in open source software: a case study	& \texttt{ACM}	& 0 & SEARCHPHRASE \\\hline
@@ -308,7 +358,7 @@ Out of the studies presented in Table~\ref{tab:relevant} we currently use seven 
 	The search phrase \texttt{acmdlTitle:(+open +source +software +development)} on \texttt{ACM} resulted in 99 hits. One of them was~\cite{Noll} which after the second pass we still found relevant. When going through its references we found the following relevant articles:~\cite{Noll2008a} and also~\cite{Mockus2002a} which is used in our thesis.
 	
 	\item \textbf{Outsourcing to an Unknown Workforce: Exploring Opensourcing as a Global Sourcing Strategy~\cite{Onofrei2004}}
-	The search phrase \texttt{ACM: acmdlTitle:(+"open source" + corporate + project)} on \texttt{ACM} resulted in 67 hits. One of them was \cite{Krishnamurthy2016}  which after the second pass we still found relevant. When Going through its references we found the relevant article:~\cite{Onofrei2004} which is used in our thesis
+	The search phrase \texttt{ACM: acmdlTitle:(+"open source" + corporate + project)} on \texttt{ACM} resulted in 67 hits. One of them was \cite{Krishnamurthy2016} which after the second pass we still found relevant. When Going through its references we found the relevant article:~\cite{Onofrei2004} which is used in our thesis
 	
 \end{enumerate}
 
@@ -375,60 +425,8 @@ The last, is the difference in amount of LoC and files. As mentioned in section~
 
 The two addressed differences were considered when constructing and conducting the case study. And even with these differences, Atom and Neovim are the most similar firm- and comunity-driven OSS projects of the ones we considered in our case study. Other candidates were, Google Chrome and Mozilla Firefox (difference in age and location of codebase) and Codelite instead of Neovim (Codelite was considerably smaller and older than Atom).
 
-\subsection{Case Study}
-%what is a case study?
-Oates refers to a case study as being research strategy for which one tries to describe a case, or phenomenon, from within its natural context~\cite{Oates2005}. Rather than just confirming a phenomenons existence, which could be done by for example conducting a survey, a case study aims to discover why it occurred. This is done, as a researcher, by aiming to give a detailed description of not just the phenomenon but also it's context. It is from the context the researcher can identify factors which might have caused the phenomenon to occur. The amount of factors varies from case to case and the probability of multiple causing factors should be taken into account.
-
-%internet case studies
-Oates says that case study can favourably be used when ''studying the 'life' on the Internet''~\cite{Oates2005}. However the author mentions particular issues with conducting this kind of research. The first is the problem of boundary. Namely how does one define the boundaries for which the study is being conducted. The second is the problem of offline/online existence. That is one might not get all the details for a case by only studying it online, since some information might only be available offline, such as communications between participants of the studied case. These problems are taken into consideration when constructing our method for conducting the case study. However, the first problem will have minimal effect on our research since it's easy to define what is part and not of the development process of a product and what is not. The second problem on the other hand could affect our research to greater extent. The nature of OSS is that everything related to the project is stored and displayed online. But even though developers might never meet face-to-face, they may still communicate on other channels than those provided through the project. These channels are not always displayed online and can therefore be seen, from a researchers perspective, as offline.
-
-%what have others done in their case studies?
-% apache and mozilla
-As previously mentioned (section~\ref{related_work}) there have been two studies conducted that are similar to ours. In the first,~\cite{Mockus2002a}, Mockus et al. conduct an exploratory case study with the purpose of mapping how OSS-projects are conducted to form hypothesises on how they generally will perform. The authors compares their results with commercial projects. To make their generalisation trustworthy they have selected two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate should be sufficient to compare with other projects~\cite{Mockus2002a}. In our case study we will use parts of the presented questions. However, because the second paper focuses on requirement elicitation, the majority of our data collection schema will be more similar to this that paper. The 6 questions are presented in Table~\ref{tab:apache}.
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{ | p{0.9\textwidth} |}
-		\hline
-		\begin{enumerate}
-			\item What were the processes used to develop Apache and Mozilla?
-			\item How many people wrote code for new functionality? How many people reported problems? How many people repaired defects?
-			\item Were these functions carried out by distinct groups of people, that is, did people primarily assume a single role? Did large numbers of people participate somewhat equally in these activities, or did a small number of people do most of the work?
-			\item Where did the code contributors work in the code? Was strict code ownership enforced on a file or module level?
-			\item What is the defect density of Apache and Mozilla code?
-			\item How long did it take to resolve problems? Were high priority problems resolved faster than low priority problems? Has resolution interval 	decreased over time?
-		\end{enumerate}\\
-		\hline
-	\end{tabular}
-	\caption{Research questions for exploring OSS-projects~\cite{Mockus2002a}.}
-	\label{tab:apache}
-\end{table}
-
-\FloatBarrier
-
-% firefox and openemr (req. elicitation) 
-
-The second study,~\cite{Noll}, is also an case study on OSS-projects. But instead of being exploratory it is specific on what factors to compare between two projects, namely requirement elicitation. Noll and Liu have chosen to compare requirement elicitation between two extremes off OSS-projects, large, Firefox, and small, OpenEMR, in terms of end-users of the product and contributors to the project. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in Table~\ref{tab:openemr}.
-\begin{table}[h]
-	\centering
-	\begin{tabular}{ | p{0.9\textwidth} |}
-		\hline
-		\begin{enumerate}
-			\item Identify the set of features delivered for OpenEMR after release 2.8.0, up to and including release 2.9.0.
-			\item Select a subset of these features for examination.
-			\item Examine Internet resources related to OpenEMR, such as archives of discussion forums, the OpenEMR issue database, the OpenEMR ''tracker'' on Sourceforge.net, and other online forums, to discover when the feature was first proposed, and what role the person proposing the feature played (such as user or developer).
-			\item Determine the initial implementation of the feature (prototype by a developer, patch submitted to the tracker, or enhancement committed directly to the codebase).
-			\item Categorise the requirement as asserted by a developer, either from his or her personal experience or knowledge of user needs; proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database; or derived from features found in competing products.
-		\end{enumerate}\\
-		\hline
-	\end{tabular}
-	\caption{5 steps for gathering data from OSS-projects~\cite{Noll}.}
-	\label{tab:openemr}
-\end{table}
-
-\FloatBarrier
 %what do we want to do in our case study?
-In the following sections we present the approach for conducting our case study. For our data schema we will use a combination of the two presented schemas in section~\ref{sec:related_work}.
+%In the following sections we present the approach for conducting our case study. For our data schema we will use a combination of the two presented schemas in section~\ref{sec:related_work}.
 
 \subsection{Data Collection}
 \subsubsection{Sources}
@@ -685,7 +683,7 @@ In this section we will present to you the detailed data that we have collected 
 \subsubsection{Feature Proposals (D5)}
 The results of feature proposals displayed in Tables~\ref{tab:proposals_atom} and~\ref{tab:proposals_neovim} shows the amount of proposals made by individual users categorised as core developers, peripheral developers and end users. From this data we can summarise that there were a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers where in the Atom project a total of 12 in contrast to the Neovim project which had 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
 
-In Table~\ref{tab:proposals_group} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) where 2 in the Atom project and  7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category peripheral developers (dev) where Atom had a total of 9 unique peripheral developers and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users came from  proposals from end users did not where only unique events where Atom had 4 end users proposing features and Neovim had a total of 3.
+In Table~\ref{tab:proposals_group} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) where 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both project are from the category peripheral developers (dev) where Atom had a total of 9 unique peripheral developers and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users came from proposals from end users did not where only unique events where Atom had 4 end users proposing features and Neovim had a total of 3.
 
 \begin{table}[h]
 	\centering
@@ -776,7 +774,7 @@ Presented in this section are the result for proposals in category A, B and C de
 
 \FloatBarrier
 \subsubsection{Feature Acknowledgement (D7)}
-The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neovim} below presents detailed data for feature acknowledgement~\ref{subsec:data}. The tables includes data regarding unique user status (peripheral developer or core developer), the amount of features they have acknowledge during the time period and the unique username. Table~\ref{tab:acknowledgements_atom}  presents detailed data from the Atom project and Table~\ref{tab:acknowledgements_neovim} present detailed data from the Neovim project.
+The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neovim} below presents detailed data for feature acknowledgement~\ref{subsec:data}. The tables includes data regarding unique user status (peripheral developer or core developer), the amount of features they have acknowledge during the time period and the unique username. Table~\ref{tab:acknowledgements_atom} presents detailed data from the Atom project and Table~\ref{tab:acknowledgements_neovim} present detailed data from the Neovim project.
 
 \begin{table}[h]
 	\centering
@@ -823,7 +821,7 @@ The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neo
 
 \FloatBarrier
 \subsubsection{First Implementation of Feature (D8)}
-This section presents the collected detailed data for whom a first feature implementation came from. Table~\ref{tab:implementation_atom} presents this data for the Atom project and Table~\ref{tab:implementation_neovim} presents the data for the Neovim project. Both Table~\ref{tab:implementation_atom}  and Table~\ref{tab:implementation_neovim} includes data regarding the amount of first implementation from a unique user, the status of that unique user (core developer or peripheral developer) and the unique username.
+This section presents the collected detailed data for whom a first feature implementation came from. Table~\ref{tab:implementation_atom} presents this data for the Atom project and Table~\ref{tab:implementation_neovim} presents the data for the Neovim project. Both Table~\ref{tab:implementation_atom} and Table~\ref{tab:implementation_neovim} includes data regarding the amount of first implementation from a unique user, the status of that unique user (core developer or peripheral developer) and the unique username.
 \begin{table}[h]
 	\centering
 	\begin{tabular}{ | l | c | c |}
@@ -969,7 +967,7 @@ Moving on to analyse the first implementation of a feature we can confirm that f
 \section{Discussion}
 \label{section:discussion}
 %Section intro
-In section \ref{sec:intro} we have present the problem, purpose, contribution and approach for this thesis. Furthermore in section \ref{subsec:background} we introduce the research area and describe the related work within the area. Based on these facts and thoughts  a total of three research question where framed and presented in section \ref{sec:rq}. 
+In section \ref{sec:intro} we have present the problem, purpose, contribution and approach for this thesis. Furthermore in section \ref{subsec:background} we introduce the research area and describe the related work within the area. Based on these facts and thoughts a total of three research question where framed and presented in section \ref{sec:rq}. 
 
 In this section we will discuss our findings in previous section \ref{detaileddata}, their implications and their relevance to our first two research questions. Then we will discuss, based on the first two research questions, the answer for our third research question. We consider the answers to the first two questions to be conclusive, and the answer for our third research question to be speculative.
 

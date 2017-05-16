@@ -127,7 +127,7 @@ Denna sammanfattning kommer skrivas inför slutgiltiga inlämningen.
 \newpage
 
 \section*{Abstract}
-Knowledge about the variety of options among project process when starting up a new software development project is crucial for the developers, the governing bodies and the end product. Therefore new and unfamiliar options are taken out of the equation to make sure that the work gets done and that the solution will be delivered on time and with high quality. This behavior in long term does, however, exclude new and better ways of executing the work in the process. So to shine light upon new development methods and enlighten those who are in need of insight into a new viable option we chose to investigate the differences in requirement elicitation within the area of Open Source Software (OSS) Development. By examining how and by who requirements are elicited in a firm-driven project compared to a community driven project, we framed a total of three research question to base our case study on. The case study showed that in community driven OSS projects external users have a low participation compared to firm-driven projects where the participation is high. Finally, we discuss the speculative implications of the findings for both community- and firm-driven OSS projects. Where we could see for both types that it's possible to increase both development speed and customer product value. 
+Knowledge about the variety of options among project processes when starting up a new software development project is crucial for the developers, the governing bodies and the end product. Therefore new and unfamiliar options are taken out of the equation to make sure that the work gets done and that the solution will be delivered on time and with high quality. This behaviour in the long term does, however, exclude new and better ways of executing the work in the process. So to shine light upon new development methods and enlighten those who are in need of insight into a new viable option we chose to investigate the differences in requirement elicitation within the area of Open Source Software (OSS) Development. By examining how and by who requirements are elicited in a firm-driven project compared to a community driven project, we framed a total of three research questions to base our case study on. The case study showed that in community driven OSS projects external users have low participation compared to firm-driven projects where the participation of external users is high. Finally, we discuss the potential implications of the findings for both community- and firm-driven OSS projects, where we could see for both types that it's possible to increase both development speed and customer product value. 
 
 %Keywords
 \textbf{\textit{Keywords---open source software, development process, requirement elicitation, git, Github, Atom, Neovim}}
@@ -169,25 +169,26 @@ This thesis presents a comparative case study of differences and commonalities i
 
 %introduce the reader to the section
     %Introduce the reader to System Development
-In the evolution of software development different types of methods have been used to manage initiation, planning, execution, monitoring and closeout of a software project. The project methods which were first to adopt these phases are known as traditional development methods. The traditional development approach identifies a sequence of steps to be completed, where the work of a new step doesn't begin until the previous step is completed. However, methods were not optimal for software development, where the need for continuous integration is important~\cite{Jansson2015}. Therefore on February 11, 2001, at The Lodge at Snowbird ski resort in the Wasatch mountains of Utah, 17 people met to talk, ski, relax and try to find common ground~\cite{Fowler2001}. What emerged from this meeting was the Agile Software Development Alliance. From this alliance, the Agile methods evolved based on a manifesto where the effort was to overcome perceived and actual weakness in conventional software engineering~\cite{Fowler2001}. This alliance wrote down the famous Agile Manifesto and their reason was simply to uncover better ways of developing software by doing it and helping others do it~\cite{Fowler2001}. In contrast to the traditional methods the agile methods are based on incremental methods, managing the design and build activities of engineering~\cite{Jansson2015}. Apart from the traditional and agile methods the open source software (OSS) development method started to receive a lot of attention in the late 90's. OSS development is the process by which open-source, or similar software whose source code is publicly available, is developed. These are software products available with its source code under an open-source license to study, change and improve its design. For this reason, OSS was in the late 90's characterised as a fundamentally new way to develop software and was seen as a challenge to the commercial software business that dominated the vast majority of the software market~\cite{Mockus2002a}. Over time, OSS evolved into a method that can be applied to commercial software and maintain quality. Examples of some popular open-source software products are Mozilla Firefox, Google Chromium, Android, Linux, the Apache OpenOffice Suite, Atom and Neovim. Open-source software development has been a
- large part of the creation of the World Wide Web as we know it, with Tim Berners-Lee contributing his HTML code development as the original platform upon which the internet is now built~\cite{timbernerslee}.
+In the evolution of software development different types of methods have been used to manage initiation, planning, execution, monitoring and closeout of a software project. The project methods which were first to adopt these phases are known as traditional development methods. The traditional development approach identifies a sequence of steps to be completed, where the work of a new step doesn't begin until the previous step is completed. However, methods were not optimal for software development, where the need for continuous integration is important~\cite{Jansson2015}. Therefore on February 11, 2001, at The Lodge at Snowbird ski resort in the Wasatch mountains of Utah, 17 people met to talk, ski, relax and try to find common ground~\cite{Fowler2001}. What emerged from this meeting was the Agile Software Development Alliance. From this alliance, the Agile methods evolved based on a manifesto where the effort was to overcome perceived and actual weakness in conventional software engineering~\cite{Fowler2001}. This alliance wrote down the famous Agile Manifesto and their reason was simply to uncover better ways of developing software by doing it and helping others do it~\cite{Fowler2001}.
+
+In contrast to the traditional methods the agile methods are based on incremental methods, managing the design and build activities of engineering~\cite{Jansson2015}. Agile methods are also claimed to encourage developers to be more flexible and efficient by means of arrangements in the development teams physical and social environment~\cite{Jansson2015}. Apart from the traditional and agile methods the open source software (OSS) development method started to receive a lot of attention in the late 90's. OSS development is the process by which open-source, or similar software whose source code is publicly available, is developed. These are software products available with its source code under an open-source license to study, change and improve its design. For this reason, OSS was in the late 90's characterised as a fundamentally new way to develop software and was seen as a challenge to the commercial software business that dominated the vast majority of the software market~\cite{Mockus2002a}. Over time, OSS evolved into a method that can be applied to develop commercial software and to maintain quality. Examples of some popular open-source software products are Mozilla Firefox, Google Chromium, Android, Linux, the Apache OpenOffice Suite, Atom and Neovim. Open-source software development has been a large part of the creation of the World Wide Web as we know it, with Tim Berners-Lee contributing his HTML code development as the original platform upon which the internet is now built~\cite{timbernerslee}.
 
     %TODO: More on the open source story
 
     %Introduce the reader to Community-driven projects and Requierment elicitation
-Regardless of the development process a project chooses to use when developing a software system they would most likely need a way to handle requirements in one way or another. While requirements in traditional and agile development processes are elicited from discussions with a client/customer OSS project handles the elicitation through the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed~\cite{Maccormack2006}. Joblin et al.~\cite{Joblin} describes the two vital roles of developers in an OSS project, where they so-called core developers are developers with a substantial, long-term involvement, and in an abstract sense these developers play an essential role in developing the system architecture and forming the general leadership structure. In contrast, peripheral developers are typically involved in bug fixes or small enhancements, and they have irregular or short-term involvement. 
+Regardless of the development process a project chooses to use when developing a software system they would most likely need a way to handle requirements in one way or another. While requirements in traditional and agile development processes are elicited from discussions with a client/customer, OSS projects handle the elicitation through the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed~\cite{Maccormack2006}. Joblin et al.~\cite{Joblin} describe the two vital roles of developers in an OSS project, where the so-called core developers are developers with a substantial, long-term involvement, and in an abstract sense these developers play an essential role in developing the system architecture and forming the general leadership structure. In contrast, peripheral developers are typically involved in bug fixes or small enhancements, and they have irregular or short-term involvement. 
 
 %The key decisions in project driven by OSS communities are taken by a central group of software developers (core developers). Beyond this central group, are the peripheral developers; these are developers who intermittently submit code contributions (called patches). The core group reviews and acknowledge the patches before they are incorporated into the projects source code~\cite{Crowston2006}. 
 
 %Introduce the reader to Firm-driven development
-The Agile methods are popular to use in software companies for information systems development. Agile methods are claimed to encourage developers to be more flexible and efficient by means of arrangements in the development teams physical and social environment~\cite{Jansson2015}. In recent years, however, we have seen an increased interest in using open source alongside with the Agile development~\cite{Onofrei2004,Jansson2015}. Large-scale companies like Google, Microsoft, Facebook etc have been striving towards a more open environment in both development projects but also in general work process~\cite{Schmidt2014}. Alongside with an interest and momentum of OSS it is now also considered to be, in a commercial setting, a more viable approach~\cite{Onofrei2004}. From a commercial standpoint OSS development also promises many advantages. Including reduced salary costs; reduced cycle time arising from' 'follow-the-sun'' software development; cross-site modularisation of development work; access to a larger skilled developer pool; innovation and shared best practice; and closer proximity to customers~\cite{Onofrei2004}.
+In recent years, we have seen an increased interest in using open source alongside with the Agile development~\cite{Onofrei2004,Jansson2015}. Large-scale companies like Google, Microsoft, Facebook etc have been striving towards a more open environment in both development projects but also in general work process~\cite{Schmidt2014}. Alongside with an interest and momentum of OSS it is now also considered to be, in a commercial setting, a more viable approach~\cite{Onofrei2004}. From a commercial standpoint OSS development also promises many advantages. Including reduced salary costs; reduced cycle time arising from' 'follow-the-sun'' software development; cross-site modularisation of development work; access to a larger skilled developer pool; innovation and shared best practice; and closer proximity to customers~\cite{Onofrei2004}.
 
 \subsection{Related Work}
 \label{related_work}
 %Explain the context of the other two studies and their findings/limitations
 
 % apache and mozilla
-In previous work within the area of OSS and requirement elicitation there are two highly relevant studies for this thesis. The first article~\cite{Mockus2002a} presents two case studies of the development and maintenance of major OSS projects: the Apache server and Mozilla. Where Mockus et al. address key questions about the development process, and about the software that is the result of the processes. Based on results from a earlier study made on Apache, covered in the article A Case Study of Open Source software Development: the Apache server, they framed a number of hypotheses that they conjectured would be true generally of open source developments. The second case study in the article~\cite{Mockus2002a} examined data from the Mozilla project based on the analyses and hypothesis that were framed from the Apache project. Mockus et al. came to the conclusion that the essential differences in which elements of commercial and open source processes coordinate, select, and assign work could be combined. To make their generalisation trustworthy they selected the two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions for which they motivate should be sufficient to compare with other projects~\cite{Mockus2002a}. The 6 questions are presented in Table~\ref{tab:apache}.
+In previous work within the area of OSS and requirement elicitation there are two highly relevant studies for this thesis. The first article~\cite{Mockus2002a} presents two case studies of the development and maintenance of major OSS projects: the Apache server and Mozilla. Mockus et al.~\cite{Mockus2002a} address key questions about the development process and about the software that is the result of the processes. Based on results from an earlier study made on Apache, covered in~\cite{Mockus}, they framed a number of hypotheses that they conjectured would be true generally of open source developments. The second case study in the article~\cite{Mockus2002a} examined data from the Mozilla project based on the analyses and hypotheses that were framed from the Apache project. Mockus et al. came to the conclusion that the essential differences by which elements of commercial and open source processes coordinate, select, and assign work could be combined. To make their generalisation trustworthy they selected the two cases which can be considered typical instances for an OSS-project, Apache and Mozilla. The authors present 6 research questions they used to compare the projects~\cite{Mockus2002a}. The 6 questions are presented in Table~\ref{tab:apache}.
 
 \begin{table}[h]
     \centering
@@ -210,7 +211,7 @@ In previous work within the area of OSS and requirement elicitation there are tw
 \FloatBarrier
 
 % firefox and openemr (req. elicitation) 
-In the second highly relevant article,~\cite{Noll}, Noll et al. presents a case study of the OpenEMR, an open source project developing electronic medical record (EMR) software. The goal of the study was to understand how requirements are elicited, documented, agreed and validated in a small open source software project. The study followed the same approach as of an earlier study of the Firefox web browser~\cite{Noll2008a}. The comparison between the both projects showed that, similar to the Firefox study, the majority of OpenEMR requirements are asserted by developers. Documentation was informal, consisting mainly of archived discussions. Contributors to the OpenEMR project were medical practitioners such as doctors or clinic administrations, who use the product in their practices and also developers which do not use the product at all. The implication for software development, in general, is that developers can be a significant source of innovation. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in Table~\ref{tab:openemr}.
+In the second highly relevant article,~\cite{Noll}, Noll et al. presents a case study of the OpenEMR, an open source project developing electronic medical record (EMR) software. The goal of the study was to understand how requirements are elicited, documented, agreed and validated in a small open source software project. The study followed the same approach as an earlier study of the Firefox web browser~\cite{Noll2008a}. The comparison between the both projects showed that, similar to the Firefox study, the majority of OpenEMR requirements are asserted by developers. Documentation was informal, consisting mainly of archived discussions. Contributors to the OpenEMR project were medical practitioners such as doctors or clinic administrations, who use the product in their practices and also developers which do not use the product at all. The implication for software development, in general, is that developers can be a significant source of innovation. In order to conduct the study the authors present a method including 5 steps for retrieving the data upon which they will make the comparison. The method is presented in Table~\ref{tab:openemr}.
 
 % firefox and openemr (req. elicitation) 
 \begin{table}[h]
@@ -238,14 +239,14 @@ The articles together summarise the differences between open-source projects in 
 
 \subsubsection{Case Study}
 %what is a case study?
-Oates refers to a case study as being research strategy for which one tries to describe a case, or phenomenon, from within its natural context~\cite{Oates2005}. Rather than just confirming a phenomenons existence, which could be done by for example conducting a survey, a case study aims to discover why it occurred. This is done, as a researcher, by aiming to give a detailed description of not just the phenomenon but also it's context. It is from the context the researcher can identify factors which might have caused the phenomenon to occur. The number of factors varies from case to case and the probability of multiple causing factors should be taken into account.
+Oates refers to a case study as being a research strategy in which one tries to describe a case, or phenomenon, from within its natural context~\cite{Oates2005}. Rather than just confirming a phenomenons existence, which could be done by for example conducting a survey, a case study aims to discover why it occurred. This is done, as a researcher, by aiming to give a detailed description of not just the phenomenon but also its context. It is from the context the researcher can identify factors which might have caused the phenomenon to occur. The number of factors varies from case to case and the probability of multiple causing factors should be taken into account.
 
 %internet case studies
-Oates says that case study can favourably be used when ''studying the 'life' on the Internet''~\cite{Oates2005}. However, the author mentions particular issues with conducting this kind of research. The first is the problem of the boundary. Namely, how does one define the boundaries for which the study is being conducted. The second is the problem of offline/online existence. That is one might not get all the details for a case by only studying it online, since some information might only be available offline, such as communications between participants of the studied case. These problems are taken into consideration when constructing our method for conducting the case study. However, the first problem will have minimal effect on our research since it's easy to define what is part and not of the development process of a product and what is not. The second problem, on the other hand, could affect our research to a greater extent. The nature of OSS is that everything related to the project is stored and displayed online. But even though developers might never meet face-to-face, they may still communicate on other channels than those provided through the project. These channels are not always displayed online and can therefore be seen, from a researcher's perspective, as offline.
+Oates says that case study can favourably be used when ''studying the 'life' on the Internet''~\cite{Oates2005}. However, the author mentions particular issues with conducting this kind of research. The first is the problem of the boundary. Namely, how does one define the boundaries for which the study is being conducted. The second is the problem of offline/online existence. That is one might not get all the details for a case by only studying it online, since some information might only be available offline, such as communications between participants of the studied case. These problems are taken into consideration when constructing our method for conducting the case study. However, the first problem will have minimal effect on our research since it's easy to define what is part and not of the development process of a product and what is not. The second problem, on the other hand, could affect our research to a greater extent. The nature of OSS is that everything related to the project is stored and displayed online. But even though developers might never meet face-to-face, they may still communicate on other channels than those provided through the project. These channels are not always openly displayed online and can therefore be seen, from a researcher's perspective, as offline.
 
 \subsection{Research Question}
 \label{sec:rq}
-Based on our research interests in studying the commonalities and differences between community and firm driven OSS projects, we present our research questions below. The first research question (RQ) addresses the characteristics of community-driven OSS development. The second RQ addresses the characteristics of firm-driven OSS development. The third and last RQ addresses the result of what the first two and what they imply.
+Based on our research interests in studying the commonalities and differences between community and firm driven OSS projects, we present our research questions below. The first research question (RQ) addresses the characteristics of community-driven OSS development. The second RQ addresses the characteristics of firm-driven OSS development. The third and last RQ addresses the results of the first two and what they imply.
 \begin{enumerate}[label=RQ\arabic*]
     \item \emph{What are the characteristics of community-driven OSS development?}
     \item \emph{What are the characteristics of firm-driven OSS development?}
@@ -253,12 +254,12 @@ Based on our research interests in studying the commonalities and differences be
 \end{enumerate}
 
 %Shortly describe structure of report
-The remainder of this paper is organised as follows: the next section will present our systematic literature review which we conducted to familiarise with the subject; the next section will present the chosen method for this study; next are the results; they are followed by an analysis and discussion of their implications; lastly we present a conclusion and suggestions for future work.
+The remainder of this paper is organised as follows: the next section will present our systematic literature review which we conducted to familiarise ourselves with the subject; the next section will present the chosen method for this study; next are the results; they are followed by an analysis and discussion of their implications; lastly we present a conclusion and suggestions for future work.
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \newpage
 \section{Systematic Literature Review}
-To ensure that our thesis is credible we first have to make sure that we are well informed on the subject we're researching. In order to do this we've performed a systematic literature review. which is presented in this section.
+To ensure that our thesis is credible we first have to make sure that we are well informed on the subject we're researching. In order to do this we've performed a systematic literature review which is presented in this section.
 
 When searching we used three different databases: \emph{ACM Digital Library} (\texttt{ACM}), \emph{IEEE Xplore Digital Library} (\texttt{IEEE}) and \emph{Google Scholar} (\texttt{GOOGLE}). The first two, \texttt{ACM} and \texttt{IEEE}, are well-known within the area of computer science and they were used for searching for articles using keywords and search phrases. The last, \texttt{GOOGLE}, was used for forward and backward snowballing.
 
@@ -300,7 +301,7 @@ We used \texttt{GOOGLE} to snowball more studies. This was done in three parts f
 \begin{table}
     \resizebox{!}{.35\paperheight}{\begin{tabular}{ p{0.6\textwidth} | p{0.15\textwidth} | p{0.1\textwidth} | p{0.4\textwidth}}
         \hline
-        \textbf{Name of Article}    & \textbf{How it was found}    & \textbf{How many articles was snowballed form this}    & \textbf{Used search phrase}\\\hline
+        \textbf{Name of Article}    & \textbf{How it was found}    & \textbf{How many articles was snowballed from this}    & \textbf{Used search phrase}\\\hline
         A Case Study of Open Source software Development: the Apache server    & \texttt{ACM} or \texttt{IEEE}    & 1 & open AND source AND software AND development \\\hline
         Agila projektledningsmetoder och motivation & \texttt{GOOGLE}    & 0 & open source + konventionell + project + management + case study \\\hline
         An analysis of requirements evolution in open source projects: recommendations for issue trackers    & \texttt{ACM} or \texttt{IEEE}    & 0 & open AND source AND development AND requirements \\\hline
@@ -370,13 +371,13 @@ Out of the studies presented in Table~\ref{tab:relevant} we currently use seven 
 \newpage
 \section{Methodology}
 \label{sec:method}
-In the section \ref{sec:intro}, we introduced OSS development and related studies comparing the different ways that these projects are executed. In this section, we present our research methodology.
+In section \ref{sec:intro}, we introduced OSS development and related studies comparing the different ways that these projects are executed. In this section, we present our research methodology.
 
 %Descirbe what we want to research
 The purpose of this study is to compare two different types of governing bodies for OSS-projects, firm driven and community driven. And with these results try to identify what they imply. For OSS projects, in general, all information regarding development process is public, this includes both documentation and code. The communication between project participants also tends to be public. This public access to data creates an opportunity for researchers to study the development process over time. With all this detailed information of a project's development process we have chosen to conduct a comparative case study on two OSS-projects, one of each type of governing bodies.
 
 % why not survey
-With all the given data mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. However, such a survey would risk to miss out on detailed information that is unique for each project. Which a comparative case study would be able to discover.
+With all the given data mentioned in the previous paragraph one could argue that conducting a survey would be more suitable. However, such a survey would risk to miss out on detailed information that is unique for each project which a comparative case study would be able to discover.
 
 % here we shortly describe the methodology section
 In the subsections below, we first present the two projects we've chosen for our case study, followed by a motivation for why we choose them. Next, we describe what a case study is and continue by presenting previous case studies that were similar to ours. Next, we present what we will do in our case study, both how we will gather data and what data we will gather. Finally, we present what tools we will use, how we will analyse the data and present identified threats to the validity of our report.
@@ -388,13 +389,13 @@ This section describes the two projects that we have conducted our case studies 
 \subsubsection{Case 1: Atom}
 \label{subsec:case:atom}
 %Explain Atom
-Atom is a free and open-source text and source code editor for macOS, Linux and Microsoft Windows. The Atom project was initialised by Github on Github on August 14 2011 and has since then grown to be a very popular text editor for developers all around the world. The project has today a total of 349 contributors that have made one or several contributions from the start of the project. Atom is licensed under the MIT license\footnote{A short and simple permissive license with conditions only requiring preservation of copyright and license notices}. Github is still in control of the development process. Atom also have a huge amount of extending packages developed by its own users under free software licenses and are community-built and maintained. Atom was released from beta, as version 1. 0, on June 25, 2015. Its developers calls it ''a hackable text editor for the 21st Century''~\cite{atom_wp,atom_pp}.
+Atom is a free and open-source text and source code editor for macOS, Linux and Microsoft Windows. The Atom project was initialised by Github on Github on August 14 2011 and has since then grown to be a very popular text editor for developers all around the world. The project has today a total of 349 contributors that have made one or more contributions from the start of the project. Atom is licensed under the MIT license\footnote{A short and simple permissive license with conditions only requiring preservation of copyright and license notices}. Github is still in control of the development process. Atom also have a huge amount of extending packages developed by its own users under free software licenses and are community-built and maintained. Atom was released from beta, as version 1. 0, on June 25, 2015. Its developers call it ''a hackable text editor for the 21st Century''~\cite{atom_wp,atom_pp}.
 
 
 \subsubsection{Case 2: NeoVim}
 \label{neo_vim}
 %Explain Neovim
-Neovim is a free and open-source text and source code editor for MacOS, Linux and Microsoft Windows. The Neovim project started in 2014 on Github, with some Vim community members offering early support of the high-level refactoring effort to provide better scripting, plugins, and integration with modern GUIs. Vim (Vi Improved) is a text editor which was first released in 1991 under a special license compatible with the GNU General Public License\footnote{A free, copyleft license for software and other kinds of works.} It was made to streamline creating and changing text-files. Neovim is, therefore, a refactor of Vim and strives to be a superset of Vim except for some intentionally removed features. It is built for users who want the good parts of Vim, and more. The Neovim Project today is a total of 309 contributors that have been involved in writing code in one way or another. Neovim is driven by an independent community that is able to support the project through monthly subscriptions. Neovim had its first public released on 1 November 2015~\cite{neovim_wp,neovim_wiki}.
+Neovim is a free and open-source text and source code editor for MacOS, Linux and Microsoft Windows. The Neovim project started in 2014 on Github, with some Vim community members offering early support of the high-level refactoring effort to provide better scripting, plugins, and integration with modern GUIs. Vim (Vi Improved) is a text editor which was first released in 1991 under a special license compatible with the GNU General Public License\footnote{A free, copyleft license for software and other kinds of works.} It was made to streamline creating and changing text-files. Neovim is, therefore, a refactor of Vim and strives to be a superset of Vim except for some intentionally removed features. It is built for users who want the good parts of Vim, and more. The Neovim Project today is a total of 309 contributors that have been involved in writing code in one way or another. Neovim is driven by an independent community that is able to support the project through monthly subscriptions. Neovim had its first public release on 1 November 2015~\cite{neovim_wp,neovim_wiki}.
 
 \subsubsection{Motivation for Selection of Cases}
 \label{sec:case_selection}
@@ -421,11 +422,11 @@ To ensure our results reflect only the requirement elicitation process of the pr
 \end{table}
 
 \FloatBarrier
-Based on the data presented in table~\ref{tab:github_stats}, we see that the (1) projects are similar in relation to a number of contributors, (2) both projects have several thousands of commits, and (3) both projects consists of several hundred of files.
+Based on the data presented in table~\ref{tab:github_stats}, we see that (1) the projects are similar in relation to the number of contributors, (2) both projects have several thousands of commits, and (3) both projects consists of several hundred of files.
 
 With Atom having more than 3 times as many commits as Neovim there is a difference. However, the usage of how one would commit code could differ between the two projects. For example the amount of LoC committed could be approximately the same even if amount of commits differ.
 
-The last, is the difference in the amount of LoC and files. As mentioned in section~\ref{neo_vim} Neovim is a product that uses a lot of the functionality from Vim. The result of this is that Neovim has a lot of code which has been transferred from Vim. Vim has 328722 LoC and 230 files. This justifies the difference in the LoC.
+Lastly, is the difference in the amount of LoC and files. As mentioned in section~\ref{neo_vim} Neovim is a product that uses a lot of the functionality from Vim. The result of this is that Neovim has a lot of code which has been transferred from Vim. Vim has 328722 LoC and 230 files. This justifies the difference in the LoC.
 
 The two addressed differences were considered when constructing and conducting the case study. And even with these differences, Atom and Neovim are the most similar firm- and community-driven OSS projects of the ones we considered in our case study. Other candidates were, Google Chrome and Mozilla Firefox (difference in age and location of the codebase) and Codelite instead of Neovim (Codelite was considerably smaller and older than Atom).
 
@@ -435,21 +436,21 @@ The two addressed differences were considered when constructing and conducting t
 \subsection{Data Collection}
 \subsubsection{Sources}
 \label{subsec:sources}
-Several data sources have been used to collect different types of data for this thesis. The biggest source of data for this thesis is Github, a web-based version control and collaboration platform for software developers, which have provided us with data from both Atom- and Neovim-project. The data is, for example, project participants, developer discussions, contribution history and feature suggestions. Data from Github have been used on two occasions. The first occasion is gathering of overview data from the Github API for both Atom and Neovim, the second occasion is gathering of detailed data from Atom and Neovim. The data gathering for the occasions is presented in section~\ref{subsec:data}.
+Several data sources have been used to collect different types of data for this thesis. The biggest source of data for this thesis is Github, a web-based version control and collaboration platform for software developers, which have provided us with data from both Atom and Neovim projects. The data is, for example, project participants, developer discussions, contribution history and feature suggestions. Data from Github have been used on two occasions. The first occasion is the gathering of overview data from the Github API for both Atom and Neovim. The second occasion is gathering of detailed data from Atom and Neovim. The data gathering for the both issues is presented in section~\ref{subsec:data}.
 
-We have also turned to Atom and Neovims forums for development discussions. Within these forums proposals for features and issues alongside with instructions and tips to the users can be found. Atom uses its own discussion forum that can be found on their official website~\cite{atom_wp}. Neovim, on the other hand, used both Reddit\footnote{Reddit is a social news aggregation, web content rating, and discussion website~\cite{reddit}} and Github as discussion channels. The gathering of this detailed data is presented in section~\ref{subsec:data}.
+We have also turned to Atom and Neovim's forums for development discussions. Within these forums proposals for features and issues alongside with instructions and tips to the users can be found. Atom uses its own discussion forum that can be found on their official website~\cite{atom_wp}. Neovim, on the other hand, used both Reddit\footnote{Reddit is a social news aggregator, web content rating, and discussion website~\cite{reddit}} and Github as discussion channels. The gathering of this detailed data is presented in section~\ref{subsec:data}.
 
 \subsubsection{Data Schema}
 \label{subsec:data}
-Below we present a schema for what data we will collect with its description. The schema consists of two parts The first, D1-D4, is overview data that can be used to comparing the two projects themselves and with other open source projects. The second part, D5-D8, is sampling data focusing on the requirements elicitation process of the two projects. A more extensive description and technical definition of each overview data point can be found in Appendix~\ref{ap:detailed_data}.
+Below we present a schema for what data we will collect with its description. The schema consists of two parts The first, D1-D4, is overview data that can be used to compare the two projects themselves and with other open source projects. The second part, D5-D8, is sampling data focusing on the requirements elicitation process of the two projects. A more extensive description and technical definition of each overview data point can be found in Appendix~\ref{ap:detailed_data}.
 \subparagraph{Overview Data}
 \begin{enumerate}[label=D\arabic*]
     \item \emph{Code contributors}
 
-    How many contributors are there in the project, and what is their distribution? We define a contributor as someone who written code to the project.
+    How many contributors are there in the project, and what is their distribution? We define a contributor as someone who has written code to the project.
     \item \emph{Feature proposers}
 
-    How many proposed new features that got implemented to the project and what is their distribution?
+    How many individuals proposed new features that got implemented to the project and what is their distribution?
     \item \emph{Problem reporters}
 
     How many people reported problems they had with the product? And how was the distribution of problem reports over these people? (Did everyone report an equal amount of problems?)
@@ -480,7 +481,7 @@ Below we present a schema for what data we will collect with its description. Th
 \end{enumerate}
 
 \subsubsection{Collection process}
-Below we present a schema for our method on collecting the data. Every step which will generate data will also specify for which data it will be. We are then referring to the schema found in section~\ref{subsec:data}.
+Below we present a schema for our method of collecting the data. Every step which will generate data will refer to for which which of the data presented in Section~\cite{subsec:data} it will be. We are then referring to the schema found in section~\ref{subsec:data}.
 
 \begin{enumerate}
     \item Select a time period between release M and N for project X. (Where $ M < N $)
@@ -501,18 +502,18 @@ In our research we make use of two tools that need further explanation. They are
 In order to retrieve the desired data from the two projects we will use the Github API. This is a service offered by Github for users to programmatically extract, and to some extent process, data hosted on Github. The API is accessible with the use of HTTPl\footnote{Hyper Text Transfer Protocol, one of the most common protocols used on the Internet today.}. The API have different addresses, called end-points, for different kinds of data. Our research requires us to make use of multiple end-points to have enough data.
 
 % Explain the constructed scripts
-To minimise the risk of making manual HTTP-request (in the command prompt) or manual processing of data. We wrote scripts to automate as much as possible. The scripts are written in the programming language Python. Our scripts are described in Appendix~\ref{ap:scripts}.
+To minimise the risk of making manual HTTP-request (in the command prompt) or manual processing of data we wrote scripts to automate as much as possible. The scripts are written in the programming language Python. Our scripts are described in Appendix~\ref{ap:scripts}.
 
 \subsection{Threats to Validity}
 \label{sec:vthreats}
-When conducting a case study it is important to select a case that is representative for the researched phenomenon in order to use the results to draw generalised conclusions. If a representative case is not selected this poses a threat to the external validity of the thesis. This is because our results would then not be used to draw a generalised conclusion. To minimise this threat we collect the overview data, D1-D4 in section~\ref{subsec:data}. This data can be used to compare to other projects and the projects that are researched in the previous studies,~\cite{Mockus2002a} and~\cite{Noll}.
+When conducting a case study it is important to select a case that is representative for the researched phenomenon in order to use the results to draw generalised conclusions. If a representative case is not selected this poses a threat to the external validity of the thesis. This is because our results could then not be used to draw a generalised conclusion. To minimise this threat we collect the overview data, D1-D4 in section~\ref{subsec:data}. This data can be used to compare to other projects and the projects that are researched in the previous studies,~\cite{Mockus2002a} and~\cite{Noll}.
 
-Furthermore, it is important when selecting cases that they have similar attributes that are not the focus of the study. In our study we want to see the differences depending on the governing body and not the size of the project, product type or project age. Ensuring the similarity on these factors would increase the internal validity of our study. This is initially ensured in section~\ref{sec:case_selection} and also with the overview data\footnote{D1-D4 in section~\ref{subsec:data}}.
+Furthermore, it is important when selecting cases that they have similar attributes that are not the focus of the study. In our study we want to see the differences depending on the governing body and not the size of the project, product type or project age. Ensuring the similarity on these factors increases the internal validity of our study. This is initially ensured in section~\ref{sec:case_selection} and also with the overview data\footnote{D1-D4 in section~\ref{subsec:data}}.
 
 Lastly, a threat to validity when conducting a case study is that the researcher affects the results by being involved in the context for which he/she researches~\cite{Oates2005}. This, however, is not applicable to our case since we are not researching on a present phenomenon but rather on something that is in the past. Therefore we do not consider it as a threat to our study.
 
 \subsection{Data Analysis}
-The analysis of the data will consist of three parts, which will be described in the following paragraphs, they are: (1) validate the selection of cases, (2) identify similarities and differences in requirement elicitation process and (3) other potential findings.
+The analysis of the data will consist of three parts, which will be described in the following paragraphs. They are: (1) validate the selection of cases, (2) identify similarities and differences in the requirement elicitation process and (3) other potential findings.
 
 In section~\ref{sec:vthreats} we mentioned that selecting two very different projects will greatly affect the results of this study. Therefore we start by analysing the results from overview data, to compare the two projects on both size compared to each other and also similarities with other OSS-projects.
 
@@ -526,7 +527,7 @@ When conducting a case study it is possible that one can discover things that we
 
 \newpage
 \section{Results}
-In the previous section~\ref{sec:method}, we presented our research methodology. In this section the results from the methods specified in section~\ref{sec:method} are presented. They are presented in the same order as they occur in section~\ref{subsec:data}. Which is first the overview data and then the detailed data.
+In the previous section~\ref{sec:method}, we presented our research methodology. In this section the results from the methods specified in section~\ref{sec:method} are presented. They are presented in the same order as they occur in section~\ref{subsec:data} which is first the overview data and then the detailed data.
 
 \subsection{Overview Data}
 \label{stat_data}
@@ -536,13 +537,13 @@ The number of code contributors was similar for the two projects as seen in Tabl
 
 \begin{table}[h]
     \centering
+    \caption{Showing amount of code contributors.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Data Type}         & \textbf{Atom}     & \textbf{Neovim}    \\\hline
         Amount of contributors    & 128        & 113             \\
         \hline
     \end{tabular}
-    \caption{Showing amount of code contributors.}
     \label{tab:contributors_amount}
 \end{table}
 
@@ -551,14 +552,14 @@ The number of code contributors was similar for the two projects as seen in Tabl
     \caption{Commits distribution compared to\dots}
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{commits_dist}
         \caption{\dots each other.}
+        \includegraphics[width=1\textwidth]{commits_dist}
         \label{fig:commits_dist}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{all_commits_dist}
         \caption{\dots other popular OSS-projects.}
+        \includegraphics[width=1\textwidth]{all_commits_dist}
         \label{fig:all_commits_dist}
     \end{subfigure}
 \end{figure}
@@ -568,14 +569,14 @@ The number of code contributors was similar for the two projects as seen in Tabl
     \caption{Additions distribution compared to\dots}
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{additions_dist}
         \caption{\dots each other.}
+        \includegraphics[width=1\textwidth]{additions_dist}
         \label{fig:additions_dist}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{all_additions_dist}
         \caption{\dots other popular OSS-projects.}
+        \includegraphics[width=1\textwidth]{all_additions_dist}
         \label{fig:all_additions_dist}
     \end{subfigure}
 \end{figure}
@@ -585,14 +586,14 @@ The number of code contributors was similar for the two projects as seen in Tabl
     \caption{Deletions distribution compared to\dots}
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{deletions_dist}
         \caption{\dots each other.}
+        \includegraphics[width=1\textwidth]{deletions_dist}
         \label{fig:deletions_dist}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{all_deletions_dist}
         \caption{\dots other popular OSS-projects.}
+        \includegraphics[width=1\textwidth]{all_deletions_dist}
         \label{fig:all_deletions_dist}
     \end{subfigure}
 \end{figure}
@@ -602,6 +603,7 @@ The number of code contributors was similar for the two projects as seen in Tabl
 The amount of feature proposers were 108 for the two projects as seen in Table~\ref{tab:other_contributors}. The amount of problem reporters were 50 for the two projects as seen in Table~\ref{tab:other_contributors}. A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in Figures~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Compared to other popular OSS-projects Atom and Neovim can be considered similar as seen in Tables~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}.
 \begin{table}[h]
     \centering
+    \caption{Showing amount of feature proposers and problem reporters.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Data Type}             & \textbf{Atom}     & \textbf{Neovim}    \\\hline
@@ -609,7 +611,6 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
         Amount of problem reporters    & 230        & 141             \\
         \hline
     \end{tabular}
-    \caption{Showing amount of feature proposers.}
     \label{tab:other_contributors}
 \end{table}
 
@@ -618,14 +619,14 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
     \caption{Distribution of feature proposals over users compared to\dots}
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{feature_proposers_dist}
         \caption{\dots each other.}
+        \includegraphics[width=1\textwidth]{feature_proposers_dist}
         \label{fig:feature_proposers}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{all_feature_proposers_dist}
         \caption{\dots other popular OSS-projects.}
+        \includegraphics[width=1\textwidth]{all_feature_proposers_dist}
         \label{fig:all_feature_proposers}
     \end{subfigure}
 \end{figure}
@@ -635,14 +636,14 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
     \caption{Distribution of problem reports over users compared to\dots}
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{problem_reporters_dist}
         \caption{\dots each other.}
+        \includegraphics[width=1\textwidth]{problem_reporters_dist}
         \label{fig:problem_reporters}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[width=1\textwidth]{all_problem_reporters_dist}
         \caption{\dots other popular OSS-projects.}
+        \includegraphics[width=1\textwidth]{all_problem_reporters_dist}
         \label{fig:all_problem_reporters}
     \end{subfigure}
 \end{figure}
@@ -652,18 +653,19 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
 The two projects differed in the amount of defects repaired and the repair time, with Atom having almost twice as many defects, seen in Table~\ref{tab:defects} and a longer repair time, seen in Table~\ref{tab:repair_times}.
 \begin{table}[h]
     \centering
+    \caption{Showing amount of reported defects.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Data Type}     & \textbf{Atom}     & \textbf{Neovim}    \\\hline
         Amount defects        & 271        & 148             \\
         \hline
     \end{tabular}
-    \caption{Showing amount of reported defects.}
     \label{tab:defects}
 \end{table}
 
 \begin{table}[h]
     \centering
+    \caption{Showing repair time measured in days.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Data Type}     & \textbf{Atom}     & \textbf{Neovim}    \\\hline
@@ -673,24 +675,24 @@ The two projects differed in the amount of defects repaired and the repair time,
         Lowest            & <1            & <1                 \\
         \hline
     \end{tabular}
-    \caption{Showing repair time measured in days.}
     \label{tab:repair_times}
 \end{table}
 
 \FloatBarrier
 \subsection{Detailed Data}
 \label{sec:detaileddata}
-In previous section Overview Data~\ref{stat_data} we described overview data to show you that the the projects are on the same level for this comparison to be more accurate. We also showed you the two projects in a bigger picture with a comparison towards several other general known open source projects that can be found on Github.
+In the previous section Overview Data~\ref{stat_data} we described overview data to show you that the the projects are on the same level for this comparison to be more accurate. We also showed you the two projects in a bigger picture with a comparison towards several other generally known open source projects that can be found on Github.
 
 In this section we will present to you the detailed data that we have collected from the Atom project and the Neovim project. The different data categories that we have investigated are described in section~\ref{subsec:data}. The raw collected data can be found in Appendix~\ref{ap:raw_detailed_data}.
 
 \subsubsection{Feature Proposals (D5)}
-The results of feature proposals displayed in Tables~\ref{tab:proposals_atom} and~\ref{tab:proposals_neovim} shows the amount of proposals made by individual users categorised as core developers, peripheral developers and end users. From this data we can summarise that there was a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers were in the Atom project a total of 12 in contrast to the Neovim project which had 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
+The results of feature proposals displayed in Tables~\ref{tab:proposals_atom} and~\ref{tab:proposals_neovim} shows the amount of proposals made by individual users categorised as core developers, peripheral developers and end users. From this data we can summarise that there was a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project add up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers were in the Atom project a total of 12 and in the Neovim project 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
 
-In Table~\ref{tab:proposals_group} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) were 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both projects are from the category peripheral developers (dev) where Atom had a total of 9 unique peripheral developers and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users came from proposals from end users did not were only unique events where Atom had 4 end users proposing features and Neovim had a total of 3.
+In Table~\ref{tab:proposals_group} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) were 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both projects are from the category peripheral developers (dev) where Atom had a total of 9 unique peripheral developers proposing features and Neovim had a total of 10. In the category of end users all feature proposals were made by to unique users. Atom had 4 end users proposing features and Neovim had 3.
 
 \begin{table}[h]
     \centering
+    \caption{Showing Atom users with amount of feature proposals.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Username}     & \textbf{Feature Proposals}    & \textbf{User Status}    \\\hline
@@ -711,12 +713,12 @@ In Table~\ref{tab:proposals_group} we can also see the number of unique users th
         karai17             & 1                         & end user            \\
         \hline
     \end{tabular}
-    \caption{Showing Atom users with amount of feature proposals.}
     \label{tab:proposals_atom}
 \end{table}
 
 \begin{table}[h]
     \centering
+    \caption{Showing Neovim users with amount of feature proposals.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Username}     & \textbf{Feature Proposals}    & \textbf{User Status}    \\\hline
@@ -742,11 +744,11 @@ In Table~\ref{tab:proposals_group} we can also see the number of unique users th
         mmlb             & 1                         & end user             \\
         \hline
     \end{tabular}
-    \caption{Showing Neovim users with amount of feature proposals.}
     \label{tab:proposals_neovim}
 \end{table}
 \begin{table}[h]
     \centering
+    \caption{Showing amount of feature proposers in user groups.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{User Group}     & \textbf{Atom}     & \textbf{Neovim}    \\\hline
@@ -755,7 +757,6 @@ In Table~\ref{tab:proposals_group} we can also see the number of unique users th
         end-users            & 4            & 3                \\
         \hline
     \end{tabular}
-    \caption{Showing amount of feature proposers in user groups.}
     \label{tab:proposals_group}
 \end{table}
 
@@ -764,6 +765,7 @@ In Table~\ref{tab:proposals_group} we can also see the number of unique users th
 Presented in this section are the result for proposals in category A, B and C described in section~\ref{subsec:data}.
 \begin{table}[h]
     \centering
+    \caption{Showing amount of proposals for each category.}
     \begin{tabular}{ | l | c | c | c | c |}
         \hline
         \textbf{Proposal Category}     & \textbf{Atom}     & \textbf{Neovim}    \\\hline
@@ -773,7 +775,6 @@ Presented in this section are the result for proposals in category A, B and C de
         tot.                         & 22             & 27                 \\
         \hline
     \end{tabular}
-    \caption{Showing amount of proposals for each category.}
 \end{table}
 
 \FloatBarrier
@@ -782,6 +783,7 @@ The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neo
 
 \begin{table}[h]
     \centering
+    \caption{Showing Atom users with amount of feature acknowledgements.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Username}     & \textbf{Feature Acknowledgements}    & \textbf{User Status}    \\\hline
@@ -800,11 +802,11 @@ The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neo
         nathansobo         & 1                                 & peripheral developer    \\
         \hline
     \end{tabular}
-    \caption{Showing Atom users with amount of feature acknowledgements.}
     \label{tab:acknowledgements_atom}
 \end{table}
 \begin{table}[h]
     \centering
+    \caption{Showing Neovim users with amount of feature acknowledgements.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Username}     & \textbf{Feature Acknowledgements}    & \textbf{User Status}    \\\hline
@@ -819,15 +821,15 @@ The two tables~\ref{tab:acknowledgements_atom} and~\ref{tab:acknowledgements_neo
         shougo             & 1                                 & peripheral developer    \\
         \hline
     \end{tabular}
-    \caption{Showing Neovim users with amount of feature acknowledgements.}
     \label{tab:acknowledgements_neovim}
 \end{table}
 
 \FloatBarrier
 \subsubsection{First Implementation of Feature (D8)}
-This section presents the collected detailed data for whom a first feature implementation came from. Table~\ref{tab:implementation_atom} presents this data for the Atom project and Table~\ref{tab:implementation_neovim} presents the data for the Neovim project. Both Table~\ref{tab:implementation_atom} and Table~\ref{tab:implementation_neovim} includes data regarding the amount of first implementation from a unique user, the status of that unique user (core developer or peripheral developer) and the unique username.
+This section presents the collected detailed data for which a first feature implementation came from. Table~\ref{tab:implementation_atom} presents this data for the Atom project and Table~\ref{tab:implementation_neovim} presents the data for the Neovim project. Both Table~\ref{tab:implementation_atom} and Table~\ref{tab:implementation_neovim} includes data regarding the amount of first implementation from a unique user, the status of that unique user (core developer or peripheral developer) and the unique username.
 \begin{table}[h]
     \centering
+    \caption{Showing Atom users with amount of first feature implementations.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Username}     & \textbf{First Feature Implementations}    & \textbf{User Status}    \\\hline
@@ -849,11 +851,11 @@ This section presents the collected detailed data for whom a first feature imple
         timkelty             & 1                                 & peripheral developer    \\
         \hline
     \end{tabular}
-    \caption{Showing Atom users with amount of first feature implementations.}
     \label{tab:implementation_atom}
 \end{table}
 \begin{table}[h]
     \centering
+    \caption{Showing Neovim users with amount of first feature implementations.}
     \begin{tabular}{ | l | c | c |}
         \hline
         \textbf{Username}     & \textbf{First Feature Implementations}    & \textbf{User Status}    \\\hline
@@ -867,27 +869,28 @@ This section presents the collected detailed data for whom a first feature imple
         ZyX-I            & 1                                 & peripheral developer    \\
         \hline
     \end{tabular}
-    \caption{Showing Neovim users with amount of first feature implementations.}
     \label{tab:implementation_neovim}
 \end{table}
+
+
 \FloatBarrier
 \clearpage
 \section{Analysis}
 \label{sec:analysis}
 In the previous section, we presented and described the results from our overview and detailed data gathering that we have conducted.
-In this section we will analyse our results presented in the previous section. The analysis consists of three parts: validate the selection of cases and identify similarities and differences in requirement elicitation process.
+In this section we will analyse our results presented in the previous section. The analysis consists of two parts: (1) validate the selection of cases and (2) identify similarities and differences in requirement elicitation process.
 
 \subsection{Validity of Selected Cases}
-From the results we can identify two things. First, the two projects are similar in size on a number of aspects, as seen in Table~\ref{tab:contributors_amount} and Figures~\ref{fig:additions_dist},~\ref{fig:deletions_dist},~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Second, the distribution of the gathered overview data are very similar both between the projects, but also compared to other popular OSS-projects as seen in Figures~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist},~\ref{fig:all_deletions_dist},~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}. With this information the two selected projects can be considered suitable for comparison on requirement elicitation.
+From the results we can identify two things. First, the two projects are similar in size on amount of contributors, additions\footnote{Added Lines of Code.} and deletions\footnote{Deleted Lines of Code.} as seen in Table~\ref{tab:contributors_amount} and Figures~\ref{fig:additions_dist},~\ref{fig:deletions_dist},~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Second, the distribution of the gathered overview data are very similar both between the projects, but also compared to other popular OSS-projects as seen in Figures~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist},~\ref{fig:all_deletions_dist},~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}. With this information the two selected projects can be considered suitable for comparison on requirement elicitation.
 
 The difference in amounts of commits as seen in Figure~\ref{fig:commits_dist} could, as mentioned before in section~\ref{sec:case_selection}, be a difference in how the two projects use commits.
 
 \subsection{Identify Similarities and Differences from Detailed Data}
 
-In general, participants in an open source software development show a strong sense of engagement in, and ownership of, the project, without having any particular reward for the time they spent on contributing to the development. In the case of Atom and Neovim there are no exceptions however within this engagement among participants we have seen certain differences and similarities within feature proposals, origin, acknowledgement and in the first implementation of a feature the engagement among participants.
+In general, participants in an open source software development show a strong sense of engagement in, and ownership of, the project, without having any particular reward for the time they spent on contributing to the development. In the case of Atom and Neovim there are no exceptions. However within this engagement among participants we have seen certain differences and similarities within feature proposals, origin, acknowledgement and in the first implementation of a feature among participants.
 
 % Feature Proposals
-The results from feature proposals show us the amount of proposals made by individual users categorised in core developers, peripheral developers and end users. From this data we can summarise that there was a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from peripheral developers were a total of 12 in the Atom project in contrast to the Neovim project which had a total of 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
+The results regarding feature proposals show us the amount of proposals made by individual users categorised as core developers, peripheral developers and end users. From this data we can summarise that there was a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project adds up to a total of 4 and in the Neovim project there are 12. Proposals made from peripheral developers were a total of 12 in the Atom project in contrast to the Neovim project which had a total of 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
 
 \begin{table}[h]
     \centering
@@ -901,7 +904,7 @@ The results from feature proposals show us the amount of proposals made by indiv
     \label{tab:more_devs_in_neovim_analysis}
 \end{table}
 
-We can also see the number of unique users that proposed a feature in each category for each project.The total amount of unique users among core developers where 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both projects are from the category peripheral developers where Atom had a total of 9 and Neovim had a total of 10. In the category of end users all feature proposals could be mapped to unique users.
+We can also see the number of unique users that proposed a feature in each category for each project. The amount of unique users among core developers were 2 in the Atom project and 7 in the Neovim project. Peripheral developers was category for which most of the feature proposals were made, and also had the most unique users, Atom had a total of 9 and Neovim had a total of 10. In the category of end users all feature proposals was made by unique users, Atom had 3 and Neovim 4.
 
 \begin{table}[h]
     \centering
@@ -916,7 +919,7 @@ We can also see the number of unique users that proposed a feature in each categ
 \end{table}
 
 % Feature Origin
-Looking into the detailed data for feature origin it was in both cases clear that the majority of proposals originated from a developer's personal experience or his knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There were 9.1\% proposals coming from end users in the Atom project and 2,2\% in the Neovim project. In the aspect of features that derives from competing products there were also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% of the feature proposals.
+Looking into the detailed data for feature origin it was in both cases clear that the majority of proposals originated from a developer's personal experience or his knowledge of user needs, 72,7\% in the Atom Project and 66,7\% in the Neovim Project. There were 9.1\% proposals coming from end users in the Atom project and 2,2\% in the Neovim project. In the aspect of features that derive from competing products there was also a minor difference, where Atom had 1,8\% and Neovim had 1,1\% of feature proposals derived from competing products.
 
 \begin{table}[h]
     \centering
@@ -931,13 +934,13 @@ Looking into the detailed data for feature origin it was in both cases clear tha
 \end{table}
 
 % Feature Acknowledgement
-Acknowledgment of features is the single most interesting aspect of the detailed data. In our results we can see that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgments came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that make these numbers interesting. First, several peripheral developers in both projects have the authorities to acknowledge a feature for implementation, for what we can see, without a core developers involvement. The Second interesting finding is the fact that the Atom project allow more than half of their features to be acknowledged by peripheral developers while the Neovim project only have 14,5\% acknowledgments by peripheral developers. Furthermore, the developers in the Atom project that made the most acknowledgments were peripheral developers while the Neovim project had core developers in the top.
+Acknowledgment of features is the single most interesting aspect of the detailed data. In our results we can see that core developers in the Atom project stands for 45,5\% of the acknowledgments compared to the 85,2\% in the Neovim project. This means that 55,5\% of the feature acknowledgments came from peripheral developers in the Atom project and 14,5\% in the Neovim. There are two aspects that make these numbers interesting. First, several peripheral developers in both projects have the authority to acknowledge a feature for implementation, from what we can see, without a core developers involvement. The second interesting finding is the fact that the Atom project allowed more than half of their features to be acknowledged by peripheral developers while the Neovim project only had 14,5\% acknowledgments by peripheral developers. Furthermore, the developers in the Atom project that made the most acknowledgments were peripheral developers while the Neovim project had core developers at the top.
 \begin{table}[h]
     \centering
     \begin{tabular}{ | c | }
         \hline
         \\
-        Peripheral developers are in both projects allowed to acknowledge feature proposals.
+        Peripheral developers are in both projects were allowed to acknowledge feature proposals.
         \\ \\
         In Atom 55,5\% of the feature acknowledgments came from peripheral developers.\\ In Neovim the number was only 14,5\%.\\
         \\
@@ -947,7 +950,7 @@ Acknowledgment of features is the single most interesting aspect of the detailed
     \label{tab:acknowledgements_analysis}
 \end{table}
 
-We also found that there is a significant spread among acknowledgement from unique developers in the projects, in the Neovim the core developer ''justinmk'' stands for 44,4\% of the feature acknowledgments while the developer ''fracalo'' in the Atom project stands for 18,2\%.
+We also found that there is a significant spread among acknowledgement from unique developers in the projects. In Neovim the developer with the most acknowledgements, ''justinmk'', stands for 44,4\% while in Atom it was ''fracalo'' who had the most feature acknowledgement which was 18,2\%.
 
 % First Implementation of feature
 Moving on to analyse the first implementation of a feature we can confirm that from the features that had been proposed in the Atom project 27,3\% of them were first implemented by a core developer and 72,7\% were implemented by a peripheral developer. The Neovim project, on the other hand, had 86,6\% of first feature implementation done by core developers and 15,4\% from peripheral developers. Furthermore, the data also shows that that the core developer ''justinmk'' stands for 38,5\% of the first feature implementations in the Neovim project and the top spot with 13,6\% in Atom is shared between the core developer ''damieng'' and the peripheral developer ''bastillian''. Overall there are a total of 12 peripheral developers and 4 core developers in the Atom project doing the first implementation of a feature while Neovim has a total of 4 core developers and 4 peripheral developers.
@@ -971,9 +974,9 @@ Moving on to analyse the first implementation of a feature we can confirm that f
 \section{Discussion}
 \label{section:discussion}
 %Section intro
-In section \ref{sec:intro} we have present the problem, purpose, contribution and approach for this thesis. Furthermore in section \ref{subsec:background} we introduce the research area and describe the related work within the area. Based on these facts and thoughts a total of three research question were framed and presented in section \ref{sec:rq}. 
+In section \ref{sec:intro} we presented the problem, purpose, contribution and approach for this thesis. Furthermore in section \ref{subsec:background} we introduce the research area and describe the related work within the area. Based on these facts and thoughts a total of three research questions were framed and presented in section \ref{sec:rq}. 
 
-In this section we will discuss our findings in the previous section, their implications and their relevance to our first two research questions. Then we will discuss, based on the first two research questions, the answer to our third research question. We consider the answers to the first two questions to be conclusive, and the answer to our third research question to be speculative.
+In this section we will discuss our findings from the previous section, their implications and their relevance to our first two research questions. Then we will discuss, based on the first two research questions, the answer to our third research question. We consider the answers to the first two questions to be conclusive, and the answer to our third research question to be speculative.
 
 \subsection{Conclusive}
 \label{subsection:discussion_conclusive}
@@ -998,23 +1001,24 @@ Communities and firms have approximately the same end-user involvement which mea
 %Compare other studies
 When comparing the results from this thesis to the article~\cite{Noll} the results shows that the majority of features are asserted by developers, based on either their personal experience or knowledge of users needs. Therefore we can conclude that our results are general for several areas within the area of OSS development. Furthermore, we also compare the results from our statistical data from section~\ref{stat_data} with the results from~\cite{Mockus2002a}, where we can see a similar pattern based on the schema we framed for overview data in section~\ref{subsec:data}.
 
+
 \subsection{Speculative}
 \label{sub:speculative}
 %Peripheral developers participation F>C
-From the differences that we concluded in Section~\ref{subsection:discussion_conclusive} for research questions one and two, one could speculate in what they implicate. Looking at peripheral developer participation in firm-driven projects we can see that it's higher. That implicates that communities could have a higher peripheral developer participation which could result in; (1) increasing product customer value by having more developers working on improving the product; (2) increasing the actual development speed by having a greater number of developers; and (3) enabling core developers to focus on managing project and its future goals by relieving them of development work.
+From the differences that we concluded in Section~\ref{subsection:discussion_conclusive} for research questions one and two, one could speculate in what they imply. Looking at peripheral developer participation in firm-driven projects we can see that it's higher. That implies that communities could have a higher peripheral developer participation which could result in; (1) increasing product customer value by having more developers working on improving the product; (2) increasing the actual development speed by having a greater number of developers; and (3) enabling core developers to focus on managing project and its future goals by relieving them of development work.
 
-Furthermore, from a firm's perspective the participation from, peripheral developers is already high. This could mean that firms choosing to use an OSS development approach instead of a proprietary development approach could (1) increase their development speed without increased costs by having more developers and (2) increasing product customer value by having more developers working on improving the product.
+Furthermore, from a firm's perspective the participation from peripheral developers is already high. This could mean that firms choosing to use an OSS development approach instead of a proprietary development approach could (1) increase their development speed without increased costs by having more developers and (2) increase product customer value by having more developers working on improving the product.
 
-From the analysis we found more points regarding core and peripheral developers that both community and firm driven project could benefit from. The finding that did concern the distribution of task within a process and the actual definition of developers. According to previous research,~\cite{Noll, Joblin}, there is a clear line between the two kinds of developers within a project and the task they are held responsible for. From our result we can see a different type of pattern that does not follow along with the lines of what previous research have defined. We found that acknowledgment, a core developer task, in several occasions where approved by peripheral developers. This anomaly in task distribution implicates that there are roles in these projects that are in need of a new definition. In the perspective from the two types of projects this thesis aims to support, one could argue that these findings are an opportunity to engage developers in the project even further by giving them the possibility to have more roles than just core- and peripheral-developers. This could by itself lead to (1) better engagement within the group of developers and (2) this could also lead to better reputation among developers outside of the project due to the fact of a more reachable goal and opportunity within the project.
+From the analysis we found more points regarding core and peripheral developers that both community and firm driven project could benefit from. The finding that did concern the distribution of tasks within a process and the actual definition of developers. According to previous research,~\cite{Noll, Joblin}, there is a clear line between the two kinds of developers within a project and the tasks they are held responsible for. From our result we can see a different type of pattern that does not follow along with the lines of what previous research have defined. We found that acknowledgment, a core developer task, in several occasions where approved by peripheral developers. This anomaly in task distribution implicates that there are roles in these projects that are in need of a new definition. In the perspective from the two types of projects this thesis aims to support, one could argue that these findings are an opportunity to engage developers in the project even further by giving them the possibility to have more roles than just core- and peripheral-developers. This could by itself lead to (1) better engagement within the group of developers and (2) this could also lead to better reputation among developers outside of the project due to the fact of a more reachable goal and opportunity within the project.
 
 \subsection{Unforeseen complications}
 \label{sec:unforeseen}
 % discuss Barcelona, peripheral developer acknowledge, maybe they are not peripheral?
-When analysing the result we found that the definition we used to categorise core and peripheral developers might not be accurate, as mention in the previous section~\ref{sub:speculative}. We notice this due to the fact that there where a high amount of peripheral developers that made acknowledgments in both of the projects, a task that according to earlier research should be in the hands of a core developer. Furthermore, we investigated this unforeseen complication and found a recent study written by~\cite{Krishnamurthy2016} that brings forward a more in-depth description in how developers should be defined and categorised.
+When analysing the results we found that the definition we used to categorise core and peripheral developers might not be accurate, as mentioned in the previous section~\ref{sub:speculative}. We notice this due to the fact that there where a high amount of peripheral developers that made acknowledgments in both of the projects, a task that according to earlier research should be in the hands of a core developer. Furthermore, we investigated this unforeseen complication and found a recent study written by~\cite{Krishnamurthy2016} that brings forward a more in-depth description in how developers should be defined and categorised.
 
 \newpage
-\section{Conclusion and Suggestions for Future Work}
-In this section we will summarise the answer for all three research questions. Then we will make suggestions for future work.
+\section{Conclusions and Future Work}
+In this section we will summarise the answers for all three research questions. Then we will make suggestions for future work.
 
 With our study we the can give the following answers for our presented research questions:
 \begin{enumerate}[label=RQ\arabic*]
@@ -1032,7 +1036,7 @@ With our study we the can give the following answers for our presented research 
     \end{itemize}    
 \end{enumerate}
 
-In section~\ref{sec:unforeseen}  we mentioned that the definitions used for categorising developers into peripheral and core might not be accurate. Therefore it would be appropriate to conduct a similar study to ours but instead using the definitions of developer categories which, of course,  in~\cite{Krishnamurthy2016}.
+In section~\ref{sec:unforeseen}  we mentioned that the definitions used for categorising developers into peripheral and core might not be accurate. Therefore it would be appropriate to conduct a similar study to ours but instead using the definitions of developer categories which appear in~\cite{Krishnamurthy2016}.
 
 
 \newpage

@@ -115,8 +115,12 @@ Examinator:~Carl Magnus Olsson
 \newpage
 
 \section*{Sammanfattning}
+Kunskap om olika utvecklingsmetoder vid start av ett nytt mjukvaruutvecklingsprojekt är avgörande för utvecklarna, styrorganen och slutprodukten. Därför prioriteras ofta nya och okända metoder ned för att säkerställa att arbetet blir gjort och att lösningen kommer att levereras i tid och med hög kvalitet. Detta beteende gör på lång sikt att mjukvaruutvecklingsprojekt går miste om nya och bättre utvecklingsmetoder.
 
-Denna sammanfattning kommer skrivas inför slutgiltiga inlämningen.
+För belysa nya utvecklingsmetoder och upplysa de som behöver, valde vi att undersöka skillnaderna i krav framställning inom området Open Source Software\footnote{öppen källkod}-utveckling. I vårt arbete ställer tre forskningsfrågor som ska belysa ämnet dessa bevarar vi genom att utföra en fallstudie. I fallstudien undersöker vi hur och av vilka som krav framställts i ett företagsstyrt projekt jämfört med ett projekt drivet av en frivilligorganisation.
+
+Fallstudien visade att externa användare i gemenskapsdrivna OSS-projekt har låg delaktighet jämfört med företagsdrivna projekt där deltagandet av externa användare är högt. Slutligen diskuterar vi de potentiella konsekvenserna av resultaten för både community-och firm-driven OSS-projekt. Vi kan sluta för båda typerna att det är möjligt att öka både utvecklingshastighet och kundproduktvärde.
+
 
 \textbf{\textit{Keywords---open source software, development process, requirement elicitation, git, Github, Atom, Neovim}}
 
@@ -127,9 +131,11 @@ Denna sammanfattning kommer skrivas inför slutgiltiga inlämningen.
 \newpage
 
 \section*{Abstract}
-Knowledge about the variety of options among project processes when starting up a new software development project is crucial for the developers, the governing bodies and the end product. Therefore new and unfamiliar options are taken out of the equation to make sure that the work gets done and that the solution will be delivered on time and with high quality. This behaviour in the long term does, however, exclude new and better ways of executing the work in the process. 
+Knowledge about different development methods when starting up a new software development project is crucial for the developers, the governing bodies and the end product. Therefore new and unfamiliar options are taken out of the equation to make sure that the work gets done and that the solution will be delivered on time and with high quality. This behaviour in the long term does, however, exclude new and better ways of executing the work in the process. 
 
-So to shine light upon new development methods and enlighten those who are in need of insight into a new viable option we chose to investigate the differences in requirement elicitation within the area of Open Source Software (OSS) Development. By examining how and by who requirements are elicited in a firm-driven project compared to a community driven project, we framed a total of three research questions to base our case study on. The case study showed that in community driven OSS projects external users have low participation compared to firm-driven projects where the participation of external users is high. Finally, we discuss the potential implications of the findings for both community- and firm-driven OSS projects. We could conclude for both types that it's possible to increase both development speed and customer product value. 
+To shine light upon new development methods and enlighten those who are in need of insight into a new viable option we chose to investigate the differences in requirement elicitation within the area of Open Source Software development. By examining how and by who requirements are elicited in a firm-driven project compared to a community driven project, we framed a total of three research questions to base our case study on. 
+
+The case study showed that in community driven Open Source Software projects external users have low participation compared to firm-driven projects where the participation of external users is high. Finally, we discuss the potential implications of the findings for both community- and firm-driven OSS projects. We could conclude for both types that it's possible to increase both development speed and customer product value. 
 
 %Keywords
 \textbf{\textit{Keywords---open source software, development process, requirement elicitation, git, Github, Atom, Neovim}}
@@ -260,6 +266,8 @@ Based on our research interests in studying the commonalities and differences be
     \item \emph{What are the characteristics of firm-driven OSS development?}
     \item \emph{What are the implications of the differences between firm- and community-driven OSS development?}
 \end{enumerate}
+
+We answer the first two questions by conducting a case study on two OSS-projects with different governing bodies, a firm-driven and a community-driven. We answer the third research question by analysing the results from the first two.
 
 %Shortly describe structure of report
 The remainder of this paper is organised as follows: the next section will present our systematic literature review which we conducted to familiarise ourselves with the subject; the next section will present the chosen method for this study; next are the results; they are followed by an analysis and discussion of their implications; lastly we present a conclusion and suggestions for future work.
@@ -894,7 +902,7 @@ This section presents the results of how many first implementation of a feature 
 \section{Analysis}
 \label{sec:analysis}
 In the previous section, we presented and described the results from our overview and detailed data gathering that we have conducted.
-In this section we will analyse our results presented in the previous section. The analysis consists of two parts: (1) validate the selection of cases and (2) identify similarities and differences in requirement elicitation process.
+In this section we analyse our results presented in the previous section. The analysis consists of two parts: (1) validate the selection of cases and (2) identify similarities and differences in requirement elicitation process.
 
 \subsection{Validity of Selected Cases}
 Based on the results presented in section~\ref{stat_data} we can identify two findings. First, the two projects are similar in size on amount of contributors, additions\footnote{Added Lines of Code.} and deletions\footnote{Deleted Lines of Code.} as seen in Table~\ref{tab:contributors_amount} and Figures~\ref{fig:additions_dist},~\ref{fig:deletions_dist},~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Second, the distribution of the gathered overview data are very similar both between the projects, but also compared to other popular OSS-projects as seen in Figures~\ref{fig:all_commits_dist},~\ref{fig:all_additions_dist},~\ref{fig:all_deletions_dist},~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}. The difference in amounts of commits as seen in Figure~\ref{fig:commits_dist} could, as mentioned before in section~\ref{sec:case_selection}, be a difference in how the two projects use commits. With this information the two selected projects can be considered suitable for comparison on requirement elicitation.

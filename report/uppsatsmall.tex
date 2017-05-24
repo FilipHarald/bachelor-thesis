@@ -72,7 +72,7 @@ The differences in requirement elicitation between community- and firm-driven op
 \vspace*{8mm}
 \large
 
-Examensarbetets titel på svenska %TODO
+Skillnaden i framtagningen av mjukvarukrav mellan community- och företags- drivna open source projekt på Github.
 
 \vspace*{12mm}
 \Large
@@ -81,7 +81,7 @@ Examensarbetets titel på svenska %TODO
 Teddy Andersson\\
 Filip Harald
 
-\vspace*{30mm}
+\vspace*{25mm}
 \large
 % picture TODO?
 \end{center}
@@ -190,7 +190,7 @@ Apart from the traditional and agile methods the open source software (OSS) deve
     %TODO: More on the open source story
 
     %Introduce the reader to Community-driven projects and Requierment elicitation
-Regardless of the development process a project chooses to use when developing a software system they would most likely need a way to handle requirements in one way or another. While requirements in traditional and agile development processes are elicited from discussions with a client/customer, OSS projects handle the elicitation through the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed~\cite{Maccormack2006}. Joblin et al.~\cite{Joblin} describe the two vital roles of developers in an OSS project, where the so-called core developers are developers with a substantial, long-term involvement, and in an abstract sense these developers play an essential role in developing the system architecture and forming the general leadership structure. In contrast, peripheral developers are typically involved in bug fixes or small enhancements, and they have irregular or short-term involvement. Joblin et al. further describe that the motivation for both core and peripheral to get involved into OSS projects are based on the reward that they can get from signalling to stakeholders with eyes on OSS projects and the OSS area in generall. The signaling could reward the developer with a job or better reputation, which is a large reward.
+Regardless of the development process a project chooses to use when developing a software system they would most likely need a way to handle requirements in one way or another. While requirements in traditional and agile development processes are elicited from discussions with a client/customer, OSS projects handle the elicitation through the users/developers that are involved in the OSS community. People in these communities cooperate via the Internet and never, or seldom, meet face to face. The number of developers can differ from a handful to thousands and are often geographically distributed~\cite{Maccormack2006}. Krishnamurthy et al.~\cite{Krishnamurthy2016} describe the two vital roles of developers in an OSS project, where the so-called core developers are developers with a substantial, long-term involvement, and in an abstract sense these developers play an essential role in developing the system architecture and forming the general leadership structure. In contrast, peripheral developers are typically involved in bug fixes or small enhancements, and they have irregular or short-term involvement. Krishnamurthy et al. further describe that the motivation for both core and peripheral to get involved into OSS projects are based on the reward that they can get from signalling to stakeholders with eyes on OSS projects, and the OSS area in general. The signaling could reward the developer with a job or better reputation, which is a large reward for contributing to a project which they most likely find interesting to work on.
 
 %The key decisions in project driven by OSS communities are taken by a central group of software developers (core developers). Beyond this central group, are the peripheral developers; these are developers who intermittently submit code contributions (called patches). The core group reviews and acknowledge the patches before they are incorporated into the projects source code~\cite{Crowston2006}. 
 
@@ -275,6 +275,7 @@ The remainder of this paper is organised as follows: the next section will prese
 
 \newpage
 \section{Systematic Literature Review Process}
+\label{sec:syslit}
 To ensure that our thesis is credible we first have to make sure that we are well informed on the subject we're researching. In order to do this we have performed a systematic literature review which is presented in this section.
 
 When searching we used three different databases: \emph{ACM Digital Library} (\texttt{ACM}), \emph{IEEE Xplore Digital Library} (\texttt{IEEE}) and \emph{Google Scholar} (\texttt{GOOGLE}). The first two, \texttt{ACM} and \texttt{IEEE}, are well-known within the area of computer science and they were used for searching for articles using keywords and search phrases. The last, \texttt{GOOGLE}, was used for forward and backward snowballing.
@@ -546,6 +547,7 @@ When conducting a case study it is possible that one can discover things that we
 
 \newpage
 \section{Results}
+\label{sec:results}
 In the previous section~\ref{sec:method}, we presented our research methodology. In this section the results from the methods specified in section~\ref{sec:method} are presented. They are presented in the same order as they occur in section~\ref{subsec:data} which is first the overview data and then the detailed data. Lastly we will include a small summary of the results.
 
 \subsection{Overview Data}
@@ -1000,45 +1002,49 @@ In section \ref{sec:intro} we presented the problem, purpose, contribution and a
 
 In this section we will discuss our findings from the previous section, their implications and their relevance to our first two research questions. Then we will discuss, based on the first two research questions, the answer to our third research question. We consider the answers to the first two questions to be conclusive, and the answer to our third research question to be speculative.
 
-\subsection{Conclusive}
+\subsection{Characteristics of Atom's and Neovim's  Requirements Processes}
 \label{subsection:discussion_conclusive}
 %Answer Research question 1
 The research questions \emph{What are the characteristics of community-driven OSS development?}(RQ1) and \emph{What are the characteristics of firm-driven OSS development?}(RQ2) will be discussed in this section. A summary of the differences between the both cases will be presented and furthermore a conclusion will be framed for each research question based on the result data in section~\ref{sec:detaileddata}.
 
-From our analysis we can see that the firm driven project, Atom, has, when compared to the community-driven project Neovim, the following differences: (1) in Atom, core developers did only 20\% of the feature proposals, in Neovim it was around 50\%; (2) in Atom, 55,5\% of feature acknowledgements came from peripheral developers, in Neovim it was 14,5\%; (3) in Atom, 72,7\% of first implementations was done by peripheral developers, in Neovim it was 15,4\%.
-
-% answer RQ1 & RQ2
-The differences mentioned in the paragraph above would imply the following for our research questions:
-\begin{enumerate}[label=RQ\arabic*]
-    \item \emph{What are the characteristics of community-driven OSS development?}
-    
-    In community-driven OSS development, core developers in projects tend to have a \textbf{high} presence in suggesting-, acknowledging- and implementing features.
-    \item \emph{What are the characteristics of firm-driven OSS development?}
-    
-    In firm-driven OSS development, core developers in projects tend to have a \textbf{low} presence in suggesting-, acknowledging- and implementing features.
-\end{enumerate}
-
-Communities and firms have approximately the same end-user involvement which means that when firms consider choosing OSS-development they can look at any OSS-project to see how end-users are involved.
-
 %Compare other studies
-When comparing the results from this thesis to the article~\cite{Noll} the results shows that the majority of features are asserted by developers, based on either their personal experience or knowledge of users needs. Therefore we can conclude that our results are general for several areas within the area of OSS development. Furthermore, we also compare the results from our statistical data from section~\ref{stat_data} with the results from~\cite{Mockus2002a}, where we can see a similar pattern based on the schema we framed for overview data in section~\ref{subsec:data}.
+When comparing the detailed data results form Atom and Neovim in this thesis, presented in section \ref{sec:detaileddata}, to the work that Noll et al.~\cite{Noll} made on requirements elicitation in open source software development. The comparison shows that the majority of features are asserted by developers, based on either their personal experience or knowledge of users needs. Therefore we can conclude that our results are general for several areas within the area of OSS development. Furthermore, we also compare the results from our statistical data from section~\ref{stat_data} with the results from~\cite{Mockus2002a}, where we can see a similar pattern based on the schema we framed for overview data in section~\ref{subsec:data}.
+
+The case study we have conducted throughout this thesis are investigating the process of requirement elicitation. We have divided to investigate the process we did divided the requirement elicitation into two major steps (1) the proposal of a feature and (2) the acknowledgment of a feature. 
+
+The first step involves several depending factors such as when a suggested implementation for a feature where made and where the feature origin came from based on three categories where the first category are if a proposal where asserted by a developer, either from his or her personal experience or knowledge of user needs, the second category are if the feature where proposed by an end-user, for example by posting a request to one of the discussion forums, and the last category focus if the feature where find while filing a bug report or ?Request for Enhancement? in the issue database or derived from features found in competing products. The investigation of the first step is to us interesting due to the fact that you can se how high the contribution from non core developers are and therefore you can see if there are a general interest in proposing features and how that interest are handeld from the central group of core developers. 
+
+The second step has no depending factor more than the first step because to acknowledge a feature there must be a feature proposal to acknowledge. So the second step is straightforward to investigate due to the fact that a proposal can either be acknowledged or not. We found this step interesting to investigate because we wanted to se if there where more or less feature acknowledgment in a firm-driven OSS project due to the high pressure on delivering a quality product that are associated with a company reputation.
+
+To investigate the requirement elicitation process we first compared the two cases in the first step of a requirement elicitation process which are feature proposals. In this step we found that Neovim had around 50\% of the feature proposals coming from core developers whereas In the Atom project only 20\% of the proposals came from core developers. These facts tell us that the core group of developers in a community driven project are a bit more involved in the a early stage of the requirement elicitation process. Furthermore the proposals were in most cases followed up by a first implementation suggestion from developers and here we can see the same differences between the projects. The Neovim project had 72,7\% of the first implementation suggestions coming from core developers whereas the Atom project had 27,3\%. These numbers in itself implicate that there are a differences in early involvement between the projects. Where the core developers working on the Atom project allow more responsibility towards the peripheral developers and the core developers at Neovim don?t give as much space to the peripheral developers possibly due to their high interest in further implementing features into the Neovim project. 
+So feature proposals and first implementations of a feature showed us that community and firm driven OSS project have some initial differences in the requirement elicitation. However we also found similarities in these differences such as the amount of feature proposals per user is approximately the same for the two projects. We also conclude that the feature origin categories was for both projects approximately the same, the categories can be found in section \ref{subsec:data}. All of the above findings where findings that we expected to find based on the systematic literature review that we have conducted and presented in section \ref{sec:syslit}. 
+
+However looking more into each project we found interesting results based on the engagement and involvement among the individuals within the project. In both projects there were certain individuals that did stand out in contribution to the development. In the Neovim project one core developer did stand for 44,4\% of all acknowledgments and the same individual had a total 38,5\% in the first feature implementation. The Atom project did not have an individual with such high involvement however the individual with highest and second highest feature acknowledgment where peripheral developers and not a core developers. These findings along with the earlier mentioned findings are interesting due to the fact that the core developers in the firm-driven project Atom project in this case don?t have high involvement in the suggestions of requirements whereas the core developers in the Neovim project has a high involvement in these early stages.
+Despite the early involvement in the requirement elicitation process one would definitely think that the acknowledgment of the proposed features would strictly be traced back to a core developer. This was however not the case in our results where both projects had peripheral developers making acknowledgements. Even more interesting are the fact that Atom had approximately 50\% of the acknowledgments coming from peripheral developers. For us this is extremely interesting finding but we can?t fully support this conclusion due to lack of insight into the projects, simply we don?t know if the peripheral developers actually have some sort of permission to do these kind of acknowledgments. This finding are further explained in the section \ref{sub:speculative}.
+					
+Overall we can clearly see a pattern of motivated and engaged core developers within the Neovim project in comparison to the peripheral developers and the end-users with high presence in suggesting-, acknowledging- and implementing features.The presence in the requirement elicitation could however impact the product in way that might be negativt to the overall usage among users (core developers, peripheral developers and end-users) but positive for the usage of the product among core developers. It would be negative due to the fact that core developers don?t take in the overall users suggestions into consideration and therefore leads the product in the direction they want.
+
+When it comes to Atom we can from the findings conclude  that core developers overall tend to have low presence in suggesting-, acknowledging- and implementing features in a firm-driven OSS development projects. The low involvement from core developers could be due to several reasons. For an example the core developers for a project could be core developers in several projects within the firm and might just be there to make the project move in the direction that best befits the firm the work for.
+
+Last but not least communities and firms have approximately the same end-user involvement which means that when firms consider choosing OSS-development they can look at any OSS-project to see how end-users are involved.
 
 
-\subsection{Speculative}
+\subsection{Implications of the differences between firm- and community-driven OSS development}
 \label{sub:speculative}
 %Peripheral developers participation F>C
 From the differences that we concluded in Section~\ref{subsection:discussion_conclusive} for research questions one and two, one could speculate in what they imply. Looking at peripheral developer participation in firm-driven projects we can see that it's higher. That implies that communities could have a higher peripheral developer participation which could result in; (1) increasing product customer value by having more developers working on improving the product; (2) increasing the actual development speed by having a greater number of developers; and (3) enabling core developers to focus on managing project and its future goals by relieving them of development work.
 
 Furthermore, from a firm's perspective the participation from peripheral developers is already high. This could mean that firms choosing to use an OSS development approach instead of a proprietary development approach could (1) increase their development speed without increased costs by having more developers and (2) increase product customer value by having more developers working on improving the product.
 
-From the analysis we found more points regarding core and peripheral developers that both community and firm driven project could benefit from. The finding regarding the distribution of tasks within a process and the actual definition of developers. According to previous research,~\cite{Noll, Joblin}, there is a clear line between the two kinds of developers within a project and the tasks they are held responsible for. From our result we can see a different type of pattern that does not follow along with the lines of what previous research have defined. We found that acknowledgment, a core developer task, in several occasions where approved by peripheral developers. This anomaly in task distribution implies that there are roles in these projects that are in need of a new definition. In the perspective from the two types of projects this thesis aims to support, one could argue that these findings are an opportunity to engage developers in the project even further by giving them the possibility to have more roles than just core- and peripheral-developers. This could by itself lead to (1) better engagement within the group of developers and (2) this could also lead to better reputation among developers outside of the project due to the fact of a more reachable goal and opportunity within the project.
+%From the analysis we found more points regarding core and peripheral developers that both community and firm driven project could benefit from. The finding regarding the distribution of tasks within a process and the actual definition of developers. According to previous research,~\cite{Noll, Joblin}, there is a clear line between the two kinds of developers within a project and the tasks they are held responsible for. From our result we can see a different type of pattern that does not follow along with the lines of what previous research have defined. We found that acknowledgment, a core developer task, in several occasions where approved by peripheral developers. This anomaly in task distribution implies that there are roles in these projects that are in need of a new definition. In the perspective from the two types of projects this thesis aims to support, one could argue that these findings are an opportunity to engage developers in the project even further by giving them the possibility to have more roles than just core- and peripheral-developers. This could by itself lead to (1) better engagement within the group of developers and (2) this could also lead to better reputation among developers outside of the project due to the fact of a more reachable goal and opportunity within the project.
 
+\newpage
 \subsection{Unforeseen complications}
 \label{sec:unforeseen}
 % discuss Barcelona, peripheral developer acknowledge, maybe they are not peripheral?
-When analysing the results we found that the definition we used to categorise core and peripheral developers might not be accurate, as mentioned in the previous section~\ref{sub:speculative}. We notice this due to the fact that there where a high amount of peripheral developers that made acknowledgments in both of the projects, a task that according to earlier research should be in the hands of a core developer.
+When analysing the results we found that the definition that Krishnamurthy et al.~\cite{Krishnamurthy2016} used to categorise core and peripheral developers based on count-based operationalisations and that we also used when we collected the data might not be accurate, as mentioned in the previous section~\ref{sub:speculative}. We notice this due to the fact that there where a high amount of peripheral developers that made acknowledgments in both of the projects, a task that according to Krishnamurthy al.~\cite{Krishnamurthy2016} should be in the hands of a core developer.
  
-After further investigation we found a recent study by Joblin et al.~\cite{Joblin} that looks at the issue. Joblin et al. concludes that the count-based operationalisations, which we used in this thesis, does not give an accurate distribution of core and peripheral developers when compared to the project participants perceptions of the distribution.  Joblin et al. instead suggests a network-based operationalisation, which, when compared to project participants perceptions of the distribution, resulted in a more accurate distribution of core and peripheral developers.
+After further investigation we found a recent study by Joblin et al.~\cite{Joblin} that looks at the issue. Joblin et al. concludes that the count-based operationalisations, which we used in this thesis, does not give an accurate distribution of core and peripheral developers when compared to the project participants perceptions of the distribution.  Joblin et al. instead suggests a network-based operationalisation, which, when compared to project participants perceptions of the distribution, resulted in a more accurate distribution of core and peripheral developers. The network-based operationalisation focus on the communication and contributions among the developers instead and then classify the developers based on their network activity and impact rather then just looking into if a developer are a part of the core organisation or not.
 
 \newpage
 \section{Conclusions and Future Work}
@@ -1065,6 +1071,7 @@ In section~\ref{sec:unforeseen} we mentioned that the count-based operationalisa
 Given the scripts we programmed for conducting our research it also possible to replicate this study for the same projects but different time periods. But most importantly it creates an opportunity to study any OSS project, hosted on Github, for any time period.
 
 Furthermore our results indicate that there is a possibility for firms to reduce their development costs by using an OSS development process. This could be further studied by comparing the actual costs between a firm-driven OSS development project with a firm-driven proprietary development project. It can also be done by studying a firm-driven proprietary development project which is doing a transition into an OSS development process.
+
 
 \newpage
 \addcontentsline{toc}{section}{References}

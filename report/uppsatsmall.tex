@@ -484,8 +484,8 @@ Below we present a schema for what data we will collect with its description. Th
 
     Which of these categories did the feature belong to?
     \begin{enumerate}[label=\alph*) ]
-        \item asserted by a developer, either from his or her personal experience or knowledge of user needs.
-        \item proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database.
+        \item asserted by a code contributor, either from his or her personal experience or knowledge of user needs.
+        \item proposed by an end-user\footnote{An end-user is someone that uses the product but is not a code contributor.}, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database.
         \item or derived from features found in competing products.
     \end{enumerate}
     \item \emph{Feature acknowledgement}
@@ -500,9 +500,9 @@ Below we present a schema for what data we will collect with its description. Th
 Below we present a schema for our method of collecting the data. Every step which will generate data will refer to for which which of the data presented in Section~\ref{subsec:data} it will be. We are then referring to the schema found in section~\ref{subsec:data}.
 
 \begin{enumerate}
-    \item Select a time period between release M and N for project X. (Where $ M < N $)
+    \item Select a time period, from M to N for project X. (Where $ M < N $)
 
-    Project X is either Atom or Neovim. M and N are two versions of the software developed in project X. In order to compare the two projects M and N should be approximately within the same timespan.
+    Project X is either Atom or Neovim. 
     \item Extract the data specified in items D1-D4 for the selected time period.
     \item Identify a set of features delivered for project X after M, up to and including N.
     \item Select a subset of these features for examination.
@@ -547,7 +547,10 @@ When conducting a case study it is possible that one can discover things that we
 In the previous section~\ref{sec:method}, we presented our research methodology. In this section the results from the methods specified in section~\ref{sec:method} are presented. They are presented in the same order as they occur in section~\ref{subsec:data} which is first the overview data and then the detailed data. Lastly we will include a small summary of the results.
 
 \subsection{Overview Data}
-In this section we present the overview data results for Atom and Neovim and also other popular OSS projects. We also write a brief description of our observations of the results.
+In this section we present the overview data results for Atom and Neovim and also other popular OSS projects. The other popular OSS projects were randomly picked from Github Showcases~\cite{github_showcases}. We also write a brief description of our observations of the results.
+
+The overview data for Atom, Neovim and the other popular OSS projects was collected over a time period of a year, 2016-01-01 until 2017-01-01.
+
 \label{stat_data}
 
 \subsubsection{Code Contributors (D1)}
@@ -618,7 +621,9 @@ The number of code contributors was similar for the two projects as seen in Tabl
 
 \FloatBarrier
 \subsubsection{Feature Proposers \& Problem Reporters (D2 \& D3)}
-The amount of feature proposers were 108 for the two projects as seen in Table~\ref{tab:other_contributors}. The amount of problem reporters were 50 for the two projects as seen in Table~\ref{tab:other_contributors}. A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in Figures~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Compared to other popular OSS-projects Atom and Neovim can be considered similar as seen in Figures~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}.
+The amount of feature proposers were 108 in Atom and 50 Neovim as seen in Table~\ref{tab:other_contributors}. The amount of problem reporters were 230 for Atom and 141 for Neovim as seen in Table~\ref{tab:other_contributors}. 
+
+A majority, around 60\%, of the feature proposers and problem reporters did more than one proposal or report and the remaining 40\% did only one report each as seen in Figures~\ref{fig:feature_proposers} and~\ref{fig:problem_reporters}. Compared to other popular OSS-projects Atom and Neovim can be considered similar as seen in Figures~\ref{fig:all_feature_proposers} and~\ref{fig:all_problem_reporters}.
 \begin{table}[h]
     \centering
     \caption{Showing amount of feature proposers and problem reporters.}
@@ -668,6 +673,8 @@ The amount of feature proposers were 108 for the two projects as seen in Table~\
 
 \FloatBarrier
 \subsubsection{Defect Repair Time (D4)}
+Defect repair time is in Appendix \ref{ap:detailed_data} defined as ''[\dots]\emph{the time between the creation of a problem report and when it was closed}''.
+
 The two projects differed in the amount of defects repaired and the repair time, with Atom having almost twice as many defects, seen in Table~\ref{tab:defects} and a longer repair time, seen in Table~\ref{tab:repair_times}.
 \begin{table}[h]
     \centering
@@ -703,10 +710,12 @@ In the previous section Overview Data~\ref{stat_data} we described overview data
 
 In this section we will present to you the detailed data that we have collected from the Atom project and the Neovim project. The different data categories that we have investigated are described in section~\ref{subsec:data}. The raw collected data can be found in Appendix~\ref{ap:raw_detailed_data}.
 
-\subsubsection{Feature Proposals (D5)}
-The results of feature proposals displayed in Tables~\ref{tab:proposals_atom} and~\ref{tab:proposals_neovim} shows the amount of proposals made by individual users categorised as core developers, peripheral developers and end users. From this data we can summarise that there was a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project add up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from contribution developers were in the Atom project a total of 12 and in the Neovim project 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
+For Atom all the features (22 pcs) was from the v1.10.0-release, released 2016-09-01. And from Neovim the features (26 pcs) were from both v0.1.5 (released 2016-08-23) and v0.1.6 (released 2016-11-6). In Neovim two releases were picked so that we would have approximately the same amount of implemented features.
 
-In Table~\ref{tab:proposals_group} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) were 2 in the Atom project and 7 in the Neovim project. The biggest spread of unique users proposing features in both projects are from the category peripheral developers (dev) where Atom had a total of 9 unique peripheral developers proposing features and Neovim had a total of 10. In the category of end users all feature proposals were made by to unique users. Atom had 4 end users proposing features and Neovim had 3.
+\subsubsection{Feature Proposals (D5)}
+The results of feature proposals displayed in Tables~\ref{tab:proposals_atom} and~\ref{tab:proposals_neovim} shows the amount of proposals made by individual users categorised as core developers, peripheral developers and end users. From this data we can summarise that there was a total of 20 feature proposals in the Atom project and 26 proposals in the Neovim project. Proposals from core developers in the Atom project add up to a total of 4 and in the Neovim project they are a total of 12. Proposals made from peripheral developers were in the Atom project a total of 12 and in the Neovim project 11. Regarding proposals from end users the Atom project had 4 and the Neovim project had a total of 3.
+
+In Table~\ref{tab:proposals_group} we can also see the number of unique users that that proposed a feature in each category in each project.The total amount of unique users among core developers ( core dev ) were 2 in the Atom project and 7 in the Neovim project. The category with the biggest group of unique users proposing features in both projects are from the category peripheral developers (dev) where Atom had a total of 9 unique peripheral developers proposing features and Neovim had a total of 10. In the category of end users all feature proposals were made by to unique users. Atom had 4 end users proposing features and Neovim had 3.
 
 \begin{table}[h]
     \centering
@@ -780,7 +789,7 @@ In Table~\ref{tab:proposals_group} we can also see the number of unique users th
 
 \FloatBarrier
 \subsubsection{Feature Origin Categories (D6)}
-In this section we present the results for Feature Origin Categories presented in section~\ref{subsec:data}. The categories are: (A) asserted by a developer, either from his or her personal experience or knowledge of user needs. (B) Proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database. And (C) derived from features found in competing products.
+In this section we present the results for Feature Origin Categories presented in section~\ref{subsec:data}. The categories are: (A) asserted by a code contributor, either from his or her personal experience or knowledge of user needs; (B) proposed by an end-user, for example by posting a request to one of the discussion forums, or filing a bug report or ''Request for Enhancement'' in the issue database; and (C) derived from features found in competing products.
 
 \begin{table}[h]
     \centering
@@ -788,9 +797,9 @@ In this section we present the results for Feature Origin Categories presented i
     \begin{tabular}{ | l | c | c | c | c |}
         \hline
         \textbf{Proposal Category}     & \textbf{Atom}     & \textbf{Neovim}    \\\hline
-        A                        & 16             & 18                \\\hline
-        B                         & 2            & 6                  \\\hline
-        C                        & 4            & 3                \\\hline
+        asserted by a code contributor (A)                      & 16             & 18                \\\hline
+        proposed by an end-user (B)                       & 2            & 6                  \\\hline
+        derived from features found in competing products (C)                       & 4            & 3                \\\hline
         tot.                         & 22             & 27                 \\
         \hline
     \end{tabular}
@@ -1004,11 +1013,11 @@ In this section we will discuss our findings from the previous section, their im
 The research questions \emph{What are the characteristics of community-driven OSS development?}(RQ1) and \emph{What are the characteristics of firm-driven OSS development?}(RQ2) will be discussed in this section. A summary of the differences between the both cases will be presented and furthermore a conclusion will be framed for each research question based on the result data in section~\ref{sec:detaileddata}.
 
 %Compare other studies
-When comparing the detailed data results form Atom and Neovim in this thesis, presented in section \ref{sec:detaileddata}, to the work that Noll et al.~\cite{Noll} made on requirements elicitation in open source software development. The comparison shows that the majority of features are asserted by developers, based on either their personal experience or knowledge of users needs. Therefore we can conclude that our results are general for several areas within the area of OSS development. Furthermore, we also compare the results from our statistical data from section~\ref{stat_data} with the results from~\cite{Mockus2002a}, where we can see a similar pattern based on the schema we framed for overview data in section~\ref{subsec:data}.
+When comparing the detailed data results form Atom and Neovim in this thesis, presented in section \ref{sec:detaileddata}, to the work that Noll et al.~\cite{Noll} made on requirements elicitation in open source software development. The comparison shows that the majority of features are asserted by code contributors, based on either their personal experience or knowledge of users needs. Therefore we can conclude that our results are general for several areas within the area of OSS development. Furthermore, we also compare the results from our statistical data from section~\ref{stat_data} with the results from~\cite{Mockus2002a}, where we can see a similar pattern based on the schema we framed for overview data in section~\ref{subsec:data}.
 
 The case study we have conducted throughout this thesis are investigating the process of requirement elicitation. We have divided to investigate the process we did divided the requirement elicitation into two major steps (1) the proposal of a feature and (2) the acknowledgment of a feature. 
 
-The first step involves several depending factors such as when a suggested implementation for a feature were made and where the feature origin came from based on three categories were the first category are if a proposal were asserted by a developer, either from his or her personal experience or knowledge of user needs, the second category are if the feature were proposed by an end-user, for example by posting a request to one of the discussion forums, and the last category focus if the feature were find while filing a bug report or request for enhancement in the issue database or derived from features found in competing products. The investigation of the first step is to us interesting due to the fact that you can se how high the contribution from non core developers are and therefore you can see if there are a general interest in proposing features and how that interest are handeld from the central group of core developers. 
+The first step involves several depending factors such as when a suggested implementation for a feature were made and where the feature origin came from based on three categories were the first category are if a proposal were asserted by a code contributor, either from his or her personal experience or knowledge of user needs, the second category are if the feature were proposed by an end-user, for example by posting a request to one of the discussion forums, and the last category focus if the feature were find while filing a bug report or request for enhancement in the issue database or derived from features found in competing products. The investigation of the first step is to us interesting due to the fact that you can se how high the contribution from non core developers are and therefore you can see if there are a general interest in proposing features and how that interest are handeld from the central group of core developers. 
 
 The second step has no depending factor more than the first step because to acknowledge a feature there must be a feature proposal to acknowledge. So the second step is straightforward to investigate due to the fact that a proposal can either be acknowledged or not. We found this step interesting to investigate because we wanted to se if there were more or less feature acknowledgment in a firm-driven OSS project due to the high pressure on delivering a quality product that are associated with a company reputation.
 
@@ -1058,7 +1067,7 @@ With our study we the can give the following answers for our presented research 
     \begin{itemize}
         \item Communities could, by allowing more peripheral developers to participate, increase product customer value and development speed and also allow core developers to focus on managing the project.
         \item Firms could, by choosing to use an OSS-development approach,  increase product customer value and increase development speed without increasing development costs.
-        \item Both firms and communities could, by encouraging contribution developers in an OSS-development with goals and opportunities, increase engagement among involved developers and improve the reputation towards developers not jet involved.
+        \item Both firms and communities could, by encouraging project developers in an OSS-development with goals and opportunities, increase engagement among project developers and improve the reputation towards developers not yet involved in the project.
     \end{itemize}    
 \end{enumerate}
 
